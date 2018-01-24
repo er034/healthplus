@@ -4,15 +4,86 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no ">
         <meta name="description" content="Onlineshop für Nahrungsergänzungsmittel">
-        <!-- Beschreibung unserer Webseite -->
+            <!-- Beschreibung unserer Webseite -->
         <meta name="keywords" content="Nahrungsergänzung, Online Shop , Fitness , Sport">
-        <!-- Suchbbegriffe für die Suchmaschine -->
+            <!-- Suchbbegriffe für die Suchmaschine -->
         <meta name="author" content="Eileen Röhm, Marc Lunardi, Cedric Tippl">
-        <!-- Authoren der Webseite -->
+            <!-- Authoren der Webseite -->
         <title>HEALTH PLUS - ENJOY THE DIFFERENCE</title>
         <link rel= "stylesheet" href="style.css" type="text/css">
     </head>
     <body>
+        <header>
+            <div class="container">
+                <div id="logo">
+                    <a href="index.html"><img src="bilder/logo.svg" alt="Bild" /></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="produkte.php">PRODUKTE</a></li>
+                        <li><a href="angebote.php">ANGEBOTE</a></li>
+                        <li><a href="blog.php">BLOG</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+                <!-- Class benutzt man für Objekte die mehrmals in einer Seite vorkommen.
+                ID ist für einzigartige Objekte welche sich nicht wiederholen.
+                -->
+
+    <section id="banner">
+        <div class="container">
+            <h1>NEU</h1>
+            <h2>COMPLEX<br>WEIGHT GAINER</h2>
+            <button type="submit" class="button_2">JETZT ENTDECKEN</button>
+        </div>
+    </section>
+
+        <section id="search">
+            <div class="container">
+                <h4> PREMIUM QUALITÄT ZUM BESTMÖGLICHEN PREIS </h4>
+                    <img src="bilder/icon_01.png" alt="icon1">
+                <form>
+                    <input type="produktname" placeholder="Produkt suchen...">
+                    <button type="submit" class="button_1">Suchen</button>
+                </form>
+            </div>
+        </section>
+        <!-- Suchfunktion für den Online Shop -->
+
+    <section id="new">
+        <div class="container">
+        <h2>NEU IM SHOP</h2>
+        <img src="bilder/strich.png" alt="Strich">
+        </div>
+    </section>
+
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="bilder/produkt_01.jpg" alt="Produkt">
+                <h3>Produkt 01</h3>
+                <p>Produktbeschreibung</p>
+                <h2>19,99€</h2>
+            </div>
+            <div class="box">
+                <img src="bilder/produkt_01.jpg" alt="Produkt">
+                <h3>Produkt 02</h3>
+                <p>Produktbeschreibung</p>
+                <h2>19,99€</h2>
+            </div>
+            <div class="box">
+                <img src="bilder/produkt_01.jpg" alt="Produkt">
+                <h3>Produkt 03</h3>
+                <p>Produktbeschreibung</p>
+                <h2>19,99€</h2>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>HealthPlus, Copyright &copy; 2018</p>
+    </footer>
 
     </body>
 </html>
