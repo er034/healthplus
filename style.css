@@ -4,6 +4,7 @@ body{
     line-height: 1.5;
     padding:0;
     background-color: white;
+    width: 100%;
 }
 /*Global*/
 .container{
@@ -94,6 +95,10 @@ header a:hover{
     margin-top: -25px;
     font-weight: lighter;
 }
+
+
+/*Suche*/
+
 #search {
     padding: 15px;
     color: #333333;
@@ -110,8 +115,66 @@ header a:hover{
     float: right;
     margin-top: 12px;
 }
+
 #search input {
     padding: 4px;
     height: 25px;
     width: 250px;
+}
+
+
+/*Boxes*/
+
+#boxes {
+    margin-top: 20px;
+}
+
+#boxes .box{
+    float: left;
+    padding: 90px;
+    text-align: center;
+    margin-top: -150px;
+}
+
+#boxes h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: -5px;
+}
+
+#boxes h2 {
+    font-weight: bold;
+    margin-top: -10px;
+    color: #29ABE2;
+}
+
+#boxes p {
+    font-weight: lighter;
+    margin-top: -40px;
+}
+
+footer{
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+    background: #333333;
+    text-align: center;
+    margin-bottom: -10px;
+    margin-right: -10px;
+    margin-left: -10px;
+    text-align: center;
+}
+
+/*New In*/
+
+#new {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    text-align: center;
+    margin-top: -10px;
+}
+#new img{
+    margin-bottom: -105px;
+    margin-right: 5px;
 }
