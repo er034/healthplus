@@ -29,13 +29,6 @@
     </header>
 
 <body>
-
-    <section id="banner">
-        <div class="container">
-            <img src="bilder/registrieren_hintergrund.jpg">
-        </div>
-    </section>
-
 <section id="eingabe">
     <div class="container">
         <h2>REGISTRIERUNG</h2>
@@ -67,7 +60,6 @@
     </div>
     # Allgemeines Fomular zum Regestrieren bei HealthPlus
  # Benutzername, Passwort und Passwort wiederholen
-
 </section>
 </body>
 </html>

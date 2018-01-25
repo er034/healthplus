@@ -3,7 +3,9 @@ body{
     font-size: 15px;
     line-height: 1.5;
     padding:0;
-    background: white;
+    background: url("bilder/registrieren_hintergrund.jpg");
+    background-position: center -400px;
+    background-attachment: local;
     width: 100%;
 }
 /*Global*/
@@ -68,7 +70,7 @@ header a:hover{
 #eingabe {
     padding: 15px;
     color: #333333;
-    background: white;
+
 }
 #eingabe h2 {
     text-align: center;
@@ -97,14 +99,3 @@ header a:hover{
     width: 350px;
     font-weight: bold;
 }
-
-/* Banner*/
-#banner{
-    min-height: 450px;
-    background: url("bilder/banner.jpg") no-repeat 0 -450px;
-    text-align:left;
-    color: white;
-    margin-right: -10px;
-    margin-left: -10px;
-    margin-bottom: 1px;
-    margin-top: 1px;
