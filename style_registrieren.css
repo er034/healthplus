@@ -1,0 +1,110 @@
+body{
+    font-family: "Azo Sans", Arial, "Helvetica Neue";
+    font-size: 15px;
+    line-height: 1.5;
+    padding:0;
+    background: white;
+    width: 100%;
+}
+/*Global*/
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+/*Header**/
+header{
+    background: #F2F2F2;
+    color: white;
+    padding-top: 30px;
+    height: 10px;
+    min-height: 60px;
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-top: -10px;
+
+}
+#logo{
+    width: 220px;
+    height: 120px;
+    float: left;
+}
+
+header nav{
+    text-align: center;
+}
+
+header a{
+    color: #333333;
+    text-decoration:none;
+    text-transform: full-width;
+    font-size: 20px;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+}
+
+header li{
+    float: right;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #logo{
+    float: left;
+}
+
+header .highlight, header .current a{
+    color: black;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #29ABE2;
+    font-weight: normal;
+}
+#eingabe {
+    padding: 15px;
+    color: #333333;
+    background: white;
+}
+#eingabe h2 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+#eingabe p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-top: 1px;
+    margin-bottom: 10px;
+}
+#eingabe form{
+    float: right;
+    margin-right: 380px;
+    margin-top: 10px;
+    font-weight: lighter;
+
+}
+
+#eingabe input {
+    padding: 4px;
+    height: 25px;
+    width: 350px;
+    font-weight: bold;
+}
+
+/* Banner*/
+#banner{
+    min-height: 450px;
+    background: url("bilder/banner.jpg") no-repeat 0 -450px;
+    text-align:left;
+    color: white;
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-bottom: 1px;
+    margin-top: 1px;
