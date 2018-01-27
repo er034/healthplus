@@ -114,6 +114,7 @@ ID ist für einzigartige Objekte welche sich nicht wiederholen.
 
     </body>
 </html>
+
 <?php
 session_start();
 $page = strtolower($_GET['page']);
