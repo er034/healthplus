@@ -17,6 +17,5 @@ if($search_result->num_rows == 1):
         session_destroy();
         header('Location:/~er034/abmelden.php');
     endif;
-
 endif;
 ?>

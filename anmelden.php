@@ -1,4 +1,5 @@
-<form action="" method="post">
+<link rel= "stylesheet" href="style_anmelden.css" type="text/css">
+<form  id="eingabe" action="" method="post">
     Dein Benutzername:<br>
     <input type="text" name="benutzername" placeholder="Benutzername"><br>
     Dein Passwort:<br>
@@ -6,6 +7,7 @@
     <input type="submit" name="absenden" value="Absenden"><br>
 </form>
 <?php
+
 require_once("db.php");
 
 if(isset($_POST['absenden'])):
@@ -21,8 +23,7 @@ if(isset($_POST['absenden'])):
     if($search_result->num_rows == 1):
         $search_object = $search_result->fetch_object();
 
-        $_SESSION['user'] = $search_object->id;
-        header('Location:/~er034/index.php');
+        $_SESSION['benutzer'] = $search_object->id;
     else:
         echo 'Deine Angaben sind leider nicht korrekt!';
     endif;
