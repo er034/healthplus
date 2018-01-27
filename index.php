@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no ">
@@ -117,23 +116,19 @@ ID ist für einzigartige Objekte welche sich nicht wiederholen.
 </html>
 <?php
 session_start();
-// Seite?
 $page = strtolower($_GET['page']);
 
-// Nutzer ist angemeldet?
-// TODO: Prüfen ob Nutzer angemeldet ist
-if(isset($_SESSION['user'])):
+if(isset($_SESSION['benutzer'])):
     require_once('ui.php');
 else:
     if($page == 'anmelden'):
         echo 'Doch <a href="index.php?page=registrieren">registrieren</a>?';
-        require_once('anmelden.php');
+        require_once('registrieren.php');
     elseif($page == 'registrieren'):
         echo 'Doch <a href="index.php?page=anmelden">anmelden</a>?';
-        require_once('registrieren.php');
+        require_once('anmelden.php');
     else:
-        echo 'Hey! Willst du dich <a href="index.php?page=anmelden">anmelden</a> oder <a href="index.php?page=registrieren">registrieren</a>?';
+        echo 'Hey! Willst du dich <a href="anmelden.php">anmelden</a> oder <a href="registrieren.php">registrieren</a>?';
     endif;
 endif;
-?>
 ?>
