@@ -28,8 +28,8 @@
             </div>
         </header>
                 <!-- Class benutzt man für Objekte die mehrmals in einer Seite vorkommen.
-                ID ist für einzigartige Objekte welche sich nicht wiederholen.
-                -->
+ID ist für einzigartige Objekte welche sich nicht wiederholen.
+-->
 <body>
     <section id="banner">
         <div class="container">
@@ -115,3 +115,25 @@
 
     </body>
 </html>
+<?php
+session_start();
+// Seite?
+$page = strtolower($_GET['page']);
+
+// Nutzer ist angemeldet?
+// TODO: Prüfen ob Nutzer angemeldet ist
+if(isset($_SESSION['user'])):
+    require_once('ui.php');
+else:
+    if($page == 'anmelden'):
+        echo 'Doch <a href="index.php?page=registrieren">registrieren</a>?';
+        require_once('anmelden.php');
+    elseif($page == 'registrieren'):
+        echo 'Doch <a href="index.php?page=anmelden">anmelden</a>?';
+        require_once('registrieren.php');
+    else:
+        echo 'Hey! Willst du dich <a href="index.php?page=anmelden">anmelden</a> oder <a href="index.php?page=registrieren">registrieren</a>?';
+    endif;
+endif;
+?>
+?>
