@@ -1,3 +1,6 @@
+<?php
+include 'db.php';
+?>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -43,7 +46,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="produkte.php">PRODUKTE</a></li>
+                    <li><a href="uebersicht.php">PRODUKTE</a></li>
                     <li><a href="angebote.php">ANGEBOTE</a></li>
                     <li><a href="blog.php">BLOG</a></li>
                 </ul>
@@ -66,9 +69,9 @@ ID ist für einzigartige Objekte welche sich nicht wiederholen.
         <div class="container">
             <img src="bilder/icon_01.png">
             <h4> PREMIUM QUALITÄT ZUM BESTMÖGLICHEN PREIS </h4>
-            <form>
-                <input type="produktname" placeholder="Produkt suchen...">
-                <button type="submit" class="button_1">Suchen</button>
+            <form action="suche.php" method="POST">
+                <input type="text" name="suche" placeholder="Produkt suchen...">
+                <button type="submit" name="suche-bestätigen" class="button_1">Suchen</button>
             </form>
         </div>
     </section>

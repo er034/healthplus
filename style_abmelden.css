@@ -3,8 +3,11 @@ body{
     font-size: 15px;
     line-height: 1.5;
     padding:0;
-    background: url("/bilder/abmelden_banner.jpg");
+    background: url("bilder/registrieren_hintergrund.jpg");
+    background-position: center;
+    background-attachment: local;
     width: 100%;
+    border-image: fill;
 }
 /*Global*/
 .container{
@@ -21,33 +24,7 @@ body{
     margin-left: -10px;
     margin-bottom: -20px;
 }
-.button_1{
-    text-align: center;
-    height: 35px;
-    width: 70px;
-    background: #29ABE2;
-    border: none;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: white;
-}
-.button_2{
-    text-align: center;
-    height: 35px;
-    width: 150px;
-    background:none;
-    border-color: #29ABE2;
-    border-style: solid;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: white;
-    margin-top: -30px;
-}
-.button_2:hover{
-    color:white;
-    background-color:#29ABE2;
-    font-weight: normal;
-}
+
 /*Header**/
 header{
     background: #F2F2F2;

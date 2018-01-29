@@ -19,7 +19,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="produkte.php">PRODUKTE</a></li>
+                <li><a href="uebersicht.php">PRODUKTE</a></li>
                 <li><a href="angebote.php">ANGEBOTE</a></li>
                 <li><a href="blog.php">BLOG</a></li>
             </ul>
