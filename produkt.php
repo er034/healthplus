@@ -16,6 +16,7 @@ if($queryResults > 0){
                 <h3>".$row['p_name']."</h3>
                 <p>".$row['p_beschreibung']."</p>
                 <p>".$row['p_nummer']."</p>
+                <p>".$row['p_preis']."</p>
                 </div>";
     }
 }
