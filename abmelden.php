@@ -29,6 +29,6 @@
 <section id="abgemeldet">
 <div>
 <h1>BIS ZUM NÄCHTSEN MAL!</h1>
-    <a href="index.php">ZURÜCK ZUM SHOP</a>'
+    <a href="indexalt.php">ZURÜCK ZUM SHOP</a>'
 </section>
 </html>
