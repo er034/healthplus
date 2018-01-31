@@ -1,5 +1,5 @@
 <?php
-include 'dbConfig.php';
+include 'db.php';
 
 if (isset($_POST['submit-search'])){
     $search = mysqli_real_escape_string($db, $_POST['search']);

@@ -4,7 +4,7 @@
 </form>
 <?php
 // include database configuration file
-include 'dbConfig.php';
+include 'db.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">

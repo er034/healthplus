@@ -50,7 +50,7 @@
 </html>
 <?php
 
-require_once("dbConfig.php");
+require_once("db.php");
 
 if(isset($_POST['absenden'])):
 

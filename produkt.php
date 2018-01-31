@@ -1,5 +1,5 @@
 <?php
-include 'dbConfig.php';
+include 'db.php';
 
 $name = mysqli_real_escape_string($db, $_GET['name']);
 $description = mysqli_real_escape_string($db, $_GET['description']);
