@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'dbConfig.php';
 ?>
 <html>
 <head>

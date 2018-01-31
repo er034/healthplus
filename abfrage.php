@@ -1,8 +1,5 @@
 <?php
 require_once("dbConfig.php");
-if($db->connect_error):
-    echo $db->connect_error;
-endif;
 
 $search_user = $db->prepare("SELECT id FROM users WHERE id = ?");
 $search_user->bind_param('i',$_SESSION['benutzer']);

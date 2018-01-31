@@ -9,9 +9,6 @@
 <?php
 
 require_once("dbConfig.php");
-if($db->connect_error):
-    echo $db->connect_error;
-endif;
 
 if(isset($_POST['absenden'])):
     $username = strtolower($_POST['username']);
