@@ -35,12 +35,12 @@
             <p> Melde Dich jetzt bei Health Plus an und bestelle noch heute.</p>
             <form action="" method="post">
                 Dein Benutzername:<br>
-                <input type="text" name="benutzername" placeholder="Benutzername"><br><br>
+                <input type="text" name="username" placeholder="Benutzername"><br><br>
 
                 Dein Passwort:<br>
-                <input type="password" name="passwort" placeholder="Passwort"><br><br>
+                <input type="password" name="password" placeholder="Passwort"><br><br>
                 Widerhole dein Passwort:<br>
-                <input type="password" name="passwort_widerholen" placeholder="Passwort"><br><br>
+                <input type="password" name="password_repeat" placeholder="Passwort"><br><br>
                 <input type="submit" name="absenden" value="Absenden"><br>
             </form>
         </div>
@@ -51,7 +51,7 @@
 <?php
 
 require_once("db.php");
-if($conn->connect_error):
+if($db->connect_error):
     echo $conn->connect_error;
 endif;
 if(isset($_POST['absenden'])):

@@ -15,7 +15,7 @@ if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){
             'id' => $row['id'],
             'name' => $row['name'],
             'price' => $row['price'],
-            'qty' => ['quantity']
+            'qty' => 1
         );
 
         $insertItem = $cart->insert($itemData);
@@ -33,9 +33,7 @@ if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){
         header("Location: warenkorb_uebersicht.php");
     }elseif($_REQUEST['action'] == 'placeOrder' && $cart->total_items() > 0 && !empty($_SESSION['sessCustomerID'])){
         // insert order details into database
-        $insertOrder = $db->query("INSERT INTO orders (customer_id, total_price, created, modified) VALUES ('".$_SESSION['sessCustomerID']."', '".$cart->total()."', '".date("Y-m-d H:i:s")."', '".date("Y-m-d H:i:s")."')");
-
-
+        $insertOrder = $db->query("INSERT INTO orders (user_id, total_price, created, modified) VALUES ('".$_SESSION['sessCustomerID']."', '".$cart->total()."', '".date("Y-m-d H:i:s")."', '".date("Y-m-d H:i:s")."')");
         if($insertOrder){
             $orderID = $db->insert_id;
             $sql = '';
