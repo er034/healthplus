@@ -1,13 +1,13 @@
 <?php
-include 'db.php';
+include 'dbConfig.php';
 
-$name = mysqli_real_escape_string($conn, $_GET['name']);
-$description = mysqli_real_escape_string($conn, $_GET['description']);
-$price = mysqli_real_escape_string($conn, $_GET['price']);
+$name = mysqli_real_escape_string($db, $_GET['name']);
+$description = mysqli_real_escape_string($db, $_GET['description']);
+$price = mysqli_real_escape_string($db, $_GET['price']);
 
 
 $sql = "SELECT * FROM products WHERE name='$name' AND description='$description' AND price='$price'";
-$result = mysqli_query($conn, $sql);
+$result = mysqli_query($db, $sql);
 $queryResults = mysqli_num_rows($result);
 
 if($queryResults > 0){

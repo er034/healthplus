@@ -1,10 +1,10 @@
 <?php
-include 'db.php';
+include 'dbConfig.php';
 
 if (isset($_POST['submit-search'])){
-    $search = mysqli_real_escape_string($conn, $_POST['search']);
+    $search = mysqli_real_escape_string($db, $_POST['search']);
     $sql ="SELECT * FROM products WHERE name LIKE '%$search%' OR description LIKE '%$search%' OR id LIKE '%$search%' OR price LIKE '%$search%'";
-    $result = mysqli_query($conn, $sql);
+    $result = mysqli_query($db, $sql);
     $queryResult = mysqli_num_rows($result);
 
         echo "Es gibt".$queryResult." Produkte!";

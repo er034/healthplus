@@ -50,10 +50,8 @@
 </html>
 <?php
 
-require_once("db.php");
-if($conn->connect_error):
-    echo $conn->connect_error;
-endif;
+require_once("dbConfig.php");
+
 if(isset($_POST['absenden'])):
 
     $username = $_POST['username'];
@@ -61,7 +59,7 @@ if(isset($_POST['absenden'])):
     $password_repeat = $_POST['password_repeat'];
 
 
-    $search_user = $conn->prepare("SELECT id FROM customers WHERE username = ?");
+    $search_user = $db->prepare("SELECT id FROM users WHERE username = ?");
     $search_user->bind_param('s',$username);
     $search_user->execute();
     $search_result = $search_user->get_result();
@@ -70,7 +68,7 @@ if(isset($_POST['absenden'])):
     if($search_result->num_rows == 0):
         if($password == $password_repeat):
             $password = md5($password);
-            $insert = $conn->prepare("INSERT INTO customers (username,password) VALUES (?,?)");
+            $insert = $db->prepare("INSERT INTO users (username,password) VALUES (?,?)");
             $insert->bind_param('ss',$username,$password);
             $insert->execute();
             if($insert !== false):

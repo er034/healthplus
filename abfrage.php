@@ -1,10 +1,10 @@
 <?php
-require_once("db.php");
+require_once("dbConfig.php");
 if($db->connect_error):
     echo $db->connect_error;
 endif;
 
-$search_user = $conn->prepare("SELECT id FROM customers WHERE id = ?");
+$search_user = $db->prepare("SELECT id FROM users WHERE id = ?");
 $search_user->bind_param('i',$_SESSION['benutzer']);
 $search_user->execute();
 $search_result = $search_user->get_result();

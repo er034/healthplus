@@ -8,7 +8,7 @@
 </form>
 <?php
 
-require_once("db.php");
+require_once("dbConfig.php");
 if($db->connect_error):
     echo $db->connect_error;
 endif;
@@ -18,7 +18,7 @@ if(isset($_POST['absenden'])):
     $password = $_POST['password'];
     $password = md5($password);
 
-    $search_user = $conn->prepare("SELECT id FROM customers WHERE username = ? AND password = ?");
+    $search_user = $db->prepare("SELECT id FROM users WHERE username = ? AND password = ?");
     $search_user->bind_param('ss',$username,$password);
     $search_user->execute();
     $search_result = $search_user->get_result();
