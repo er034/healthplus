@@ -1,30 +1,31 @@
-<?php
-include 'db.php';
-?>
+<?php include 'db.php'; ?>
+
+<!-- html = Gesamte HTML-Dokument -->
 <html>
 
+<!-- head = unsichtbare Kopfdaten -->
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no ">
-    <meta name="description" content="Onlineshop für Nahrungsergänzungsmittel">
+    <!-- Code sorgt für Skalierung für mobile Endgeräte -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!-- Beschreibung unserer Webseite -->
-    <meta name="keywords" content="Nahrungsergänzung, Online Shop , Fitness , Sport">
+    <meta name="description" content="Onlineshop für Nahrungsergänzungsmittel">
     <!-- Suchbbegriffe für die Suchmaschine -->
-    <meta name="author" content="Eileen Röhm, Marc Lunardi, Cedric Tippl">
+    <meta name="keywords" content="Nahrungsergänzung, Online Shop , Fitness , Sport">
     <!-- Autoren der Website -->
+    <meta name="author" content="Eileen Röhm, Marc Lunardi, Cedric Tippl">
+    <!-- Titel der Website -->
     <title>HEALTH PLUS - ENJOY THE DIFFERENCE</title>
+    <!-- Verlinkung des Stylesheet (style.css)-->
     <link rel= "stylesheet" href="style.css" type="text/css">
 </head>
 
-<div>
+    <!-- section = Gruppierung von Inhalten mit einer Überschrift -->
     <section id="header02">
     <?php
     session_start();
-    // Seite?
-    $page = strtolower($_GET['page']);
 
-    // Nutzer ist angemeldet?
-    // TODO: Prüfen ob Nutzer angemeldet ist
+    $page = strtolower($_GET['page']);
 
     if(isset($_SESSION['benutzer'])):
         require_once('abfrage.php');
@@ -42,10 +43,12 @@ include 'db.php';
     ?>
     </section>
     <header>
+        <!-- Class = wird für Objekt benutzt die mehrmals in einer Seite vorkommen, div (division) = Elemente in einem gemeinsamen Bereich einschließen -->
         <div class="container">
             <div id="logo">
-                <a href="index.php"><img src="bilder/logo.svg" alt="Bild" /></a>
+                <a href="index.php"><img src="bilder/logo.svg" alt="Logo" /></a>
             </div>
+            <!-- nav (Navigation) = Menüleiste -->
             <nav>
                 <ul>
                     <li><a href="uebersicht.php">ALLE PRODUKTE</a></li>
@@ -55,9 +58,8 @@ include 'db.php';
             </nav>
         </div>
     </header>
-    <!-- Class benutzt man für Objekte die mehrmals in einer Seite vorkommen.
-ID ist für einzigartige Objekte welche sich nicht wiederholen.
--->
+
+    <!-- body = angezeigter Inhaltsbereich, id = ist für Objekte, welche sich nicht wiederholen -->
     <body>
     <section id="banner">
         <div class="container">
