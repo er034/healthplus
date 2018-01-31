@@ -1,14 +1,6 @@
-
-/**
- * Created by PhpStorm.
- * User: cedric
- * Date: 30.01.18
- * Time: 11:20
- */
-
 <?php
 if(!isset($_REQUEST['id'])){
-    header("Location: index.php");
+    header("Location: uebersicht.php");
 }
 ?>
 <!DOCTYPE html>

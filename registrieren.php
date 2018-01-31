@@ -16,13 +16,13 @@
     <header>
         <div class="container">
             <div id="logo">
-                <a href="index.html"><img src="bilder/logo.svg" alt="Bild" /></a>
+                <a href="index.php"><img src="bilder/logo.svg" alt="Bild" /></a>
             </div>
             <nav>
                 <ul>
                     <li><a href="anmelden.php">ANMELDEN</a></li>
                     <li><a href="registrieren.php">REGISTRIEREN</a></li>
-                    <li><a href="index.html">ZUM SHOP</a></li>
+                    <li><a href="index.php">ZUM SHOP</a></li>
                 </ul>
             </nav>
         </div>
@@ -38,10 +38,10 @@
                 <input type="text" name="benutzername" placeholder="Benutzername"><br><br>
 
                 Dein Passwort:<br>
-                    <input type="password" name="passwort" placeholder="Passwort"><br><br>
+                <input type="password" name="passwort" placeholder="Passwort"><br><br>
                 Widerhole dein Passwort:<br>
-                    <input type="password" name="passwort_widerholen" placeholder="Passwort"><br><br>
-                    <input type="submit" name="absenden" value="Absenden"><br>
+                <input type="password" name="passwort_widerholen" placeholder="Passwort"><br><br>
+                <input type="submit" name="absenden" value="Absenden"><br>
             </form>
         </div>
         <!--Allgemeines Fomular zum Regestrieren bei HealthPlus - Benutzername, Passwort und Passwort wiederholen -->
@@ -49,28 +49,29 @@
     </body>
 </html>
 <?php
+
 require_once("db.php");
+if($conn->connect_error):
+    echo $conn->connect_error;
+endif;
 if(isset($_POST['absenden'])):
 
-    $benutzername = $_POST['benutzername'];
-    $passwort = $_POST['passwort'];
-    $passwort_widerholen = $_POST['passwort_widerholen'];
-    //$email = $_POST['email'];
-    //$vorname= $_POST['vorname'];
-    //$nachname = $_POST['nachname'];
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $password_repeat = $_POST['password_repeat'];
 
-    $search_user = $db->prepare("SELECT id FROM benutzer WHERE benutzername = ?");
-    $search_user->bind_param('s',$benutzername);
+
+    $search_user = $conn->prepare("SELECT id FROM customers WHERE username = ?");
+    $search_user->bind_param('s',$username);
     $search_user->execute();
     $search_result = $search_user->get_result();
 
-    //$eintrag = mysqli_query($db, "INSERT INTO benutzer (email,vorname,nachname) VALUES ('$email','$vorname','$nachname')");
 
     if($search_result->num_rows == 0):
-        if($passwort == $passwort_widerholen):
-            $passwort = md5($passwort);
-            $insert = $db->prepare("INSERT INTO benutzer (benutzername,passwort) VALUES (?,?)");
-            $insert->bind_param('ss',$benutzername,$passwort);
+        if($password == $password_repeat):
+            $password = md5($password);
+            $insert = $conn->prepare("INSERT INTO customers (username,password) VALUES (?,?)");
+            $insert->bind_param('ss',$username,$password);
             $insert->execute();
             if($insert !== false):
                 echo 'Dein Account wurde erfolgreich erstellt!';

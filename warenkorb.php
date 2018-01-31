@@ -1,10 +1,3 @@
-
-/**
- * Created by PhpStorm.
- * User: cedric
- * Date: 30.01.18
- * Time: 11:16
- */
 <?php session_start();
 class Cart {
     protected $cart_contents = array();

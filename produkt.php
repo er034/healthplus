@@ -2,21 +2,20 @@
 include 'db.php';
 
 $name = mysqli_real_escape_string($conn, $_GET['name']);
-$beschreibung = mysqli_real_escape_string($conn, $_GET['beschreibung']);
-$nummer = mysqli_real_escape_string($conn, $_GET['nummer']);
+$description = mysqli_real_escape_string($conn, $_GET['description']);
+$price = mysqli_real_escape_string($conn, $_GET['price']);
 
 
-$sql = "SELECT * FROM produkte WHERE p_name='$name' AND p_beschreibung='$beschreibung' AND p_nummer='$nummer'";
+$sql = "SELECT * FROM products WHERE name='$name' AND description='$description' AND price='$price'";
 $result = mysqli_query($conn, $sql);
 $queryResults = mysqli_num_rows($result);
 
 if($queryResults > 0){
     while ($row = mysqli_fetch_assoc($result)){
         echo "<div>
-                <h3>".$row['p_name']."</h3>
-                <p>".$row['p_beschreibung']."</p>
-                <p>".$row['p_nummer']."</p>
-                <p>".$row['p_preis']."</p>
+                <h3>".$row['name']."</h3>
+                <p>".$row['description']."</p>
+                <p>".$row['price']."</p>
                 </div>";
     }
 }

@@ -11,12 +11,12 @@
 include 'dbConfig.php';
 
 // initializ shopping cart class
-include 'Cart.php';
+include 'warenkorb.php';
 $cart = new Cart;
 
 // redirect to home if cart is empty
 if($cart->total_items() <= 0){
-    header("Location: index.php");
+    header("Location: uebersicht.php");
 }
 
 // set customer ID in session
@@ -88,8 +88,8 @@ $custRow = $query->fetch_assoc();
         <p><?php echo $custRow['address']; ?></p>
     </div>
     <div class="footBtn">
-        <a href="index.php" class="btn btn-warning"><i class="glyphicon glyphicon-menu-left"></i> Continue Shopping</a>
-        <a href="cartAction.php?action=placeOrder" class="btn btn-success orderBtn">Place Order <i class="glyphicon glyphicon-menu-right"></i></a>
+        <a href="uebersicht.php" class="btn btn-warning"><i class="glyphicon glyphicon-menu-left"></i> Continue Shopping</a>
+        <a href="warenkorb_funktion.php?action=placeOrder" class="btn btn-success orderBtn">Place Order <i class="glyphicon glyphicon-menu-right"></i></a>
     </div>
 </div>
 </body>

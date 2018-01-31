@@ -3,7 +3,7 @@ include 'db.php';
 
 if (isset($_POST['submit-search'])){
     $search = mysqli_real_escape_string($conn, $_POST['search']);
-    $sql ="SELECT * FROM produkte WHERE p_name LIKE '%$search%' OR p_beschreibung LIKE '%$search%' OR p_id LIKE '%$search%' OR p_preis LIKE '%$search%'";
+    $sql ="SELECT * FROM products WHERE name LIKE '%$search%' OR description LIKE '%$search%' OR id LIKE '%$search%' OR price LIKE '%$search%'";
     $result = mysqli_query($conn, $sql);
     $queryResult = mysqli_num_rows($result);
 
@@ -11,12 +11,12 @@ if (isset($_POST['submit-search'])){
 
 if($queryResult > 0){
     while ($row = mysqli_fetch_assoc($result)){
-        echo "<a href='produkt.php?name=".$row['p_name']. "&beschreibung=".$row['p_beschreibung']. "&nummer=".$row['p_nummer']. "&preis=".$row['p_preis']."'>
+        echo "<a href='produkt.php?name=".$row['name']. "&description=".$row['description']. "&price=".$row['price']."'>
                 <div>
-                <h3>".$row['p_name']."</h3>
-                <p>".$row['p_beschreibung']."</p>
-                <p>".$row['p_nummer']."</p>
-                <p>".$row['p_preis']."</p>
+                <h3>".$row['name']."</h3>
+                <p>".$row['description']."</p>
+                <p>".$row['ean']."</p>
+                <p>".$row['price']."</p>
                 </div></a>";
        }
     } else {

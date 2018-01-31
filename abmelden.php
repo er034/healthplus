@@ -15,11 +15,11 @@
 <header>
     <div class="container">
         <div id="logo">
-            <a href="index.html"><img src="bilder/logo.svg" alt="Bild" /></a>
+            <a href="index.php"><img src="bilder/logo.svg" alt="Bild" /></a>
         </div>
         <nav>
             <ul>
-                <li><a href="uebersicht.php">PRODUKTE</a></li>
+                <li><a href="uebersicht_alt.php">PRODUKTE</a></li>
                 <li><a href="angebote.php">ANGEBOTE</a></li>
                 <li><a href="blog.php">BLOG</a></li>
             </ul>
@@ -29,6 +29,6 @@
 <section id="abgemeldet">
 <div>
 <h1>BIS ZUM NÄCHTSEN MAL!</h1>
-    <a href="indexalt.php">ZURÜCK ZUM SHOP</a>'
+    <a href="index.php">ZURÜCK ZUM SHOP</a>'
 </section>
 </html>

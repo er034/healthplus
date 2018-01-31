@@ -8,7 +8,7 @@ $cart = new Cart;
 
 // redirect to home if cart is empty
 if($cart->total_items() <= 0){
-    header("Location: uebersicht.php");
+    header("Location: uebersicht_alt.php");
 }
 
 // set customer ID in session
@@ -83,7 +83,7 @@ $custRow = $query->fetch_assoc();
         <p><?php echo $custRow['b_stadt']; ?></p>
     </div>
     <div class="footBtn">
-        <a href="uebersicht.php" class="btn btn-warning"><i class="glyphicon glyphicon-menu-left"></i> Continue Shopping</a>
+        <a href="uebersicht_alt.php" class="btn btn-warning"><i class="glyphicon glyphicon-menu-left"></i> Continue Shopping</a>
         <a href="warenkorb_action.php?action=placeOrder" class="btn btn-success orderBtn">Place Order <i class="glyphicon glyphicon-menu-right"></i></a>
     </div>
 </div>
@@ -94,7 +94,7 @@ The customer is redirected to this page if their order is submitted successfully
 
 <?php
 if(!isset($_REQUEST['b_id'])){
-    header("Location: uebersicht.php");
+    header("Location: uebersicht_alt.php");
 }
 ?>
 <!DOCTYPE html>

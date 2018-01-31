@@ -1,14 +1,6 @@
-
-/**
- * Created by PhpStorm.
- * User: cedric
- * Date: 30.01.18
- * Time: 11:16
- */
-
 <?php
 // initialize shopping cart class
-include 'Cart.php';
+include 'warenkorb.php';
 $cart = new Cart;
 
 // include database configuration file
@@ -23,11 +15,11 @@ if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){
             'id' => $row['id'],
             'name' => $row['name'],
             'price' => $row['price'],
-            'qty' => 1
+            'qty' => ['quantity']
         );
 
         $insertItem = $cart->insert($itemData);
-        $redirectLoc = $insertItem?'viewCart.php':'index.php';
+        $redirectLoc = $insertItem?'warenkorb_uebersicht.php':'uebersicht.php';
         header("Location: ".$redirectLoc);
     }elseif($_REQUEST['action'] == 'updateCartItem' && !empty($_REQUEST['id'])){
         $itemData = array(
@@ -38,10 +30,11 @@ if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){
         echo $updateItem?'ok':'err';die;
     }elseif($_REQUEST['action'] == 'removeCartItem' && !empty($_REQUEST['id'])){
         $deleteItem = $cart->remove($_REQUEST['id']);
-        header("Location: viewCart.php");
+        header("Location: warenkorb_uebersicht.php");
     }elseif($_REQUEST['action'] == 'placeOrder' && $cart->total_items() > 0 && !empty($_SESSION['sessCustomerID'])){
         // insert order details into database
         $insertOrder = $db->query("INSERT INTO orders (customer_id, total_price, created, modified) VALUES ('".$_SESSION['sessCustomerID']."', '".$cart->total()."', '".date("Y-m-d H:i:s")."', '".date("Y-m-d H:i:s")."')");
+
 
         if($insertOrder){
             $orderID = $db->insert_id;
@@ -56,7 +49,7 @@ if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){
 
             if($insertOrderItems){
                 $cart->destroy();
-                header("Location: orderSuccess.php?id=$orderID");
+                header("Location: bestellung.php?id=$orderID");
             }else{
                 header("Location: checkout.php");
             }
@@ -64,8 +57,8 @@ if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){
             header("Location: checkout.php");
         }
     }else{
-        header("Location: index.php");
+        header("Location: uebersicht.php");
     }
 }else{
-    header("Location: index.php");
+    header("Location: uebersicht.php");
 }

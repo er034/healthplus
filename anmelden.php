@@ -9,14 +9,17 @@
 <?php
 
 require_once("db.php");
+if($db->connect_error):
+    echo $db->connect_error;
+endif;
 
 if(isset($_POST['absenden'])):
-    $benutzername = strtolower($_POST['benutzername']);
-    $passwort = $_POST['passwort'];
-    $passwort = md5($passwort);
+    $username = strtolower($_POST['username']);
+    $password = $_POST['password'];
+    $password = md5($password);
 
-    $search_user = $db->prepare("SELECT id FROM benutzer WHERE benutzername = ? AND passwort = ?");
-    $search_user->bind_param('ss',$benutzername,$passwort);
+    $search_user = $conn->prepare("SELECT id FROM customers WHERE username = ? AND password = ?");
+    $search_user->bind_param('ss',$username,$password);
     $search_user->execute();
     $search_result = $search_user->get_result();
 
