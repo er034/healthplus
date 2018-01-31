@@ -23,7 +23,7 @@ include 'dbConfig.php';
 <body>
 <div class="container">
     <h1>Products</h1>
-    <a href="warenkorb_uebersicht.php" class="cart-link" title="View Cart"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+    <a href="warenkorb_uebersicht.php" class="cart-link" title="View Cart">Warenkorb></a>
     <div id="products" class="row list-group">
         <?php
         //get rows query

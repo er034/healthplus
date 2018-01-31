@@ -1,11 +1,3 @@
-
-/**
- * Created by PhpStorm.
- * User: cedric
- * Date: 30.01.18
- * Time: 11:17
- */
-
 <?php
 // include database configuration file
 include 'dbConfig.php';
@@ -23,7 +15,7 @@ if($cart->total_items() <= 0){
 $_SESSION['sessCustomerID'] = 1;
 
 // get customer details by session customer ID
-$query = $db->query("SELECT * FROM customers WHERE id = ".$_SESSION['sessCustomerID']);
+$query = $db->query("SELECT * FROM users WHERE id = ".$_SESSION['sessCustomerID']);
 $custRow = $query->fetch_assoc();
 ?>
 <!DOCTYPE html>
@@ -75,7 +67,7 @@ $custRow = $query->fetch_assoc();
         <tr>
             <td colspan="3"></td>
             <?php if($cart->total_items() > 0){ ?>
-                <td class="text-center"><strong>Total <?php echo '$'.$cart->total().' USD'; ?></strong></td>
+                <td class="text-center"><strong>Total <?php echo '$'.$cart->total().' EURO'; ?></strong></td>
             <?php } ?>
         </tr>
         </tfoot>

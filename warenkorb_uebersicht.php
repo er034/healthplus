@@ -16,8 +16,8 @@ $cart = new Cart;
         input[type="number"]{width: 20%;}
     </style>
     <script>
-        function updateCartItem(obj,id,){
-            $.get("cartAction.php", {action:"updateCartItem", id:id, qty:obj.value}, function(data){
+        function updateCartItem(obj,id){
+            $.get("warenkorb_funktion.php", {action:"updateCartItem", id:id, qty:obj.value}, function(data){
                 if(data === 'ok'){
                     location.reload();
                 }else{
@@ -52,10 +52,9 @@ $cart = new Cart;
                     <td><?php echo $item["name"]; ?></td>
                     <td><?php echo '$'.$item["price"].' USD'; ?></td>
                     <td><input type="number" class="form-control text-center" value="<?php echo $item["qty"]; ?>" onchange="updateCartItem(this, '<?php echo $item["rowid"]; ?>')"></td>
-                    <td><?php echo '$'.$item["subtotal"].' USD'; ?></td>
+                    <td><?php echo '$'.$item["subtotal"].' EURO'; ?></td>
                     <td>
                         <a href="warenkorb_funktion.php?action=removeCartItem&id=<?php echo $item["rowid"]; ?>" class="btn btn-danger" onclick="return confirm('Are you sure?')">Löschen</a>
-                    </td>
                     </td>
                 </tr>
             <?php } }else{ ?>
