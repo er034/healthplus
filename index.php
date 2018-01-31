@@ -2,6 +2,7 @@
 include 'db.php';
 ?>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no ">
@@ -10,10 +11,11 @@ include 'db.php';
     <meta name="keywords" content="Nahrungsergänzung, Online Shop , Fitness , Sport">
     <!-- Suchbbegriffe für die Suchmaschine -->
     <meta name="author" content="Eileen Röhm, Marc Lunardi, Cedric Tippl">
-    <!-- Authoren der Webseite -->
+    <!-- Autoren der Website -->
     <title>HEALTH PLUS - ENJOY THE DIFFERENCE</title>
     <link rel= "stylesheet" href="style.css" type="text/css">
 </head>
+
 <div>
     <section id="header02">
     <?php
@@ -34,7 +36,7 @@ include 'db.php';
             echo 'Doch <a href="index.php?page=anmelden">anmelden</a>?';
             require_once('registrieren.php');
         else:
-            echo 'Hey! Willst du dich <a href="index.php?page=anmelden">anmelden</a> oder <a href="registrieren.php">registrieren</a>?';
+            echo 'NOCH NICHT <a href="index.php?page=anmelden">ANGEMELDET</a>? DANN <a href="registrieren.php">REGISTRIERE</a> DICH!';
         endif;
     endif;
     ?>
@@ -46,7 +48,7 @@ include 'db.php';
             </div>
             <nav>
                 <ul>
-                    <li><a href="uebersicht.php">PRODUKTE</a></li>
+                    <li><a href="uebersicht.php">ALLE PRODUKTE</a></li>
                     <li><a href="angebote.php">ANGEBOTE</a></li>
                     <li><a href="blog.php">BLOG</a></li>
                 </ul>
@@ -69,6 +71,9 @@ ID ist für einzigartige Objekte welche sich nicht wiederholen.
         <div class="container">
             <img src="bilder/icon_01.png">
             <h4> PREMIUM QUALITÄT ZUM BESTMÖGLICHEN PREIS </h4>
+
+            <h4> FÜR FRAUEN ENTWICKELT </h4>
+
             <form action="suche.php" method="POST">
                 <input type="text" name="suche" placeholder="Produkt suchen...">
                 <button type="submit" name="suche-bestätigen" class="button_1">Suchen</button>
@@ -89,21 +94,21 @@ ID ist für einzigartige Objekte welche sich nicht wiederholen.
         <div class="container">
             <div class="box">
                 <img src="bilder/produkt_02.jpg" width="150px" height="300px" border="0" alt="Produkt">
-                <h3>PRODUKT 01</h3>
-                <p>Produktbeschreibung</p>
-                <h2>19,99€</h2>
+                <h3> FIT WHEY PROTEIN </h3>
+                <p> 100% Premium Whey Protein für optimalen Muskelaufbau.</p>
+                <h2>21,99€</h2>
             </div>
             <div class="box">
                 <img src="bilder/produkt_03.jpg" width="150px" height="300px" border="0" alt="Produkt">
-                <h3>PRODUKT 02</h3>
-                <p>Produktbeschreibung</p>
-                <h2>19,99€</h2>
+                <h3>BCAA AMINO | 200G</h3>
+                <p>Essenzielle Aminosäuren für den Muskelaufbau.</p>
+                <h2>21,99</h2>
             </div>
             <div class="box">
                 <img src="bilder/produkt_01.jpg"width="150px" height="300px" border="0"  alt="Produkt">
-                <h3>PRODUKT 03</h3>
-                <p>Produktbeschreibung</p>
-                <h2>19,99€</h2>
+                <h3>ALL-IN-ONE WHEY PROTEIN</h3>
+                <p>Whey Protein mit Vitaminen und Mineralien für optimalen Muskelaufbau.</p>
+                <h2>14,99€</h2>
             </div>
         </div>
     </section>
@@ -121,14 +126,14 @@ ID ist für einzigartige Objekte welche sich nicht wiederholen.
         <div class="container2">
             <div class="angebot1">
                 <img src="bilder/angebot_01.png" width="200" height="300px" border="0" alt="Angebot">
-                <h3> ANGEBOT 03 </h3>
-                <p> Beschreibung </p>
-                <h2> 29,99€ </h2>
+                <h3>COMPLEX WEIGHT GAINER </h3>
+                <p>Der Power-Shake für den Aufbau von Muskelmasse.</p>
+                <h2> 21,99€ </h2>
             </div>
             <div class="angebot2">
                 <img src="bilder/angebot_02.png" width="250" height="300px" border="0" alt="Angebot">
-                <h3> ANGEBOT 03 </h3>
-                <p> Beschreibung </p>
+                <h3> VEGAN PROTEIN </h3>
+                <p> Veganer Protein-Shake für den Muskelaufbau. </p>
                 <h2> 29,99€ </h2>
             </div>
         </div>
