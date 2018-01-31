@@ -83,6 +83,22 @@ $custRow = $query->fetch_assoc();
         <a href="uebersicht.php" class="btn btn-warning"><i class="glyphicon glyphicon-menu-left"></i> Continue Shopping</a>
         <a href="warenkorb_funktion.php?action=placeOrder" class="btn btn-success orderBtn">Place Order <i class="glyphicon glyphicon-menu-right"></i></a>
     </div>
+    <?php
+    //Bezahlmethode Auswahl durch Radio Checkbox:
+    ?>
+    Wähle deine Bezahlmethode:
+    <br />
+
+    <input type="radio" name="bezahlmethode"
+        <?php if (isset($bezahlmethode) && $bezahlmethode=="nachname") echo "checked";?>
+           value="nachname">Nachname
+    <input type="radio" name="bezahlmethode"
+        <?php if (isset($bezahlmethode) && $bezahlmethode=="paypal") echo "checked";?>
+           value="paypal">Paypal
+
+
+
+
 </div>
 </body>
 </html>
