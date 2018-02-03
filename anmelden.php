@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>Registration system PHP and MySQL</title>
-    <link rel="stylesheet" type="text/css" href="style_anmelden.css">
+    <link rel="stylesheet" type="text/css" href="style_registrieren.css">
 </head>
 <body>
 <div class="header">
