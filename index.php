@@ -5,6 +5,7 @@
 
 <!-- head = unsichtbare Kopfdaten -->
 <head>
+    <a></a>
     <meta charset="UTF-8">
     <!-- Code sorgt für Skalierung für mobile Endgeräte -->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
