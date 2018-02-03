@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="login_style.css">
 </head>
 <body>
-<div class="header">
+<div class="titel">
     <h2>REGISTRIEREN</h2>
 </div>
 

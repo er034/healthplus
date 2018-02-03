@@ -40,9 +40,9 @@ if (isset($_POST['reg_user'])) {
 
     // form validation: ensure that the form is correctly filled ...
     // by adding (array_push()) corresponding error unto $errors array
-    if (empty($username)) { array_push($errors, "Username is required"); }
-    if (empty($email)) { array_push($errors, "Email is required"); }
-    if (empty($password_1)) { array_push($errors, "Password is required"); }
+    if (empty($username)) { array_push($errors, "Bitte Benutzername eingeben"); }
+    if (empty($email)) { array_push($errors, "Bitte Email eingeben"); }
+    if (empty($password_1)) { array_push($errors, "Bitte Passwort eingeben"); }
     if ($password_1 != $password_2) {
         array_push($errors, "The two passwords do not match");
     }
@@ -55,11 +55,11 @@ if (isset($_POST['reg_user'])) {
 
     if ($user) { // if user exists
         if ($user['username'] === $username) {
-            array_push($errors, "Username already exists");
+            array_push($errors, "Benutzername schon vergeben");
         }
 
         if ($user['email'] === $email) {
-            array_push($errors, "email already exists");
+            array_push($errors, "Email schon vergeben");
         }
     }
 
@@ -71,7 +71,7 @@ if (isset($_POST['reg_user'])) {
   			  VALUES('$username','$email','$password','$firstname','$lastname','$street','$housenumber','$postcode', '$city')";
         mysqli_query($db, $query);
         $_SESSION['username'] = $username;
-        $_SESSION['success'] = "You are now logged in";
+        $_SESSION['success'] = "Du bist jetzt angemeldet!";
         header('location:/~er034/index.php');
     }
 }
@@ -82,10 +82,10 @@ if (isset($_POST['login_user'])) {
     $password = mysqli_real_escape_string($db, $_POST['password']);
 
     if (empty($username)) {
-        array_push($errors, "Username is required");
+        array_push($errors, "Bitte Benutzername eingeben");
     }
     if (empty($password)) {
-        array_push($errors, "Password is required");
+        array_push($errors, "Bitte Passwort eingeben");
     }
 
     if (count($errors) == 0) {

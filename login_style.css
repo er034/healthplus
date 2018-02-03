@@ -1,35 +1,108 @@
-body {
-    font-size: 120%;
-    background: #F8F8FF;
+header{
+    background: #F5F5F5;
+    padding-top: 30px;
+    height: 10px;
+    min-height: 60px;
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-top: -10px;
+    margin-bottom: 0px;
+    position: relative;
+}
+header #logo{
+    width: 270px;
+    height: 100px;
+    margin-top: -10px;
+    margin-left: 30px;
+    position: absolute;
+}
+header nav{
+    margin-top: 55px;
+    background: #29ABE2;
+    height: 60px;
+    text-align: center;
 }
 
-.header {
-    width: 30%;
-    margin: 50px auto 0px;
+header a{
     color: white;
-    background: #29ABE2;
+    text-decoration:none;
+    text-transform: full-width;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+}
+
+header li{
+    font-family: "Azo Sans", "Arial", "Helvetica Neue";
+    margin-top: 20px;
     text-align: center;
-    border: 1px solid #B0C4DE;
+    display: inline;
+    padding: 0px 50px 0px 50px;
+}
+
+header .highlight, header .current a{
+    color: black;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #333333;
+    font-weight: bold;
+}
+
+
+body {
+    font-size: 15px;
+    line-height: 1.5;
+    padding:0;
+    background: white;
+    width: 100%;
+    background: url("bilder/registrieren_hintergrund.jpg");
+    background-position: center;
+    background-attachment: local;
+    width: 100%;
+    border-image: fill;
+}
+
+.titel {
+    font-family: "Azo Sans", "Arial", "Helvetica Neue";
+    font-size: 30px;
+    width: 30%;
+    margin: 200px auto 0px;
+    color: #333333;
+    background: none;
+    text-align: center;
+    border: 2px solid #29ABE2;
     border-bottom: none;
     border-radius: 10px 10px 0px 0px;
     padding: 20px;
 }
+
 form, .content {
     font-family: "Azo Sans", "Arial", "Helvetica Neue";
+    color: #333333;
     width: 30%;
     margin: 0px auto;
     padding: 20px;
-    border: 1px solid #B0C4DE;
-    background: white;
+    border: 2px solid #29ABE2;
+    background: none;
     border-radius: 0px 0px 10px 10px;
 }
 .input-group {
     margin: 10px 0px 10px 0px;
+    background: none;
+
 }
 .input-group label {
     display: block;
     text-align: left;
     margin: 3px;
+    background: none;
+
 }
 .input-group input {
     height: 30px;
@@ -37,7 +110,8 @@ form, .content {
     padding: 5px 10px;
     font-size: 16px;
     border-radius: 5px;
-    border: 1px solid gray;
+    border: 2px solid #29ABE2;
+    background: none;
 }
 .btn {
     padding: 10px;
@@ -62,4 +136,14 @@ form, .content {
     background: #dff0d8;
     border: 1px solid #3c763d;
     margin-bottom: 20px;
+}
+footer {
+    background: #F5F5F5;
+    height: 10px;
+    min-height: 60px;
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-top: -10px;
+    margin-bottom: 40px;
+    position: relative;
 }

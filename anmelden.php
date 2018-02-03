@@ -5,9 +5,24 @@
     <title>Registration system PHP and MySQL</title>
     <link rel="stylesheet" type="text/css" href="login_style.css">
 </head>
+
+<header>
+    <div id="logo">
+        <a href="index.php"><img src="bilder/logo.svg" alt="Logo" /></a>
+    </div>
+    <!-- nav (Navigation) = Menüleiste -->
+    <nav>
+        <ul>
+            <li><a href="uebersicht.php">PRODUKTE</a></li>
+            <li><a href="angebote.php">ANGEBOTE</a></li>
+            <li><a href="blog.php">BLOG</a></li>
+        </ul>
+    </nav>
+</header>
+
 <body>
-<div class="header">
-    <h2>Login</h2>
+<div class="titel">
+    <h2>LOGIN</h2>
 </div>
 
 <form method="post" action="anmelden.php">
@@ -24,8 +39,17 @@
         <button type="submit" class="btn" name="login_user">Login</button>
     </div>
     <p>
-        Not yet a member? <a href="registrieren.php">Sign up</a>
+        Noch kein Mitglied? <a href="registrieren.php">JETZT REGISTRIEREN</a>
     </p>
 </form>
 </body>
+<footer>
+    <nav>
+        <ul>
+            <li><a href="uebersicht.php">IMPRESSUM</a></li>
+            <li><a href="angebote.php">KONTAKE</a></li>
+            <li><a href="blog.php">DATENSCHUTZ</a></li>
+        </ul>
+    </nav>
+</footer>
 </html>
