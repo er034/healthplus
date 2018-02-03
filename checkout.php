@@ -2,6 +2,9 @@
 // include database configuration file
 include 'db.php';
 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 // initializ shopping cart class
 include 'warenkorb.php';
 $cart = new Cart;
@@ -12,12 +15,42 @@ if($cart->total_items() <= 0){
 }
 
 // set customer ID in session
-$_SESSION['sessCustomerID'] = 1;
+$id = "id";
+$email    = "email";
+$firstname    = "firstname";
+$lastname    = "lastname";
+$street    = "street";
+$housenumber   = "housenumber";
+$postcode    = "postcode";
+$city    = "city";
 
-// get customer details by session customer ID
-$query = $db->query("SELECT * FROM users WHERE id = ".$_SESSION['sessCustomerID']);
-$custRow = $query->fetch_assoc();
-?>
+        if (isset($_GET['logout'])) {
+            session_destroy();
+            unset($_SESSION['username']);
+            header("location:/~er034/abmelden.php");
+        }
+        ?>
+<?php if (isset($_SESSION['success'])) : ?>
+    <div class="error success" >
+        <h3>
+            <?php
+            echo $_SESSION['success'];
+            unset($_SESSION['success']);
+            ?>
+        </h3>
+    </div>
+<?php endif ?>
+
+<!-- logged in user information -->
+<?php  if (isset($_SESSION['username'])) : ?>
+    <p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
+    <p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
+<?php endif ?>
+
+<?php
+$results = mysqli_query($db, "SELECT * FROM users"); ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -74,10 +107,17 @@ $custRow = $query->fetch_assoc();
     </table>
     <div class="shipAddr">
         <h4>Shipping Details</h4>
-        <p><?php echo $custRow['name']; ?></p>
-        <p><?php echo $custRow['email']; ?></p>
-        <p><?php echo $custRow['phone']; ?></p>
-        <p><?php echo $custRow['address']; ?></p>
+        <?php while ($row = mysqli_fetch_array($results)) { ?>
+
+                <p><?php echo $row['firstname']; ?></p>
+                <p><?php echo $row['lastname']; ?></p>
+                <p><?php echo $row['email']; ?></p>
+                <p><?php echo $row['street']; ?></p>
+                <p><?php echo $row['housenumber']; ?></p>
+                <p><?php echo $row['postcode']; ?></p>
+                <p><?php echo $row['city']; ?></p>
+        <?php } ?>
+
     </div>
     <div class="footBtn">
         <a href="uebersicht.php" class="btn btn-warning"><i class="glyphicon glyphicon-menu-left"></i> Continue Shopping</a>
