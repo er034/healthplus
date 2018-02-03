@@ -11,7 +11,7 @@
 </div>
 
 <form method="post" action="register.php">
-    <?php include('errors.php'); ?>
+    <?php include_once "errors.php"?>
     <div class="input-group">
         <label>Benutzername</label>
         <input type="text" name="username" value="<?php echo $username; ?>">

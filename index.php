@@ -16,12 +16,12 @@
     <!-- Titel der Website -->
     <title>HEALTH PLUS - ENJOY THE DIFFERENCE</title>
     <!-- Verlinkung des Stylesheet (style.css)-->
-    <link rel= "stylesheet" href="style.css" type="text/css">
+    <link rel= "stylesheet" href="style_index.css" type="text/css">
 </head>
 
-
+<header>
 <!-- Header02 beinhaltet alle Login und Registrieren Elemente-->
-    <section id="header02">
+    <section id="header">
         <?php
         session_start();
 
@@ -33,41 +33,27 @@
         ?>
         Möchtest Du dich  <a href="/~er034/Login%20-%20System/login.php">anmelden</a> oder <a href="/~er034/Login%20-%20System/register.php">registrieren</a>?
 
-
-    <head>
-        <title>Home</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-        <div class="content">
-
             <!-- Abfrage der Session - User richtig angemeldet? -->
             <?php if (isset($_SESSION['success'])) : ?>
                 <div class="error success" >
-                    <h3>
                         <?php
                         echo $_SESSION['success'];
                         unset($_SESSION['success']);
                         ?>
-                    </h3>
                 </div>
             <?php endif ?>
-
             <!-- Benutzer Information - Willkommen Benutzer... -->
             <?php  if (isset($_SESSION['username'])) : ?>
-                <p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
-                <p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
+                <p>Willkommen zurück, <strong><?php echo $_SESSION['username']; ?></strong> <button> <a href="index.php?logout='1'">LOGOUT</a> </button></p>
             <?php endif ?>
-        </div>
     </section>
 
 
-
-<header>
         <!-- Class = wird für Objekt benutzt die mehrmals in einer Seite vorkommen, div (division) = Elemente in einem gemeinsamen Bereich einschließen -->
         <!-- Inhalt unserer Navigationsleiste (Logo/Menü-Elemente) -->
-    <div class="container">
+    <div class="menu">
         <div id="logo">
-            <a href="index.php"><img src="bilder/logo.svg" alt="Logo" /></a>
+            <a href="index.php"><img src="bilder/logo.png" alt="Logo"></a>
         </div>
         <!-- nav (Navigation) = Menüleiste -->
             <nav>
@@ -79,13 +65,12 @@
             </nav>
     </div>
 </header>
-
-
+<body>
     <!-- body = angezeigter Inhaltsbereich, id = ist für Objekte, welche sich nicht wiederholen -->
     <!-- Inhalt: Bannerbild mit Text zu neustem Produkt -->
-<body>
+
     <section id="banner">
-        <div class="container">
+        <div>
             <h1>NEU</h1>
             <h2>COMPLEX<br>WEIGHT GAINER</h2>
             <button type="submit" class="button_2">JETZT ENTDECKEN</button>
@@ -93,7 +78,7 @@
     </section>
 
     <section id="new">
-        <div class="container">
+        <div>
             <img src="bilder/strich.png" alt="Strich" >
             <p>NEU IM SHOP</p>
         </div>
@@ -101,7 +86,7 @@
 
     <!-- Inhalt: Auswahl der neusten Produkte in unserem Shop -->
     <section id="boxes">
-        <div class="container">
+        <div>
             <div class="box">
                 <img src="bilder/produkt_02.jpg" width="150px" height="300px" border="0" alt="Produkt">
                 <h3> FIT WHEY PROTEIN </h3>
@@ -126,21 +111,21 @@
     <!-- Inhalt unsere Angebote/Empfehlungen -->
 
     <section id="empfehlungen">
-        <div class="container2">
+        <div>
             <img src="bilder/strich.png" alt="Strich" >
             <p>UNSERE EMPFEHLUNGEN</p>
         </div>
     </section>
 
     <section id="angebote">
-        <div class="container2">
-            <div class="angebot1">
+        <div>
+            <div class="angebot">
                 <img src="bilder/angebot_01.png" width="200" height="300px" border="0" alt="Angebot">
                 <h3>COMPLEX WEIGHT GAINER </h3>
                 <p>Der Power-Shake für den Aufbau von Muskelmasse.</p>
                 <h2> 21,99€ </h2>
             </div>
-            <div class="angebot2">
+            <div class="angebot">
                 <img src="bilder/angebot_02.png" width="250" height="300px" border="0" alt="Angebot">
                 <h3> VEGAN PROTEIN </h3>
                 <p> Veganer Protein-Shake für den Muskelaufbau. </p>
@@ -148,9 +133,9 @@
             </div>
         </div>
     </section>
+</body>
 
-
-    <footer class="footer">
+    <footer>
             <p>HealthPlus, Copyright &copy; 2018</p>
             <nav>
                 <ul>
@@ -161,5 +146,4 @@
             </nav>
     </footer>
 
-</body>
 </html>
