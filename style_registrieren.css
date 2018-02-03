@@ -1,101 +1,65 @@
-body{
-    font-family: "Azo Sans", Arial, "Helvetica Neue";
-    font-size: 15px;
-    line-height: 1.5;
-    padding:0;
-    background: url("bilder/registrieren_hintergrund.jpg");
-    background-position: center -400px;
-    background-attachment: local;
-    width: 100%;
+body {
+    font-size: 120%;
+    background: #F8F8FF;
 }
-/*Global*/
-.container{
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-/*Header**/
-header{
-    background: #F2F2F2;
+
+.header {
+    width: 30%;
+    margin: 50px auto 0px;
     color: white;
-    padding-top: 30px;
-    height: 10px;
-    min-height: 60px;
-    margin-right: -10px;
-    margin-left: -10px;
-    margin-top: -10px;
-
-}
-#logo{
-    width: 220px;
-    height: 120px;
-    float: left;
-}
-
-header nav{
+    background: #29ABE2;
     text-align: center;
+    border: 1px solid #B0C4DE;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px;
 }
-
-header a{
-    color: #333333;
-    text-decoration:none;
-    text-transform: full-width;
-    font-size: 20px;
+form, .content {
+    font-family: "Azo Sans", "Arial", "Helvetica Neue";
+    width: 30%;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid #B0C4DE;
+    background: white;
+    border-radius: 0px 0px 10px 10px;
 }
-
-header ul{
-    margin: 0;
-    padding: 0;
+.input-group {
+    margin: 10px 0px 10px 0px;
 }
-
-header li{
-    float: right;
-    display: inline;
-    padding: 0 20px 0 20px;
+.input-group label {
+    display: block;
+    text-align: left;
+    margin: 3px;
 }
-
-header #logo{
-    float: left;
+.input-group input {
+    height: 30px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
 }
-
-header .highlight, header .current a{
-    color: black;
-    font-weight: bold;
-}
-
-header a:hover{
-    color: #29ABE2;
-    font-weight: normal;
-}
-#eingabe {
-    padding: 15px;
-    color: #333333;
-
-}
-#eingabe h2 {
-    text-align: center;
-    font-size: 45px;
-    font-weight: bold;
-    margin-bottom: 1px;
-}
-#eingabe p{
-    text-align: center;
+.btn {
+    padding: 10px;
     font-size: 15px;
-    font-weight: lighter;
-    margin-top: 1px;
-    margin-bottom: 10px;
+    color: white;
+    background: #29ABE2;
+    border: none;
+    border-radius: 5px;
 }
-#eingabe form{
-    float: right;
-    margin-right: 380px;
-    margin-top: 10px;
-    font-weight: lighter;
-
+.error {
+    width: 92%;
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid #a94442;
+    color: #a94442;
+    background: #f2dede;
+    border-radius: 5px;
+    text-align: left;
 }
-
-#eingabe input {
-    padding: 4px;
-    height: 25px;
-    width: 350px;
-    font-weight: bold;
+.success {
+    color: #3c763d;
+    background: #dff0d8;
+    border: 1px solid #3c763d;
+    margin-bottom: 20px;
 }

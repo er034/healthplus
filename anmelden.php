@@ -1,30 +1,31 @@
-<link rel= "stylesheet" href="style_anmelden.css" type="text/css">
-<form  id="eingabe" action="" method="post">
-    Dein Benutzername:<br>
-    <input type="text" name="benutzername" placeholder="Benutzername"><br>
-    Dein Passwort:<br>
-    <input type="password" name="passwort" placeholder="Passwort"><br>
-    <input type="submit" name="absenden" value="Absenden"><br>
+<?php include('server.php') ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration system PHP and MySQL</title>
+    <link rel="stylesheet" type="text/css" href="style_anmelden.css">
+</head>
+<body>
+<div class="header">
+    <h2>Login</h2>
+</div>
+
+<form method="post" action="anmelden.php">
+    <?php include('errors.php'); ?>
+    <div class="input-group">
+        <label>Username</label>
+        <input type="text" name="username" >
+    </div>
+    <div class="input-group">
+        <label>Password</label>
+        <input type="password" name="password">
+    </div>
+    <div class="input-group">
+        <button type="submit" class="btn" name="login_user">Login</button>
+    </div>
+    <p>
+        Not yet a member? <a href="registrieren.php">Sign up</a>
+    </p>
 </form>
-<?php
-
-require_once("db.php");
-
-if(isset($_POST['absenden'])):
-    $username = strtolower($_POST['username']);
-    $password = $_POST['password'];
-    $password = md5($password);
-
-    $search_user = $db->prepare("SELECT id FROM users WHERE username = ? AND password = ?");
-    $search_user->bind_param('ss',$username,$password);
-    $search_user->execute();
-    $search_result = $search_user->get_result();
-
-    if($search_result->num_rows == 1):
-        $search_object = $search_result->fetch_object();
-
-        $_SESSION['benutzer'] = $search_object->id;
-    else:
-        echo 'Deine Angaben sind leider nicht korrekt!';
-    endif;
-endif;
+</body>
+</html>
