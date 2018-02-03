@@ -190,18 +190,6 @@ header a:hover{
     margin-top: -40px;
 }
 
-footer{
-    padding: 10px;
-    margin-top: 20px;
-    color: white;
-    background: #333333;
-    text-align: center;
-    margin-bottom: -10px;
-    margin-right: -10px;
-    margin-left: -10px;
-    text-align: center;
-}
-
 /*New In*/
 
 #new {
@@ -277,6 +265,8 @@ footer{
     margin-bottom: 20px;
     font-family: "Azo Sans", Arial, "Helvetica Neue";
     font-weight: lighter;
-
 }
-#header02 .
+footer{
+    font-size: 20px;
+}
+

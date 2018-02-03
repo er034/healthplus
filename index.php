@@ -1,11 +1,9 @@
 <?php include 'db.php'; ?>
-
-<!-- html = Gesamte HTML-Dokument -->
+<!DOCTYPE html>
 <html>
 
-<!-- head = unsichtbare Kopfdaten -->
+
 <head>
-    <a></a>
     <meta charset="UTF-8">
     <!-- Code sorgt für Skalierung für mobile Endgeräte -->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -21,7 +19,8 @@
     <link rel= "stylesheet" href="style.css" type="text/css">
 </head>
 
-    <!-- section = Gruppierung von Inhalten mit einer Überschrift -->
+
+<!-- Header02 beinhaltet alle Login und Registrieren Elemente-->
     <section id="header02">
         <?php
         session_start();
@@ -32,15 +31,16 @@
             header("location:/~er034/abmelden.php");
         }
         ?>
-        <!DOCTYPE html>
-        <html>
-        <head>
-            <title>Home</title>
-            <link rel="stylesheet" type="text/css" href="style.css">
-        </head>
-        <body>
+        Möchtest Du dich  <a href="/~er034/Login%20-%20System/login.php">anmelden</a> oder <a href="/~er034/Login%20-%20System/register.php">registrieren</a>?
+
+
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
         <div class="content">
-            <!-- notification message -->
+
+            <!-- Abfrage der Session - User richtig angemeldet? -->
             <?php if (isset($_SESSION['success'])) : ?>
                 <div class="error success" >
                     <h3>
@@ -52,31 +52,24 @@
                 </div>
             <?php endif ?>
 
-            <!-- logged in user information -->
+            <!-- Benutzer Information - Willkommen Benutzer... -->
             <?php  if (isset($_SESSION['username'])) : ?>
                 <p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
                 <p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
             <?php endif ?>
         </div>
-
-        </body>
-        </html>
-
-
-
-
-
-
-
-
     </section>
-    <header>
+
+
+
+<header>
         <!-- Class = wird für Objekt benutzt die mehrmals in einer Seite vorkommen, div (division) = Elemente in einem gemeinsamen Bereich einschließen -->
-        <div class="container">
-            <div id="logo">
-                <a href="index.php"><img src="bilder/logo.svg" alt="Logo" /></a>
-            </div>
-            <!-- nav (Navigation) = Menüleiste -->
+        <!-- Inhalt unserer Navigationsleiste (Logo/Menü-Elemente) -->
+    <div class="container">
+        <div id="logo">
+            <a href="index.php"><img src="bilder/logo.svg" alt="Logo" /></a>
+        </div>
+        <!-- nav (Navigation) = Menüleiste -->
             <nav>
                 <ul>
                     <li><a href="uebersicht.php">ALLE PRODUKTE</a></li>
@@ -84,11 +77,13 @@
                     <li><a href="blog.php">BLOG</a></li>
                 </ul>
             </nav>
-        </div>
-    </header>
+    </div>
+</header>
+
 
     <!-- body = angezeigter Inhaltsbereich, id = ist für Objekte, welche sich nicht wiederholen -->
-    <body>
+    <!-- Inhalt: Bannerbild mit Text zu neustem Produkt -->
+<body>
     <section id="banner">
         <div class="container">
             <h1>NEU</h1>
@@ -97,29 +92,14 @@
         </div>
     </section>
 
-    <section id="search">
-        <div class="container">
-            <img src="bilder/icon_01.png">
-            <h4> PREMIUM QUALITÄT ZUM BESTMÖGLICHEN PREIS </h4>
-
-            <h4> FÜR FRAUEN ENTWICKELT </h4>
-
-            <form action="suche.php" method="POST">
-                <input type="text" name="suche" placeholder="Produkt suchen...">
-                <button type="submit" name="suche-bestätigen" class="button_1">Suchen</button>
-            </form>
-        </div>
-    </section>
-    <!-- Suchfunktion für den Online Shop -->
-
     <section id="new">
         <div class="container">
             <img src="bilder/strich.png" alt="Strich" >
             <p>NEU IM SHOP</p>
         </div>
-
     </section>
 
+    <!-- Inhalt: Auswahl der neusten Produkte in unserem Shop -->
     <section id="boxes">
         <div class="container">
             <div class="box">
@@ -143,7 +123,7 @@
         </div>
     </section>
 
-    <!-- Sektion mit neuen Produkten -->
+    <!-- Inhalt unsere Angebote/Empfehlungen -->
 
     <section id="empfehlungen">
         <div class="container2">
@@ -170,8 +150,15 @@
     </section>
 
 
-    <footer>
-        <p>HealthPlus, Copyright &copy; 2018</p>
+    <footer class="footer">
+            <p>HealthPlus, Copyright &copy; 2018</p>
+            <nav>
+                <ul>
+                    <li><a href="impressum.php">IMPRESSUM</a></li>
+                    <li><a href="kontakt.php">KONTAKT</a></li>
+                    <li><a href="datenschutz.php">DATENSCHUTZ</a></li>
+                </ul>
+            </nav>
     </footer>
 
 </body>
