@@ -8,13 +8,13 @@
 
 <header>
     <div id="logo">
-        <a href="index.php"><img src="bilder/logo.png" alt="Logo" /></a>
+        <a href="index.php"><img src="bilder/logo.png" width="400" height="64" alt="Logo" /></a>
     </div>
     <div id="einkaufswagen">
-         <a href="warenkorb_uebersicht.php"><img src="bilder/einkaufswagen_icon.png" alt="Einkaufswagen"/></a>
+         <a href="warenkorb_uebersicht.php"><img src="bilder/einkaufswagen_icon.png " width="60" height="60" alt="Einkaufswagen"/></a>
     </div>
     <div id="suche">
-        <a href="uebersicht.php"><img src="bilder/suche_icon.png" alt="Suche"/></a>
+        <a href="uebersicht.php"><img src="bilder/suche_icon.png" width="60" height="60" alt="Suche"/></a>
     </div>
     <!-- nav (Navigation) = Menüleiste -->
     <nav>
