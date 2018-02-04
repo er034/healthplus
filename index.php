@@ -52,9 +52,9 @@
                     SALES
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">...</a>
-                    <a class="dropdown-item" href="#">...</a>
-                    <a class="dropdown-item" href="#">...</a>
+                    <a class="dropdown-item" href="#">Protein Waffeln</a>
+                    <a class="dropdown-item" href="#">Protein Cookies</a>
+                    <a class="dropdown-item" href="#">Protein Pudding</a>
                 </div>
             </li>
             <li class="nav-item">
@@ -104,7 +104,7 @@
 
 <div class="mt-5 text-center Oberueberschirft"><h5>ANGEBOTE</h5></div>
     <div align="center">
-        <img src="bilder/strich.png">
+        <img src="bilder/balken.png">
     </div>
 <div class="row justify-content-center">
     <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
@@ -112,7 +112,7 @@
             <div class='card img-container'>
                     <img class='card-img-top' width='100%' src="bilder/paket_01.jpg">
                 <div class='card-body'>
-                    <h5>ABNEHM PAKET</h5>
+                    <h6>ABNEHM PAKET</h6>
                     <p class='text-muted'>49.99€</p>
                 </div>
             </div>
@@ -124,7 +124,7 @@
             <div class='card img-container'>
                     <img class='card-img-top' width='100%' src="bilder/paket_03.jpg">
                 <div class='card-body'>
-                    <h5>VEGAN PAKET</h5>
+                    <h6>VEGAN PAKET</h6>
                     <p class='text-muted'>119.99€</p>
                 </div>
             </div>
@@ -136,7 +136,7 @@
             <div class='card img-container'>
                 <img class='card-img-top' width='100%' src="bilder/paket_02.jpg">
                 <div class='card-body'>
-                    <h5>AUFBAU PAKET</h5>
+                    <h6>AUFBAU PAKET</h6>
                     <p class='text-muted'>89.99€</p>
                 </div>
             </div>
@@ -147,7 +147,7 @@
 
     <div class="mt-5 text-center Oberueberschirft"><h5>SALES</h5></div>
         <div align="center">
-            <img src="bilder/strich.png">
+            <img src="bilder/balken.png">
         </div>
     <div class="row justify-content-center">
         <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
@@ -155,7 +155,7 @@
                 <div class='card img-container'>
                     <img class='card-img-top' width='100%' src="bilder/sales_01.jpg">
                     <div class='card-body'>
-                        <h5>PROTEIN WAFFELN</h5>
+                        <h6>PROTEIN WAFFELN</h6>
                         <p class='text-muted'>5.99€</p><p><s>12.99€</s></p>
                     </div>
                 </div>
@@ -167,7 +167,7 @@
                 <div class='card img-container'>
                     <img class='card-img-top' width='100%' src="bilder/sales_02.jpg">
                     <div class='card-body'>
-                        <h5>PROTEIN COOKIES</h5>
+                        <h6>PROTEIN COOKIES</h6>
                         <p class='text-muted'>0.99€</p><p><s>2.99€</s></p>
                     </div>
                 </div>
@@ -179,7 +179,7 @@
                 <div class='card img-container'>
                     <img class='card-img-top' width='100%' src="bilder/sales_03.jpg">
                     <div class='card-body'>
-                        <h5>PROTEIN PUDDING</h5>
+                        <h6>PROTEIN PUDDING</h6>
                         <p class='text-muted'>4.99€</p><p><s>9.99€</s></p>
                     </div>
                 </div>
