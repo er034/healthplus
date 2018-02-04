@@ -102,7 +102,10 @@
     </div>
 
 
-<div class="mt-5 text-center Oberueberschirft">ANGEBOTE</div>
+<div class="mt-5 text-center Oberueberschirft"><h5>ANGEBOTE</h5></div>
+    <div align="center">
+        <img src="bilder/strich.png">
+    </div>
 <div class="row justify-content-center">
     <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
         <a href="angebote.php">
@@ -142,7 +145,10 @@
 </div>
 
 
-    <div class="mt-5 text-center Oberueberschirft">SALES</div>
+    <div class="mt-5 text-center Oberueberschirft"><h5>SALES</h5></div>
+        <div align="center">
+            <img src="bilder/strich.png">
+        </div>
     <div class="row justify-content-center">
         <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
             <a href="angebote.php">
@@ -173,7 +179,7 @@
                 <div class='card img-container'>
                     <img class='card-img-top' width='100%' src="bilder/sales_03.jpg">
                     <div class='card-body'>
-                        <h5>PROTEIN PUDDINGS</h5>
+                        <h5>PROTEIN PUDDING</h5>
                         <p class='text-muted'>4.99€</p><p><s>9.99€</s></p>
                     </div>
                 </div>
