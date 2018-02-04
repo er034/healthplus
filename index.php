@@ -57,10 +57,10 @@
             </li>
         </ul>
         <div class="form-inline my-2 " href="warenkorb_uebersicht.php">
-            <a href="uebersicht.php"> <img src="bilder/suche_icon.png" width="40" height="40" alt="Suche"></a>
+            <a href="uebersicht.php"> <img src="bilder/suche_icon.png" width="25" height="25" alt="Suche"></a>
         </div>
         <div class="form-inline my-2 my-lg-1">
-            <a href="warenkorb_uebersicht.php"> <img src="bilder/einkaufswagen_icon.png" width="40" height="40" alt="Einkaufswagen"></a>
+            <a href="warenkorb_uebersicht.php"> <img src="bilder/einkaufswagen_icon.png" width="25" height="25" alt="Einkaufswagen"></a>
         </div>
     </div>
 </nav>
