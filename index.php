@@ -44,7 +44,7 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Abnehm Paket</a>
                     <a class="dropdown-item" href="#">Vegan Paket</a>
-                    <a class="dropdown-item" href="#">Muskelaufbau Paket</a>
+                    <a class="dropdown-item" href="#">Aufbau Paket</a>
                 </div>
             </li>
             <li class="nav-item">
@@ -97,12 +97,9 @@
     <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
         <a href="angebote.php">
             <div class='card img-container'>
-                <div class='overlay'>
-                    <div>Show</div>
-                </div>
                     <img class='card-img-top' width='100%' src="bilder/paket_01.jpg">
                 <div class='card-body'>
-                    <h5>Pink Pillow</h5>
+                    <h5>ABNEHM PAKET</h5>
                     <p class='text-muted'>35.00€</p>
                 </div>
             </div>
@@ -112,12 +109,9 @@
     <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
         <a href="angebote.php">
             <div class='card img-container'>
-                <div class='overlay'>
-                    <div>Show</div>
-                </div>
-                    <img class='card-img-top' width='100%' src="bilder/paket_02.jpg">
+                    <img class='card-img-top' width='100%' src="bilder/paket_03.jpg">
                 <div class='card-body'>
-                    <h5>Poster "S"</h5>
+                    <h5>VEGAN PAKET</h5>
                     <p class='text-muted'>10.00€</p>
                 </div>
             </div>
@@ -127,12 +121,9 @@
     <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
         <a href="angebote.php">
             <div class='card img-container'>
-                <div class='overlay'>
-                    <div>Show</div>
-                </div>
-                <img class='card-img-top' width='100%' src="bilder/paket_03.jpg">
+                <img class='card-img-top' width='100%' src="bilder/paket_02.jpg">
                 <div class='card-body'>
-                    <h5>Pink Pillow</h5>
+                    <h5>AUFBAU PAKET</h5>
                     <p class='text-muted'>35.00€</p>
                 </div>
             </div>
