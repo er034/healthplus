@@ -60,7 +60,6 @@ body {
     line-height: 1.5;
     padding:0;
     background: white;
-    width: 100%;
     background: url("bilder/registrieren_hintergrund.jpg");
     background-position: center;
     background-attachment: local;
@@ -70,13 +69,12 @@ body {
 
 .titel {
     font-family: "Azo Sans", "Arial", "Helvetica Neue";
-    font-size: 30px;
     width: 30%;
     margin: 200px auto 0px;
-    color: #333333;
-    background: none;
+    color: white;
+    background: #29ABE2;
     text-align: center;
-    border: 2px solid #29ABE2;
+    border: 1px solid #B0C4DE;
     border-bottom: none;
     border-radius: 10px 10px 0px 0px;
     padding: 20px;
@@ -88,21 +86,17 @@ form, .content {
     width: 30%;
     margin: 0px auto;
     padding: 20px;
-    border: 2px solid #29ABE2;
-    background: none;
+    border: 1px solid #B0C4DE;
+    background: white;
     border-radius: 0px 0px 10px 10px;
 }
 .input-group {
     margin: 10px 0px 10px 0px;
-    background: none;
-
 }
 .input-group label {
     display: block;
     text-align: left;
     margin: 3px;
-    background: none;
-
 }
 .input-group input {
     height: 30px;
@@ -110,8 +104,7 @@ form, .content {
     padding: 5px 10px;
     font-size: 16px;
     border-radius: 5px;
-    border: 2px solid #29ABE2;
-    background: none;
+    border: 1px solid gray;
 }
 .btn {
     padding: 10px;
@@ -138,12 +131,13 @@ form, .content {
     margin-bottom: 20px;
 }
 footer {
-    background: #F5F5F5;
+
+    background: #333333;
+    padding-top: 30px;
     height: 10px;
     min-height: 60px;
     margin-right: -10px;
     margin-left: -10px;
-    margin-top: -10px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     position: relative;
 }
