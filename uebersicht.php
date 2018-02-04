@@ -89,27 +89,105 @@ include 'db.php';
         if($query->num_rows > 0){
             while($row = $query->fetch_assoc()){
                 ?>
-                <div class="item col-lg-4">
-                    <div class="thumbnail">
-                        <div class="caption">
-                            <h4 class="list-group-item-heading"><?php echo $row["name"]; ?></h4>
-                            <p class="list-group-item-text"><?php echo $row["description"]; ?></p>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <p class="lead"><?php echo '$'.$row["price"].' USD'; ?></p>
-                                </div>
-                                <div class="col-md-6">
-                                    <a class="btn btn-success" href="warenkorb_funktion.php?action=addToCart&id=<?php echo $row["id"];?>">Add to cart</a>
-                                </div>
-                            </div>
+        <div class="row justify-content-center">
+            <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
+                <a href="angebote_abnehmpaket.php">
+                    <div class='card img-container'>
+                        <img class='card-img-top' width='100%' src="bilder/paket_01.jpg">
+                        <div class='card-body'>
+                            <h6><?php echo $row["name"]; ?></h6>
+                            <p class='text-muted'><?php echo '$'.$row["price"].' EURO'; ?></p>
                         </div>
                     </div>
-                </div>
-            <?php } }else{ ?>
+                </a>
+            </div>
+
+            <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
+                <a href="angebote_veganpaket.php">
+                    <div class='card img-container'>
+                        <img class='card-img-top' width='100%' src="bilder/paket_03.jpg">
+                        <div class='card-body'>
+                            <h6><?php echo $row["name"]; ?></h6>
+                            <p class='text-muted'><?php echo '$'.$row["price"].' EURO'; ?></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
+                <a href="angebote_aufbaupaket.php">
+                    <div class='card img-container'>
+                        <img class='card-img-top' width='100%' src="bilder/paket_02.jpg">
+                        <div class='card-body'>
+                            <h6><?php echo $row["name"]; ?></h6>
+                            <p class='text-muted'><?php echo '$'.$row["price"].' EURO'; ?></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
+                <a href="angebote_aufbaupaket.php">
+                    <div class='card img-container'>
+                        <img class='card-img-top' width='100%' src="bilder/paket_02.jpg">
+                        <div class='card-body'>
+                            <h6><?php echo $row["name"]; ?></h6>
+                            <p class='text-muted'><?php echo '$'.$row["price"].' EURO'; ?></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
+                <a href="angebote_aufbaupaket.php">
+                    <div class='card img-container'>
+                        <img class='card-img-top' width='100%' src="bilder/paket_02.jpg">
+                        <div class='card-body'>
+                            <h6><?php echo $row["name"]; ?></h6>
+                            <p class='text-muted'><?php echo '$'.$row["price"].' EURO'; ?></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
+                <a href="angebote_aufbaupaket.php">
+                    <div class='card img-container'>
+                        <img class='card-img-top' width='100%' src="bilder/paket_02.jpg">
+                        <div class='card-body'>
+                            <h6><?php echo $row["name"]; ?></h6>
+                            <p class='text-muted'><?php echo '$'.$row["price"].' EURO'; ?></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
+                <a href="angebote_aufbaupaket.php">
+                    <div class='card img-container'>
+                        <img class='card-img-top' width='100%' src="bilder/paket_02.jpg">
+                        <div class='card-body'>
+                            <h6><?php echo $row["name"]; ?></h6>
+                            <p class='text-muted'><?php echo '$'.$row["price"].' EURO'; ?></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
+                <a href="angebote_aufbaupaket.php">
+                    <div class='card img-container'>
+                        <img class='card-img-top' width='100%' src="bilder/paket_02.jpg">
+                        <div class='card-body'>
+                            <h6><?php echo $row["name"]; ?></h6>
+                            <p class='text-muted'><?php echo '$'.$row["price"].' EURO'; ?></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
+
+
+    <?php } }else{ ?>
             <p>Product(s) not found.....</p>
         <?php } ?>
-    </div>
-</div>
  <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
