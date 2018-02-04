@@ -101,9 +101,11 @@
 
     <a href='index.php?product=30'>
     <div class='card img-container'>
-    <div class='overlay'><div>Show</div></div><img class='card-img-top' width='100%' src='images/products/kissen_augen_web_600x600@2x.jpg'></div>
+    <div class='overlay'><div>Show</div></div><img class='card-img-top' width='100%' src='images/products/kissen_augen_web_600x600@2x.jpg'>
     <div class='card-body'><h5>Pillow Eyes</h5><p class='text-muted'>35.00€</p></div></div></a></div>
-    <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'></div>
+    <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
+
+ </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
