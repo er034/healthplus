@@ -58,19 +58,20 @@
             <li data-slide-to="0" class="active"></li>
             <li data-slide-to="1"></li>
             <li data-slide-to="2"></li>
+            <li data-slide-to="3"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-                <img class="img-fluid w-100" src="bilder/slider_01.jpg" alt="First slide">
+                <img class="img-fluid w-100" src="bilder/slider_01.jpg" alt="Produkt 1">
             </div>
             <div class="carousel-item">
-                <img class="img-fluid w-100" src="bilder/slider_02.jpg" alt="Second slide">
+                <img class="img-fluid w-100" src="bilder/slider_02.jpg" alt="Produkt 2">
             </div>
             <div class="carousel-item">
-                <img class="img-fluid w-100" src="bilder/slider_03.jpg" alt="Third slide">
+                <img class="img-fluid w-100" src="bilder/slider_03.jpg" alt="Produkt 3">
             </div>
             <div class="carousel-item">
-                <img class="img-fluid w-100" src="bilder/slider_04.jpg" alt="Third slide">
+                <img class="img-fluid w-100" src="bilder/slider_04.jpg" alt="Produkt 4">
             </div>
         </div>
         <a class="carousel-control-prev" href="#slider_home" role="button" data-slide="prev">
