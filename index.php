@@ -24,9 +24,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    PRODUKTE
-                </a>
+                <a class="nav-link dropdown-toggle" href="uebersicht.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRODUKTE</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Produkt 1</a>
                     <a class="dropdown-item" href="#">Produkt 2</a>
@@ -56,10 +54,10 @@
                 <a class="nav-link" id="blog" href="blog.php">BLOG</a>
             </li>
         </ul>
-        <div class="form-inline my-2 " href="warenkorb_uebersicht.php">
+        <div class="form-inline my-2 ml-3" href="warenkorb_uebersicht.php">
             <a href="uebersicht.php"> <img src="bilder/suche_icon.png" width="25" height="25" alt="Suche"></a>
         </div>
-        <div class="form-inline my-2 my-lg-1">
+        <div class="form-inline my-2 my-lg-1 ml-3">
             <a href="warenkorb_uebersicht.php"> <img src="bilder/einkaufswagen_icon.png" width="25" height="25" alt="Einkaufswagen"></a>
         </div>
     </div>
@@ -194,7 +192,7 @@
 
 
 <footer>
-    <nav class="footernav footernav-expand-lg footernav-light form-inline mt-5">
+    <nav class="footernav footernav-expand-lg footernav-light form-inline mx-auto mt-5">
         <div class="footer mx-auto text-center " id="footeritem">
             <a href="impressum.php">IMPRESSUM</a>
             <a href="datenschutz.php">DATENSCHUTZ</a>
