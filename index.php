@@ -39,12 +39,22 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    PAKETE
+                    ANGEBOTE
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Abnehm Paket</a>
                     <a class="dropdown-item" href="#">Vegan Paket</a>
                     <a class="dropdown-item" href="#">Aufbau Paket</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    SALES
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">...</a>
+                    <a class="dropdown-item" href="#">...</a>
+                    <a class="dropdown-item" href="#">...</a>
                 </div>
             </li>
             <li class="nav-item">
@@ -92,7 +102,7 @@
     </div>
 
 
-<div class="mt-5 text-center Oberueberschirft">PAKETE</div>
+<div class="mt-5 text-center Oberueberschirft">ANGEBOTE</div>
 <div class="row justify-content-center">
     <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
         <a href="angebote.php">
@@ -100,7 +110,7 @@
                     <img class='card-img-top' width='100%' src="bilder/paket_01.jpg">
                 <div class='card-body'>
                     <h5>ABNEHM PAKET</h5>
-                    <p class='text-muted'>35.00€</p>
+                    <p class='text-muted'>49.99€</p>
                 </div>
             </div>
         </a>
@@ -112,7 +122,7 @@
                     <img class='card-img-top' width='100%' src="bilder/paket_03.jpg">
                 <div class='card-body'>
                     <h5>VEGAN PAKET</h5>
-                    <p class='text-muted'>10.00€</p>
+                    <p class='text-muted'>119.99€</p>
                 </div>
             </div>
         </a>
@@ -124,7 +134,7 @@
                 <img class='card-img-top' width='100%' src="bilder/paket_02.jpg">
                 <div class='card-body'>
                     <h5>AUFBAU PAKET</h5>
-                    <p class='text-muted'>35.00€</p>
+                    <p class='text-muted'>89.99€</p>
                 </div>
             </div>
         </a>
@@ -132,7 +142,44 @@
 </div>
 
 
+    <div class="mt-5 text-center Oberueberschirft">SALES</div>
+    <div class="row justify-content-center">
+        <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
+            <a href="angebote.php">
+                <div class='card img-container'>
+                    <img class='card-img-top' width='100%' src="bilder/paket_01.jpg">
+                    <div class='card-body'>
+                        <h5>ABNEHM PAKET</h5>
+                        <p class='text-muted'>49.99€</p>
+                    </div>
+                </div>
+            </a>
+        </div>
 
+        <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
+            <a href="angebote.php">
+                <div class='card img-container'>
+                    <img class='card-img-top' width='100%' src="bilder/paket_03.jpg">
+                    <div class='card-body'>
+                        <h5>VEGAN PAKET</h5>
+                        <p class='text-muted'>119.99€</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
+            <a href="angebote.php">
+                <div class='card img-container'>
+                    <img class='card-img-top' width='100%' src="bilder/paket_02.jpg">
+                    <div class='card-body'>
+                        <h5>AUFBAU PAKET</h5>
+                        <p class='text-muted'>89.99€</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
