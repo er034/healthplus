@@ -30,7 +30,6 @@
 <div class="titel">
     <h2>LOGIN</h2>
 </div>
-
 <form method="post" action="anmelden.php">
     <?php include('errors.php'); ?>
     <div class="input-group">
