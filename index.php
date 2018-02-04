@@ -37,8 +37,15 @@
                     <a class="dropdown-item" href="#">Produkt 6</a>
                 </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" id="angebote" href="#">ANGEBOTE</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    PAKETE
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Abnehm Paket</a>
+                    <a class="dropdown-item" href="#">Vegan Paket</a>
+                    <a class="dropdown-item" href="#">Muskelaufbau Paket</a>
+                </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link" id="blog" href="#">BLOG</a>
