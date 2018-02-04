@@ -42,9 +42,9 @@
                     ANGEBOTE
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Abnehm Paket</a>
-                    <a class="dropdown-item" href="#">Vegan Paket</a>
-                    <a class="dropdown-item" href="#">Aufbau Paket</a>
+                    <a class="dropdown-item" href="angebote_abnehmpaket.php">Abnehm Paket</a>
+                    <a class="dropdown-item" href="angebote_veganpaket.php">Vegan Paket</a>
+                    <a class="dropdown-item" href="angebote_aufbaupaket.php">Aufbau Paket</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
@@ -52,13 +52,13 @@
                     SALES
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Protein Waffeln</a>
-                    <a class="dropdown-item" href="#">Protein Cookies</a>
-                    <a class="dropdown-item" href="#">Protein Pudding</a>
+                    <a class="dropdown-item" href="sales_proteinwaffeln.php">Protein Waffeln</a>
+                    <a class="dropdown-item" href="sales_proteincookies.php">Protein Cookies</a>
+                    <a class="dropdown-item" href="sales_proteinpudding.php">Protein Pudding</a>
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="blog" href="#">BLOG</a>
+                <a class="nav-link" id="blog" href="blog.php">BLOG</a>
             </li>
         </ul>
         <div class="form-inline my-2 " href="warenkorb_uebersicht.php">
@@ -108,7 +108,7 @@
     </div>
 <div class="row justify-content-center">
     <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-        <a href="angebote.php">
+        <a href="angebote_abnehmpaket.php">
             <div class='card img-container'>
                     <img class='card-img-top' width='100%' src="bilder/paket_01.jpg">
                 <div class='card-body'>
@@ -120,7 +120,7 @@
     </div>
 
     <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-        <a href="angebote.php">
+        <a href="angebote_veganpaket.php">
             <div class='card img-container'>
                     <img class='card-img-top' width='100%' src="bilder/paket_03.jpg">
                 <div class='card-body'>
@@ -132,7 +132,7 @@
     </div>
 
     <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-        <a href="angebote.php">
+        <a href="angebote_aufbaupaket.php">
             <div class='card img-container'>
                 <img class='card-img-top' width='100%' src="bilder/paket_02.jpg">
                 <div class='card-body'>
@@ -151,7 +151,7 @@
         </div>
     <div class="row justify-content-center">
         <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-            <a href="angebote.php">
+            <a href="sales_proteinwaffeln.php">
                 <div class='card img-container'>
                     <img class='card-img-top' width='100%' src="bilder/sales_01.jpg">
                     <div class='card-body'>
@@ -163,7 +163,7 @@
         </div>
 
         <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-            <a href="angebote.php">
+            <a href="sales_proteincookies.php">
                 <div class='card img-container'>
                     <img class='card-img-top' width='100%' src="bilder/sales_02.jpg">
                     <div class='card-body'>
@@ -175,7 +175,7 @@
         </div>
 
         <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-            <a href="angebote.php">
+            <a href="sales_proteinpudding.php">
                 <div class='card img-container'>
                     <img class='card-img-top' width='100%' src="bilder/sales_03.jpg">
                     <div class='card-body'>

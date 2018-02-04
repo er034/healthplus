@@ -21,7 +21,7 @@
     <nav>
         <ul>
             <li><a href="uebersicht.php">PRODUKTE</a></li>
-            <li><a href="angebote.php">ANGEBOTE</a></li>
+            <li><a href="angebote_abnehmpaket.php">ANGEBOTE</a></li>
             <li><a href="blog.php">BLOG</a></li>
         </ul>
     </nav>
@@ -53,7 +53,7 @@
     <nav>
         <ul>
             <li><a href="uebersicht.php">IMPRESSUM</a></li>
-            <li><a href="angebote.php">KONTAKE</a></li>
+            <li><a href="angebote_abnehmpaket.php">KONTAKE</a></li>
             <li><a href="blog.php">DATENSCHUTZ</a></li>
         </ul>
     </nav>
