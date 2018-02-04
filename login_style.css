@@ -26,10 +26,7 @@ header #einkaufswagen{
     margin-left: 1800px;
 
 }
-footer #einkaufswagen:hover{
-    background-image: url(your-image.png);
 
-}
 header #suche{
     margin-top: -15px;
     position: absolute;
