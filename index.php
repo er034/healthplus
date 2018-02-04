@@ -52,12 +52,40 @@
         </div>
     </div>
 </nav>
-<div class="container-fluid bg-white">
-    <img class="img-fluid" src="bilder/shop_banner_start.jpg">
-    <h1>NEU</h1>
-    <h2>COMPLEX<br>WEIGHT GAINER</h2>
-    <button type="submit" class="btn-outline-light">JETZT ENTDECKEN</button>
-</div>
+<div class="container">
+    <div id="slider_home" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-slide-to="0" class="active"></li>
+            <li data-slide-to="1"></li>
+            <li data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img class="img-fluid w-100" src="bilder/slider_01.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid w-100" src="bilder/slider_02.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid w-100" src="bilder/slider_03.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid w-100" src="bilder/slider_04.jpg" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#slider_home" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#slider_home" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+<div class="mt-5 text-center Oberueberschirft">NEW ARRIVALS</div>
+<div class="row justify-content-center">
+    <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'><a href='index.php?product=32'><div class='card img-container'><div class='overlay'><div>Show</div></div><img class='card-img-top' width='100%' src='images/products/kissen_herz_web.jpg'><div class='card-body'><h5>Pink Pillow</h5><p class='text-muted'>35.00€</p></div></div></a></div><div class='new-release mt-4 col-12 col-sm-6 col-lg-3'><a href='index.php?product=31'><div class='card img-container'><div class='overlay'><div>Show</div></div><img class='card-img-top' width='100%' src='images/products/JO-JUDY_Rose_Print_S_05_1920x1920@2x.jpg'><div class='card-body'><h5>Poster "S"</h5><p class='text-muted'>10.00€</p></div></div></a></div><div class='new-release mt-4 col-12 col-sm-6 col-lg-3'><a href='index.php?product=30'><div class='card img-container'><div class='overlay'><div>Show</div></div><img class='card-img-top' width='100%' src='images/products/kissen_augen_web_600x600@2x.jpg'><div class='card-body'><h5>Pillow Eyes</h5><p class='text-muted'>35.00€</p></div></div></a></div><div class='new-release mt-4 col-12 col-sm-6 col-lg-3'><a href='index.php?product=7'><div class='card img-container'><div class='overlay'><div>Show</div></div><img class='card-img-top' width='100%' src='images/products/Notepad_growwild.jpg'><div class='card-body'><h5>Card Leaves</h5><p class='text-muted'>7.00€</p></div></div></a></div></div></div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

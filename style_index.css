@@ -1,5 +1,5 @@
 .navbar{
-    background-color: #F2F2F2;
+    background-color: white;
 }
 
 .navbar #navbarDropdown{
@@ -26,8 +26,7 @@
 #blog:hover{
     color: #29ABE2;
 }
-.container-fluid{
-}
+
 .footernav{
     background-color: #333333;
     height: 60px;
@@ -40,3 +39,5 @@
 .footernav #footeritem a:hover{
     color: #29ABE2;
 }
+
+
