@@ -1,19 +1,18 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
+    <!-- Informationen über zusätzliche Angaben -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style_index.css">
-
-    <title>HEALTH PLUS!</title>
+    <!-- Titel eines Dokumentes -->
+    <title>HEALTH PLUS</title>
 </head>
 
+<!-- Beginn Body-Bereich -->
 <body>
-
 <nav class="navbar navbar-expand-lg navbar-light ">
     <a class="navbar-brand" href="index.php">
         <img src="bilder/logo.png" width="300" height="39" alt="HealthPlus">
@@ -38,9 +37,7 @@
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    ANGEBOTE
-                </a>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ANGEBOTE</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="angebote_abnehmpaket.php">Abnehm Paket</a>
                     <a class="dropdown-item" href="angebote_veganpaket.php">Vegan Paket</a>
@@ -48,9 +45,7 @@
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    SALES
-                </a>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SALES</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="sales_proteinwaffeln.php">Protein Waffeln</a>
                     <a class="dropdown-item" href="sales_proteincookies.php">Protein Cookies</a>
@@ -69,6 +64,8 @@
         </div>
     </div>
 </nav>
+
+
 <div class="container">
     <div id="slider_home" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -104,13 +101,13 @@
 
 <div class="mt-5 text-center Oberueberschirft"><h5>ANGEBOTE</h5></div>
     <div align="center">
-        <img src="bilder/balken.png">
+        <img src="bilder/balken.png" alt="Balken-Icon">
     </div>
 <div class="row justify-content-center">
     <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
         <a href="angebote_abnehmpaket.php">
             <div class='card img-container'>
-                    <img class='card-img-top' width='100%' src="bilder/paket_01.jpg">
+                    <img class='card-img-top' width='100%' src="bilder/paket_01.jpg" alt="Abnehm-Paket">
                 <div class='card-body'>
                     <h6>ABNEHM PAKET</h6>
                     <p class='text-muted'>49.99€</p>
@@ -122,7 +119,7 @@
     <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
         <a href="angebote_veganpaket.php">
             <div class='card img-container'>
-                    <img class='card-img-top' width='100%' src="bilder/paket_03.jpg">
+                    <img class='card-img-top' width='100%' src="bilder/paket_03.jpg" alt="Vegan-Paket">
                 <div class='card-body'>
                     <h6>VEGAN PAKET</h6>
                     <p class='text-muted'>119.99€</p>
@@ -134,7 +131,7 @@
     <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
         <a href="angebote_aufbaupaket.php">
             <div class='card img-container'>
-                <img class='card-img-top' width='100%' src="bilder/paket_02.jpg">
+                <img class='card-img-top' width='100%' src="bilder/paket_02.jpg" alt="Aufbau-Paket">
                 <div class='card-body'>
                     <h6>AUFBAU PAKET</h6>
                     <p class='text-muted'>89.99€</p>
@@ -147,13 +144,13 @@
 
     <div class="mt-5 text-center Oberueberschirft"><h5>SALES</h5></div>
         <div align="center">
-            <img src="bilder/balken.png">
+            <img src="bilder/balken.png" alt="Balken-Icon">
         </div>
     <div class="row justify-content-center">
         <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
             <a href="sales_proteinwaffeln.php">
                 <div class='card img-container'>
-                    <img class='card-img-top' width='100%' src="bilder/sales_01.jpg">
+                    <img class='card-img-top' width='100%' src="bilder/sales_01.jpg" alt="Protein Waffeln">
                     <div class='card-body'>
                         <h6>PROTEIN WAFFELN</h6>
                         <p class='text-muted'>5.99€</p><p><s>12.99€</s></p>
@@ -165,7 +162,7 @@
         <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
             <a href="sales_proteincookies.php">
                 <div class='card img-container'>
-                    <img class='card-img-top' width='100%' src="bilder/sales_02.jpg">
+                    <img class='card-img-top' width='100%' src="bilder/sales_02.jpg" alt="Protein Cookies">
                     <div class='card-body'>
                         <h6>PROTEIN COOKIES</h6>
                         <p class='text-muted'>0.99€</p><p><s>2.99€</s></p>
@@ -177,7 +174,7 @@
         <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
             <a href="sales_proteinpudding.php">
                 <div class='card img-container'>
-                    <img class='card-img-top' width='100%' src="bilder/sales_03.jpg">
+                    <img class='card-img-top' width='100%' src="bilder/sales_03.jpg" alt="Protein Pudding">
                     <div class='card-body'>
                         <h6>PROTEIN PUDDING</h6>
                         <p class='text-muted'>4.99€</p><p><s>9.99€</s></p>
@@ -187,12 +184,14 @@
         </div>
     </div>
 
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
+
 
 <footer>
     <nav class="footernav footernav-expand-lg footernav-light form-inline mt-5">
