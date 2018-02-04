@@ -2,13 +2,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Registration system PHP and MySQL</title>
     <link rel="stylesheet" type="text/css" href="login_style.css">
 </head>
 
 <header>
     <div id="logo">
-        <a href="index.php"><img src="bilder/logo.png" width="400" height="64" alt="Logo" /></a>
+        <a href="index_alt.php"><img src="bilder/logo.png" width="400" height="64" alt="Logo" /></a>
     </div>
     <div id="einkaufswagen">
          <a href="warenkorb_uebersicht.php"><img src="bilder/einkaufswagen_icon.png " width="60" height="60" alt="Einkaufswagen"/></a>

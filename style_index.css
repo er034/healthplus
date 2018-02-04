@@ -1,22 +1,41 @@
-/*Header*/
-header{
-    font-family: "Azo Sans", "Arial", "Helvetica Neue";
-    text-align: center;
-    line-height: 6px;
-    margin-top: 25px;
-
+.navbar{
+    background-color: #F2F2F2;
 }
-header a{
+
+.navbar #navbarDropdown{
+    color: #333333;
+}
+
+.navbar a{
     color: #29ABE2;
+}
+
+.navbar #angebote{
+    color: #333333;
+}
+
+.navbar #blog{
+    color: #333333;
+}
+#navbarDropdown:hover{
+    color: #29ABE2;
+}
+#angebote:hover{
+    color: #29ABE2;
+}
+#blog:hover{
+    color: #29ABE2;
+}
+
+.footernav{
+    background-color: #333333;
+    height: 60px;
+}
+.footernav #footeritem a{
+    padding: 0px 20px 0px 20px;
+    color: white;
     text-decoration: none;
 }
-
-div #logo{
-    float: left;
-}
-
-.menu {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+.footernav #footeritem a:hover{
+    color: #29ABE2;
 }
