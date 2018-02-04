@@ -27,16 +27,16 @@
     color: #29ABE2;
 }
 
-.footernav{
+.footer{
     background-color: #333333;
     height: 60px;
 }
-.footernav #footeritem a{
+.footer #footeritem a{
     padding: 0px 20px 0px 20px;
     color: white;
     text-decoration: none;
 }
 
-.footernav #footeritem a:hover{
+.footer #footeritem a:hover{
     color: #29ABE2;
 }
