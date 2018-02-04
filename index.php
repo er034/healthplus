@@ -100,7 +100,7 @@
                 <div class='overlay'>
                     <div>Show</div>
                 </div>
-                    <img class='card-img-top' width='100%' src="#">
+                    <img class='card-img-top' width='100%' src="bilder/paket_01.jpg">
                 <div class='card-body'>
                     <h5>Pink Pillow</h5>
                     <p class='text-muted'>35.00€</p>
@@ -115,7 +115,7 @@
                 <div class='overlay'>
                     <div>Show</div>
                 </div>
-                    <img class='card-img-top' width='100%' src="#">
+                    <img class='card-img-top' width='100%' src="bilder/paket_02.jpg">
                 <div class='card-body'>
                     <h5>Poster "S"</h5>
                     <p class='text-muted'>10.00€</p>
@@ -130,7 +130,7 @@
                 <div class='overlay'>
                     <div>Show</div>
                 </div>
-                <img class='card-img-top' width='100%' src="#">
+                <img class='card-img-top' width='100%' src="bilder/paket_03.jpg">
                 <div class='card-body'>
                     <h5>Pink Pillow</h5>
                     <p class='text-muted'>35.00€</p>
