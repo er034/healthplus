@@ -26,7 +26,8 @@
 #blog:hover{
     color: #29ABE2;
 }
-
+.container-fluid{
+}
 .footernav{
     background-color: #333333;
     height: 60px;

@@ -52,7 +52,11 @@
         </div>
     </div>
 </nav>
-<div class="container-fluid">
+<div class="container-fluid bg-white">
+    <img class="img-fluid" src="bilder/banner.jpg">
+    <h1>NEU</h1>
+    <h2>COMPLEX<br>WEIGHT GAINER</h2>
+    <button type="submit" class="btn-outline-light">JETZT ENTDECKEN</button>
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
