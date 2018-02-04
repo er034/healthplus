@@ -149,8 +149,8 @@
                 <div class='card img-container'>
                     <img class='card-img-top' width='100%' src="bilder/sales_01.jpg">
                     <div class='card-body'>
-                        <h5>ABNEHM PAKET</h5>
-                        <p class='text-muted'>49.99€</p>
+                        <h5>PROTEIN WAFFELN</h5>
+                        <p class='text-muted'>5.99€</p><p><s>12.99€</s></p>
                     </div>
                 </div>
             </a>
@@ -161,8 +161,8 @@
                 <div class='card img-container'>
                     <img class='card-img-top' width='100%' src="bilder/sales_02.jpg">
                     <div class='card-body'>
-                        <h5>VEGAN PAKET</h5>
-                        <p class='text-muted'>119.99€</p>
+                        <h5>PROTEIN COOKIES</h5>
+                        <p class='text-muted'>0.99€</p><p><s>2.99€</s></p>
                     </div>
                 </div>
             </a>
@@ -173,8 +173,8 @@
                 <div class='card img-container'>
                     <img class='card-img-top' width='100%' src="bilder/sales_03.jpg">
                     <div class='card-body'>
-                        <h5>AUFBAU PAKET</h5>
-                        <p class='text-muted'>99.99€</p>
+                        <h5>PROTEIN PUDDING</h5>
+                        <p class='text-muted'>4.99€</p><p><s>9.99€</s></p>
                     </div>
                 </div>
             </a>
