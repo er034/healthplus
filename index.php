@@ -84,28 +84,58 @@
         </a>
     </div>
 
-<div class="mt-5 text-center Oberueberschirft">NEW ARRIVALS</div>
+
+<div class="mt-5 text-center Oberueberschirft">UNSERE ANGEBOTE</div>
 <div class="row justify-content-center">
     <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-    <a href='index.php?product=32'>
-    <div class='card img-container'>
-    <div class='overlay'><div>Show</div></div><img class='card-img-top' width='100%' src='images/products/kissen_herz_web.jpg'>
-    <div class='card-body'><h5>Pink Pillow</h5><p class='text-muted'>35.00€</p></div></div></a></div>
-    <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
+        <a href="angebote.php">
+            <div class='card img-container'>
+                <div class='overlay'>
+                    <div>Show</div>
+                </div>
+                    <img class='card-img-top' width='100%' src="#">
+                <div class='card-body'>
+                    <h5>Pink Pillow</h5>
+                    <p class='text-muted'>35.00€</p>
+                </div>
+            </div>
+        </a>
+    </div>
 
-    <a href='index.php?product=31'>
-    <div class='card img-container'>
-    <div class='overlay'><div>Show</div></div><img class='card-img-top' width='100%' src='images/products/JO-JUDY_Rose_Print_S_05_1920x1920@2x.jpg'>
-    <div class='card-body'><h5>Poster "S"</h5><p class='text-muted'>10.00€</p></div></div></a></div>
     <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
+        <a href="angebote.php">
+            <div class='card img-container'>
+                <div class='overlay'>
+                    <div>Show</div>
+                </div>
+                    <img class='card-img-top' width='100%' src="#">
+                <div class='card-body'>
+                    <h5>Poster "S"</h5>
+                    <p class='text-muted'>10.00€</p>
+                </div>
+            </div>
+        </a>
+    </div>
 
-    <a href='index.php?product=30'>
-    <div class='card img-container'>
-    <div class='overlay'><div>Show</div></div><img class='card-img-top' width='100%' src='images/products/kissen_augen_web_600x600@2x.jpg'>
-    <div class='card-body'><h5>Pillow Eyes</h5><p class='text-muted'>35.00€</p></div></div></a></div>
     <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
+        <a href="angebote.php">
+            <div class='card img-container'>
+                <div class='overlay'>
+                    <div>Show</div>
+                </div>
+                <img class='card-img-top' width='100%' src="#">
+                <div class='card-body'>
+                    <h5>Pink Pillow</h5>
+                    <p class='text-muted'>35.00€</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
 
- </div>
+
+
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -114,7 +144,7 @@
 </body>
 
 <footer>
-    <nav class="footernav footernav-expand-lg footernav-light form-inline">
+    <nav class="footernav footernav-expand-lg footernav-light form-inline mt-5">
         <div class="footer mx-auto text-center " id="footeritem">
             <a href="impressum.php">IMPRESSUM</a>
             <a href="datenschutz.php">DATENSCHUTZ</a>
