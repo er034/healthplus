@@ -147,7 +147,7 @@
         <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
             <a href="angebote.php">
                 <div class='card img-container'>
-                    <img class='card-img-top' width='100%' src="bilder/paket_01.jpg">
+                    <img class='card-img-top' width='100%' src="bilder/sales_01.jpg">
                     <div class='card-body'>
                         <h5>ABNEHM PAKET</h5>
                         <p class='text-muted'>49.99€</p>
@@ -159,7 +159,7 @@
         <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
             <a href="angebote.php">
                 <div class='card img-container'>
-                    <img class='card-img-top' width='100%' src="bilder/paket_03.jpg">
+                    <img class='card-img-top' width='100%' src="bilder/sales_02.jpg">
                     <div class='card-body'>
                         <h5>VEGAN PAKET</h5>
                         <p class='text-muted'>119.99€</p>
@@ -171,7 +171,7 @@
         <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
             <a href="angebote.php">
                 <div class='card img-container'>
-                    <img class='card-img-top' width='100%' src="bilder/paket_02.jpg">
+                    <img class='card-img-top' width='100%' src="bilder/sales_03.jpg">
                     <div class='card-body'>
                         <h5>AUFBAU PAKET</h5>
                         <p class='text-muted'>89.99€</p>
