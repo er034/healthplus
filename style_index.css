@@ -2,42 +2,57 @@
     background-color: white;
 }
 
+
 .navbar #navbarDropdown{
     color: #333333;
 }
 
+
 .navbar a{
-    color: #29ABE2;
+    color: #016691;
 }
+
 
 .navbar #angebote{
     color: #333333;
 }
 
+
 .navbar #blog{
     color: #333333;
 }
+
+
 #navbarDropdown:hover{
-    color: #29ABE2;
+    color: #016691;
 }
+
+
 #angebote:hover{
-    color: #29ABE2;
+    color: #016691;
 }
+
+
 #blog:hover{
-    color: #29ABE2;
+    color: #016691;
 }
+
 
 .footernav{
     background-color: #333333;
     height: 60px;
 }
+
+
 .footernav #footeritem a{
     padding: 0px 20px 0px 20px;
     color: white;
     text-decoration: none;
 }
+
+
 .footernav #footeritem a:hover{
-    color: #29ABE2;
+    color: #016691;
 }
 
 
