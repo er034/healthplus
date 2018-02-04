@@ -174,7 +174,7 @@
                     <img class='card-img-top' width='100%' src="bilder/sales_03.jpg">
                     <div class='card-body'>
                         <h5>AUFBAU PAKET</h5>
-                        <p class='text-muted'>89.99€</p>
+                        <p class='text-muted'>99.99€</p>
                     </div>
                 </div>
             </a>
