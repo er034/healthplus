@@ -8,7 +8,7 @@
 
 <header>
     <div id="logo">
-        <a href="index.php"><img src="bilder/logo.svg" alt="Logo" /></a>
+        <a href="index.php"><img src="bilder/logo.png" alt="Logo" /></a>
     </div>
     <div id="einkaufswagen">
          <a href="warenkorb_uebersicht.php"><img src="bilder/einkaufswagen_icon.png" alt="Einkaufswagen"/></a>

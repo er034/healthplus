@@ -48,7 +48,6 @@
             <?php endif ?>
     </section>
 
-
         <!-- Class = wird für Objekt benutzt die mehrmals in einer Seite vorkommen, div (division) = Elemente in einem gemeinsamen Bereich einschließen -->
         <!-- Inhalt unserer Navigationsleiste (Logo/Menü-Elemente) -->
     <div class="menu">

@@ -13,12 +13,43 @@ header{
 
 /* Zentrierung des Logos im Header*/
 header #logo{
-    width: 270px;
-    height: 100px;
+    width: 10px,
+    text-align: left;
     margin-top: -10px;
-    margin-left: 30px;
     position: absolute;
 }
+
+header #einkaufswagen{
+    text-align: right;
+    margin-top: -10px;
+    padding:0px 100px 0px 20px;
+
+}
+header #suche{
+    text-align: right;
+    margin-top: -10px;
+    padding:0px 200px 0px 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Zentrierung des Headers*/
 header nav{
@@ -175,7 +206,7 @@ footer a{
     font-weight: lighter;
 }
 
-/* Ausrichtung des Footer Textes mit padding(Abstand oben,recht,unten,links), Margin bedeutet der Abstand (oben/unten)*/
+/* Ausrichtung des Footer Textes mit padding(Abstand oben,rechts,unten,links), Margin bedeutet der Abstand (oben/unten)*/
 footer ul{
     margin: 0;
     padding: 20px 0px 0px 0px;
