@@ -10,6 +10,12 @@
     <div id="logo">
         <a href="index.php"><img src="bilder/logo.svg" alt="Logo" /></a>
     </div>
+    <div id="einkaufswagen">
+         <a href="warenkorb_uebersicht.php"><img src="bilder/einkaufswagen_icon.png" alt="Einkaufswagen"/></a>
+    </div>
+    <div id="suche">
+        <a href="uebersicht.php"><img src="bilder/suche_icon.png" alt="Suche"/></a>
+    </div>
     <!-- nav (Navigation) = Menüleiste -->
     <nav>
         <ul>
@@ -36,7 +42,7 @@
         <input type="password" name="password">
     </div>
     <div class="input-group">
-        <button type="submit" class="btn" name="login_user">Login</button>
+        <button type="submit" class="button" name="login_user">Login</button>
     </div>
     <p>
         Noch kein Mitglied? <a href="registrieren.php">JETZT REGISTRIEREN</a>

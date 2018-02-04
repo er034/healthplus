@@ -1,3 +1,4 @@
+/* Header-Eigenschaften*/
 header{
     background: #F5F5F5;
     padding-top: 30px;
@@ -9,6 +10,8 @@ header{
     margin-bottom: 0px;
     position: relative;
 }
+
+/* Zentrierung des Logos im Header*/
 header #logo{
     width: 270px;
     height: 100px;
@@ -16,6 +19,8 @@ header #logo{
     margin-left: 30px;
     position: absolute;
 }
+
+/* Zentrierung des Headers*/
 header nav{
     margin-top: 55px;
     background: #29ABE2;
@@ -23,19 +28,22 @@ header nav{
     text-align: center;
 }
 
+/* Schriftfarbe des Header Textes (ist hier weil sonst der Link als Linkfarbe angegeben wird), Full-Width bezieht sich auf die Browserfläche*/
 header a{
     color: white;
     text-decoration:none;
     text-transform: full-width;
     font-size: 45px;
-    font-weight: bold;
+    font-weight: normal;
 }
 
+/* Ausrichtung des Header Textes mit padding(Abstand oben,recht,unten,links), Margin bedeutet der Abstand (oben/unten)*/
 header ul{
     margin: 0;
     padding: 0;
 }
 
+/*Schirftart des Header sowie die Ausrichtung innerhalb des Footers(inline=nebeneinadner)*/
 header li{
     font-family: "Azo Sans", "Arial", "Helvetica Neue";
     margin-top: 20px;
@@ -44,17 +52,13 @@ header li{
     padding: 0px 50px 0px 50px;
 }
 
-header .highlight, header .current a{
-    color: black;
-    font-weight: bold;
-}
-
+/*Mouse-Over des Header Textes */
 header a:hover{
     color: #333333;
-    font-weight: bold;
+    font-weight: normal;
 }
 
-
+/*Style des gesamten Bodys*/
 body {
     font-size: 15px;
     line-height: 1.5;
@@ -67,6 +71,7 @@ body {
     border-image: fill;
 }
 
+/*Style des Kopfes*/
 .titel {
     font-family: "Azo Sans", "Arial", "Helvetica Neue";
     width: 30%;
@@ -80,6 +85,7 @@ body {
     padding: 20px;
 }
 
+/*Schriftart im gesamten Form sowie die Farbe der Schrift und Hintergrund */
 form, .content {
     font-family: "Azo Sans", "Arial", "Helvetica Neue";
     color: #333333;
@@ -90,14 +96,20 @@ form, .content {
     background: white;
     border-radius: 0px 0px 10px 10px;
 }
+
+/*Abstand des Forms (oben und unten 10px)*/
 .input-group {
     margin: 10px 0px 10px 0px;
 }
+
+/*Style der Schrift über der Input-Fläche*/
 .input-group label {
     display: block;
     text-align: left;
     margin: 3px;
 }
+
+/*Style des Input-Forms*/
 .input-group input {
     height: 30px;
     width: 93%;
@@ -105,8 +117,11 @@ form, .content {
     font-size: 16px;
     border-radius: 5px;
     border: 1px solid gray;
+    margin-bottom: 60px;
 }
-.btn {
+
+/*Style des Login-Buttons*/
+.button {
     padding: 10px;
     font-size: 15px;
     color: white;
@@ -114,6 +129,8 @@ form, .content {
     border: none;
     border-radius: 5px;
 }
+
+/* Benachrichtigung des Forms*/
 .error {
     width: 92%;
     margin: 0px auto;
@@ -124,20 +141,56 @@ form, .content {
     border-radius: 5px;
     text-align: left;
 }
+
+/* Benachrichtigung des Forms*/
 .success {
     color: #3c763d;
     background: #dff0d8;
     border: 1px solid #3c763d;
     margin-bottom: 20px;
 }
-footer {
 
+/* Footer-Eigenschaften im Browser*/
+footer {
     background: #333333;
-    padding-top: 30px;
-    height: 10px;
-    min-height: 60px;
+    height: 60px;
+    top: 160px;
     margin-right: -10px;
     margin-left: -10px;
     margin-bottom: 0px;
     position: relative;
 }
+
+/* Zentrierung des Footers*/
+footer nav{
+    text-align: center;
+}
+
+/* Schriftfarbe des Footer Textes (ist hier weil sonst der Link als Linkfarbe angegeben wird), Full-Width bezieht sich auf die Browserfläche*/
+footer a{
+    color: white;
+    text-decoration:none;
+    text-transform: full-width;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+/* Ausrichtung des Footer Textes mit padding(Abstand oben,recht,unten,links), Margin bedeutet der Abstand (oben/unten)*/
+footer ul{
+    margin: 0;
+    padding: 20px 0px 0px 0px;
+}
+
+/*Schirftart des Footers sowie die Ausrichtung innerhalb des Footers(inline=nebeneinadner)*/
+footer li{
+    font-family: "Azo Sans", "Arial", "Helvetica Neue";
+    text-align: center;
+    display: inline;
+    padding: 0px 50px 0px 50px;
+}
+/*Mouse-Over des Footer Textes */
+footer a:hover{
+    color: #29ABE2;
+    font-weight: lighter;
+}
+
