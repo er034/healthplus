@@ -26,17 +26,17 @@
 #blog:hover{
     color: #29ABE2;
 }
-
-.footer{
+.container-fluid{
+}
+.footernav{
     background-color: #333333;
     height: 60px;
 }
-.footer #footeritem a{
+.footernav #footeritem a{
     padding: 0px 20px 0px 20px;
     color: white;
     text-decoration: none;
 }
-
-.footer #footeritem a:hover{
+.footernav #footeritem a:hover{
     color: #29ABE2;
 }
