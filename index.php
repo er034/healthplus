@@ -92,7 +92,7 @@
     </div>
 
 
-<div class="mt-5 text-center Oberueberschirft">UNSERE ANGEBOTE</div>
+<div class="mt-5 text-center Oberueberschirft">PAKETE</div>
 <div class="row justify-content-center">
     <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
         <a href="angebote.php">
