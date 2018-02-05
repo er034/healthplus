@@ -37,6 +37,24 @@
     color: #3388ad;
 }
 
+
+.card-body h5{
+    color: black;
+    font-size: 17px;
+}
+
+.card-body h6{
+    color: black;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.card-body p{
+    color: #3388ad;
+    font-size: 13px;
+    font-weight: bold;
+}
+
 .footernav{
     background-color: #333333;
     height: 60px;
