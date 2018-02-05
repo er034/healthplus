@@ -120,7 +120,7 @@
                 <div class='card-body'>
                     <h5>ABNEHM PAKET</h5>
                     <h6>Unser Bestseller. Das Rundum Paket für Gewichtsverlust.</h6>
-                    <p class='text-muted'>49.99€</p>
+                    <p>49.99€</p>
                 </div>
             </div>
         </a>
@@ -133,7 +133,7 @@
                 <div class='card-body'>
                     <h5>VEGAN PAKET</h5>
                     <h6>Unsere besten veganen Produkte in einem Paket.</h6>
-                    <p class='text-muted'>109.99€</p>
+                    <p>109.99€</p>
                 </div>
             </div>
         </a>
@@ -146,7 +146,7 @@
                 <div class='card-body'>
                     <h5>AUFBAU PAKET</h5>
                     <h6>Perfekt aufeinander abgestimmtes Paket für den Muskelaufbau.</h6>
-                    <p class='text-muted'>89.99€</p>
+                    <p>89.99€</p>
                 </div>
             </div>
         </a>
@@ -168,8 +168,9 @@
                     <div class='card-body'>
                         <h5>PROTEIN WAFFELN</h5>
                         <h6>Naschen ohne Schuldgefühle: jederzeit & überall.</h6>
-                        <p class='text-muted'><h4>5.99€</h4></p>
-                        <p><s>12.99€</s></p>
+                        <p>5.99€ <br>
+                            <s>12.99€</s>
+                        </p>
                     </div>
                 </div>
             </a>
@@ -182,8 +183,9 @@
                     <div class='card-body'>
                         <h5>PROTEIN COOKIES</h5>
                         <h6>Proteinreicher Cookie-Snack.</h6>
-                        <p class='text-muted'><h4>0.99€</h4></p>
-                        <p><s>2.99€</s></p>
+                        <p>0.99€ <br>
+                            <s>2.99€</s>
+                        </p>
                     </div>
                 </div>
             </a>
@@ -196,8 +198,9 @@
                     <div class='card-body'>
                         <h5>PROTEIN PUDDING</h5>
                         <h6>Ein leckerer Snack für zwischendurch!</h6>
-                        <p class='text-muted'><h4>4.99€</h4></p>
-                        <p><s>9.99€</s></p>
+                        <p>4.99€ <br>
+                            <s>9.99€</s>
+                        </p>
                     </div>
                 </div>
             </a>
