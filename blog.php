@@ -1,3 +1,11 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: cedric
+ * Date: 05.02.18
+ * Time: 15:32
+ */
+?>
 <html lang="en">
 
 <head>
@@ -10,6 +18,7 @@
     <!-- Titel eines Dokumentes -->
     <title>HEALTH PLUS | Blog</title>
 </head>
+
 
 <!-- Beginn Body-Bereich -->
 <body>
@@ -55,12 +64,6 @@
     </div>
 </nav>
 
-<div class="page-header mt-5 text-center">
-    <h5>BLOG</h5>
-</div>
-<div align="center">
-    <img src="bilder/balken.png" alt="Balken-Icon">
-</div>
 
 <a class="twitter-timeline" href="https://twitter.com/HealthPlusBlog?ref_src=twsrc%5Etfw">Tweets by HealthPlusBlog</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -70,6 +73,27 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<h2>Folge uns auf</h2>
+
+<!-- Social Media Buttons-->
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-instagram"></a>
+
+
+
+</body>
+</html>
+
 
 <footer>
     <nav class="footernav footernav-expand-lg footernav-light form-inline mx-auto mt-5">
