@@ -113,7 +113,7 @@ $results = mysqli_query($db, "SELECT * FROM users"); ?>
         <div class="form-inline my-2 my-lg-1 ml-3 mt-5" >
             <?php include 'db.php';
             if (isset($_SESSION['username'])) : ?>
-                <a>Welcome <?php echo $_SESSION['username']; ?> &nbsp; <a href="abmelden.php" style="color: #29ABE2; text-decoration: none">ABMELDEN</a> </a>
+                <a> <?php echo $_SESSION['username']; ?> &nbsp; <a href="abmelden.php" style="color: #29ABE2; text-decoration: none">ABMELDEN</a> </a>
             <?php endif ?>
         </div>
     </div>
@@ -139,9 +139,9 @@ $results = mysqli_query($db, "SELECT * FROM users"); ?>
                 ?>
                 <tr>
                     <td><?php echo $item["name"]; ?></td>
-                    <td><?php echo '$'.$item["price"].' USD'; ?></td>
+                    <td><?php echo ''.$item["price"].' EURO'; ?></td>
                     <td><?php echo $item["qty"]; ?></td>
-                    <td><?php echo '$'.$item["subtotal"].' USD'; ?></td>
+                    <td><?php echo ''.$item["subtotal"].' EURO'; ?></td>
                 </tr>
             <?php } }else{ ?>
         <tr><td colspan="4"><p>In deinem Einkaufswagen befinden sich keine Artikel...</p></td>
@@ -151,7 +151,7 @@ $results = mysqli_query($db, "SELECT * FROM users"); ?>
         <tr>
             <td colspan="3"></td>
             <?php if($cart->total_items() > 0){ ?>
-                <td class="text-center"><strong>Gesamt<?php echo '$'.$cart->total().' EURO'; ?></strong></td>
+                <td class="text-center"><strong>Gesamt <?php echo ''.$cart->total().' EURO'; ?></strong></td>
             <?php } ?>
         </tr>
         </tfoot>
