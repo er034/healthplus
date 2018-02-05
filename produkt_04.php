@@ -49,6 +49,9 @@ include 'db.php';
             <li class="nav-item">
                 <a class="nav-link" id="blog" href="blog.php">BLOG</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" id="blog" href="news.php">NEWS</a>
+            </li>
         </ul>
         <div class="form-inline my-2 ml-3" href="warenkorb_uebersicht.php">
             <a href="uebersicht.php"> <img src="bilder/suche_icon.png" width="25" height="25" alt="Suche"></a>
