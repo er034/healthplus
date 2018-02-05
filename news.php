@@ -81,18 +81,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
 
-<h2>Folge uns auf</h2>
-
-<!-- Social Media Buttons-->
-<a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-instagram"></a>
-
-
-
-</body>
 </html>
 
 
@@ -103,6 +92,11 @@
             <a href="datenschutz.php">DATENSCHUTZ</a>
             <a href="kontakt.php">KONTAKT</a><br>
         </div>
+        <!-- Social Media Buttons-->
+        <a href="#" class="fa fa-facebook mr-3"></a>
+        <a href="#" class="fa fa-twitter mr-3"></a>
+        <a href="#" class="fa fa-instagram mr-5"></a>
+
     </nav>
 </footer>
 </html>
