@@ -61,13 +61,7 @@
         <div class="form-inline my-2 my-lg-1 ml-1">
             <a class="nav-link h-75" id="registrieren" href="registrieren.php">REGISTRIEREN</a>
         </div>
-        <div class="form-inline my-2 my-lg-1 ml-3 mt-5" >
-            <?php include 'db.php';
-            session_start();
-            if (isset($_SESSION['username'])) : ?>
-                <a><?php echo $_SESSION['username']; ?> &nbsp; <a href="abmelden.php" style="color: #29ABE2; text-decoration: none">ABMELDEN</a> </a>
-            <?php endif ?>
-        </div>
+
     </div>
 </nav>
 <body>
