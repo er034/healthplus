@@ -67,7 +67,7 @@
 
 <div class="container text-center">
     <meta charset="UTF-8">
-    <title>HEALTH PLUS | KONTAKT</title>
+    <title>HEALTH PLUS | Kontakt</title>
     <form method="post" action="kontaktfunktion.php">
         <label for="Name"><b>Name:</b></label><br>
         <input type="text" id="Name" name="Name"><br><br>

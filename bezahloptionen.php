@@ -1,5 +1,5 @@
 <?php
-//Bezahlmethode Auswahl durch Radio Checkbox:
+//Bezahlmethode Auswahl durch Radio Button:
 ?>
 Wähle deine Bezahlmethode:
 <br />
