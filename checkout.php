@@ -1,3 +1,4 @@
+
 <?php
 // include database configuration file
 include 'db.php';
@@ -50,23 +51,62 @@ $city    = "city";
 <?php
 $results = mysqli_query($db, "SELECT * FROM users"); ?>
 
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <title>Checkout - PHP Shopping Cart Tutorial</title>
+    <!-- Informationen über zusätzliche Angaben -->
     <meta charset="utf-8">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
-        .container{width: 100%;padding: 50px;}
-        .table{width: 65%;float: left;}
-        .shipAddr{width: 30%;float: left;margin-left: 30px;}
-        .footBtn{width: 95%;float: left;}
-        .orderBtn {float: right;}
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style_index.css">
+    <!-- Titel eines Dokumentes -->
+    <title>HEALTH PLUS</title>
 </head>
+
+<!-- Beginn Body-Bereich -->
+<body>
+<nav class="navbar navbar-expand-lg navbar-light ">
+    <a class="navbar-brand" href="index.php">
+        <img src="bilder/logo.png" width="250" height="33" alt="HealthPlus">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto ml-4">
+            <li class="nav-item">
+                <a class="nav-link" id="blog" href="uebersicht.php">PRODUKTE</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ANGEBOTE</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="paket_01.php">Abnehm Paket</a>
+                    <a class="dropdown-item" href="paket_02.php">Vegan Paket</a>
+                    <a class="dropdown-item" href="paket_03.php">Aufbau Paket</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SALES</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="sales_01.php">Protein Waffeln</a>
+                    <a class="dropdown-item" href="sales_02.php">Protein Cookies</a>
+                    <a class="dropdown-item" href="sales_03.php">Protein Pudding</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="blog" href="blog.php">BLOG</a>
+            </li>
+        </ul>
+        <div class="form-inline my-2 ml-3" href="warenkorb_uebersicht.php">
+            <a href="uebersicht.php"> <img src="bilder/suche_icon.png" width="25" height="25" alt="Suche"></a>
+        </div>
+        <div class="form-inline my-2 my-lg-1 ml-3">
+            <a href="warenkorb_uebersicht.php"> <img src="bilder/einkaufswagen_icon.png" width="25" height="25" alt="Einkaufswagen"></a>
+        </div>
+    </div>
+</nav>
 <body>
 <div class="container">
     <h1>Order Preview</h1>
@@ -117,11 +157,6 @@ $results = mysqli_query($db, "SELECT * FROM users"); ?>
                 <p><?php echo $row['postcode']; ?></p>
                 <p><?php echo $row['city']; ?></p>
         <?php } ?>
-
-    </div>
-    <div class="footBtn">
-        <a href="uebersicht.php" class="btn btn-warning"><i class="glyphicon glyphicon-menu-left"></i> Continue Shopping</a>
-        <a href="warenkorb_funktion.php?action=placeOrder" class="btn btn-success orderBtn">Place Order <i class="glyphicon glyphicon-menu-right"></i></a>
     </div>
     <?php
     //Bezahlmethode Auswahl durch Radio Checkbox:
@@ -136,7 +171,10 @@ $results = mysqli_query($db, "SELECT * FROM users"); ?>
         <?php if (isset($bezahlmethode) && $bezahlmethode=="paypal") echo "checked";?>
            value="paypal">Paypal
 
-
+    <div class="footBtn">
+        <a href="uebersicht.php" class="btn btn-warning"><i class="glyphicon glyphicon-menu-left"></i> Continue Shopping</a>
+        <a href="warenkorb_funktion.php?action=placeOrder" class="btn btn-success orderBtn">Place Order <i class="glyphicon glyphicon-menu-right"></i></a>
+    </div>
 
 
 </div>
