@@ -82,19 +82,14 @@ include 'db.php';
                 </a>
             </div>
 
-            <div class='card-body'>
-                <h5>ABNEHM PAKET</h5>
-                <h6>Unser Bestseller. Das Rundum Paket für Gewichtsverlust.</h6>
-                <p class='text-muted'>49.99€</p>
-            </div>
-
             <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
                 <a href="produkt_02.php">
                     <div class='card img-container'>
                         <img class='card-img-top' width='100%' src="bilder/produkt_2.jpg">
                         <div class='card-body'>
-                            <h6><?php echo $row["name"]; ?></h6>
-                            <p class='text-muted'><?php echo '$'.$row["price"].' EURO'; ?></p>
+                            <h5>PRE WORKOUT BOOSTER</h5>
+                            <h6>Für alle die beim Training 110% geben wollen!</h6>
+                            <p class='text-muted'>29.99€</p>
                         </div>
                     </div>
                 </a>
@@ -105,8 +100,9 @@ include 'db.php';
                     <div class='card img-container'>
                         <img class='card-img-top' width='100%' src="bilder/produkt_3.jpg">
                         <div class='card-body'>
-                            <h6><?php echo $row["name"]; ?></h6>
-                            <p class='text-muted'><?php echo '$'.$row["price"].' EURO'; ?></p>
+                            <h5>ERDNUSSBUTTER</h5>
+                            <h6>100% Premium Erdnussbutter.</h6>
+                            <p class='text-muted'>9.99€</p>
                         </div>
                     </div>
                 </a>
@@ -116,8 +112,9 @@ include 'db.php';
                     <div class='card img-container'>
                         <img class='card-img-top' width='100%' src="bilder/produkt_4.jpg">
                         <div class='card-body'>
-                            <h6><?php echo $row["name"]; ?></h6>
-                            <p class='text-muted'><?php echo '$'.$row["price"].' EURO'; ?></p>
+                            <h5>PROTEIN CREME</h5>
+                            <h6>Der leckere proteinreiche Schokobrotaufstrich.</h6>
+                            <p class='text-muted'>6.99€</p>
                         </div>
                     </div>
                 </a>
@@ -127,8 +124,9 @@ include 'db.php';
                     <div class='card img-container'>
                         <img class='card-img-top' width='100%' src="bilder/produkt_5.jpg">
                         <div class='card-body'>
-                            <h6><?php echo $row["name"]; ?></h6>
-                            <p class='text-muted'><?php echo '$'.$row["price"].' EURO'; ?></p>
+                            <h5>PROTEIN CHIPS</h5>
+                            <h6>Unwiderstehlich knuspriger Protein-Snack.</h6>
+                            <p class='text-muted'>2.99€</p>
                         </div>
                     </div>
                 </a>
@@ -138,8 +136,9 @@ include 'db.php';
                     <div class='card img-container'>
                         <img class='card-img-top' width='100%' src="bilder/produkt_6.jpg">
                         <div class='card-body'>
-                            <h6><?php echo $row["name"]; ?></h6>
-                            <p class='text-muted'><?php echo '$'.$row["price"].' EURO'; ?></p>
+                            <h5>PROTEIN POWER COOKIES</h5>
+                            <h6>Der Protein Power-Snack für zwischendurch!</h6>
+                            <p class='text-muted'>1.99€</p>
                         </div>
                     </div>
                 </a>
@@ -149,8 +148,9 @@ include 'db.php';
                     <div class='card img-container'>
                         <img class='card-img-top' width='100%' src="bilder/produkt_7.jpg">
                         <div class='card-body'>
-                            <h6><?php echo $row["name"]; ?></h6>
-                            <p class='text-muted'><?php echo '$'.$row["price"].' EURO'; ?></p>
+                            <h5>PROTEIN ICE CREAM</h5>
+                            <h6>Einfach zuzubereitendes Protein-Eis.</h6>
+                            <p class='text-muted'>6.99€</p>
                         </div>
                     </div>
                 </a>
@@ -160,8 +160,9 @@ include 'db.php';
                     <div class='card img-container'>
                         <img class='card-img-top' width='100%' src="bilder/produkt_8.jpg">
                         <div class='card-body'>
-                            <h6><?php echo $row["name"]; ?></h6>
-                            <p class='text-muted'><?php echo '$'.$row["price"].' EURO'; ?></p>
+                            <h5>FLAVOR DROPS</h5>
+                            <h6>Verfeinere eine Vielzahl an Lebensmittel und Supplements.</h6>
+                            <p class='text-muted'>5.99€</p>
                         </div>
                     </div>
                 </a>
@@ -171,8 +172,9 @@ include 'db.php';
                     <div class='card img-container'>
                         <img class='card-img-top' width='100%' src="bilder/produkt_9.jpg">
                         <div class='card-body'>
-                            <h6><?php echo $row["name"]; ?></h6>
-                            <p class='text-muted'><?php echo '$'.$row["price"].' EURO'; ?></p>
+                            <h5>HPROTEIN WAFFELN</h5>
+                            <h6>Naschen ohne Schuldgefühle: jederzeit & überall.</h6>
+                            <p class='text-muted'>5.99€</p>
                         </div>
                     </div>
                 </a>
@@ -182,8 +184,9 @@ include 'db.php';
                     <div class='card img-container'>
                         <img class='card-img-top' width='100%' src="bilder/sales_01.jpg">
                         <div class='card-body'>
-                            <h6><?php echo $row["name"]; ?></h6>
-                            <p class='text-muted'><?php echo '$'.$row["price"].' EURO'; ?></p>
+                            <h5>PROTEIN COOKIES & CREAM</h5>
+                            <h6>Proteinreicher Cookie-Snack.</h6>
+                            <p class='text-muted'>0.99€</p>
                         </div>
                     </div>
                 </a>
@@ -193,8 +196,9 @@ include 'db.php';
                     <div class='card img-container'>
                         <img class='card-img-top' width='100%' src="bilder/sales_02.jpg">
                         <div class='card-body'>
-                            <h6><?php echo $row["name"]; ?></h6>
-                            <p class='text-muted'><?php echo '$'.$row["price"].' EURO'; ?></p>
+                            <h5>PROTEIN PUDDING</h5>
+                            <h6>Ein leckerer Snack für zwischendurch!</h6>
+                            <p class='text-muted'>4.99</p>
                         </div>
                     </div>
                 </a>
@@ -204,8 +208,9 @@ include 'db.php';
                     <div class='card img-container'>
                         <img class='card-img-top' width='100%' src="bilder/sales_03.jpg">
                         <div class='card-body'>
-                            <h6><?php echo $row["name"]; ?></h6>
-                            <p class='text-muted'><?php echo '$'.$row["price"].' EURO'; ?></p>
+                            <h5>HAFERFLOCKEN PULVER</h5>
+                            <h6>100% feingemahlene Haferflocken.</h6>
+                            <p class='text-muted'>2.99€</p>
                         </div>
                     </div>
                 </a>
