@@ -10,7 +10,7 @@ include 'db.php'?>
     <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style_index.css">
     <!-- Titel eines Dokumentes -->
-    <title>HEALTH PLUS</title>
+    <title>HEALTH PLUS | Suchergebnisse</title>
 </head>
 
 <!-- Beginn Body-Bereich -->
@@ -47,6 +47,9 @@ include 'db.php'?>
             <li class="nav-item">
                 <a class="nav-link" id="blog" href="blog.php">BLOG</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" id="blog" href="news.php">NEWS</a>
+            </li>
         </ul>
         <div class="form-inline my-2 ml-3" href="warenkorb_uebersicht.php">
             <a href="uebersicht.php"> <img src="bilder/suche_icon.png" width="25" height="25" alt="Suche"></a>
@@ -74,7 +77,7 @@ if (isset($_POST['submit-search'])){
                 <div>
                 <h3>".$row['name']."</h3>
                 <p>".$row['description']."</p>
-                <p>".$row['price'].'Euro'"</p>
+                <p>".$row['price'].'Euro'."</p>
                 </div></a>";
         }
     } else {
