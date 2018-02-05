@@ -1,6 +1,6 @@
 <?php include "admin_server.php";?>
 <!doctype html>
-<html lang="en">
+<html lang="en"></html>
 <head>
     <!-- Informationen über zusätzliche Angaben -->
     <meta charset="utf-8">
