@@ -58,7 +58,13 @@ include 'db.php';
         </div>
     </div>
 </nav>
-<body>
+
+<div class="page-header mt-5 text-center">
+<h5>SALES</h5>
+</div>
+<div align="center">
+    <img src="bilder/balken.png" alt="Balken-Icon">
+</div>
 </div><div class="container mt-5 al">
     <div class="row justify-content-between" id="product-details">
         <div class="col-12 col-md-6">

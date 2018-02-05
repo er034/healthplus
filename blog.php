@@ -55,6 +55,13 @@
     </div>
 </nav>
 
+<div class="page-header mt-5 text-center">
+    <h5>BLOG</h5>
+</div>
+<div align="center">
+    <img src="bilder/balken.png" alt="Balken-Icon">
+</div>
+
 <a class="twitter-timeline" href="https://twitter.com/HealthPlusBlog?ref_src=twsrc%5Etfw">Tweets by HealthPlusBlog</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <!-- Optional JavaScript -->
