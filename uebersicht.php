@@ -74,11 +74,18 @@ include 'db.php';
                     <div class='card img-container'>
                         <img class='card-img-top' width='100%' src="bilder/produkt_1.jpg">
                         <div class='card-body'>
-                            <h6><?php echo $row["name"]; ?></h6>
-                            <p class='text-muted'><?php echo '$'.$row["price"].' EURO'; ?></p>
+                            <h5>FIT WHEY PROTEIN</h5>
+                            <h6>100% Premium Whey Protein für optimalen Muskelaufbau.</h6>
+                            <p class='text-muted'>21.99€</p>
                         </div>
                     </div>
                 </a>
+            </div>
+
+            <div class='card-body'>
+                <h5>ABNEHM PAKET</h5>
+                <h6>Unser Bestseller. Das Rundum Paket für Gewichtsverlust.</h6>
+                <p class='text-muted'>49.99€</p>
             </div>
 
             <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
