@@ -1,0 +1,16 @@
+.container #products h5{
+    color: black;
+    font-size: 17px;
+}
+
+.container #products h6{
+    color: black;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.container #products p{
+    color: #3388ad;
+    font-size: 13px;
+    font-weight: bold;
+}
