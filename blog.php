@@ -132,11 +132,6 @@
         </div>
     </div>
 
-    <div align="center">
-        <img src="bilder/balken.png" alt="Balken-Icon">
-    </div>
-    </div>
-
     <div class="col-xs-12" style="height:130px;"></div>
 
     <h2 class="container">CHIA SMOOTHIE WITH STRAWBERRY TOPPING</h2>
@@ -150,12 +145,34 @@
             <li>2 gefrorene Bananen</li>
             <li>1/2 Tasse gefrorene Erdbeeren</li>
             <li>100ml Kokosnusswasser</li>
-            <li>1 cup gefroren Himbeeren</li>
+            <li>1 Tasse gefroren Himbeeren</li>
         </ul>
         <p><strong>ZUBEREITUNG</strong></p>
         <p>Lagern Sie den Pudding über Nacht im Kühlschrank. Den Smoothie mixen und auf den Chia Pudding mit frischen Feigen servieren.</p>
 
     </div>
+
+        <div class="col-xs-12" style="height:130px;"></div>
+
+        <h2 class="container">BLUEBERRY MUFFIN SMOOTHIE</h2>
+        <div class="container">
+            <img src="bilder/Banner_03.jpg" width="" height="">
+        </div>
+        <div class="container mt-2 ">
+            <div class="wpb_wrapper">
+                <p><strong>ZUTATEN</strong></p>
+                <ul>
+                    <li>1 scoop Women`s Best Slim Body Shake</li>
+                    <li>150ml Tasse Milch</li>
+                    <li>200g Vanilie Pudding</li>
+                    <li>1 Tasse gefroren Himbeeren</li>
+                    <li>1 Tasse Haferflocken</li>
+                    <li>1/2 Tasse Eiswürfel</li>
+                </ul>
+                <p><strong>ZUBEREITUNG</strong></p>
+                <p>Zutaten zusammen mischen und danach im Mixer verblenden.</p>
+
+            </div>
 </div>
 
 </div>
