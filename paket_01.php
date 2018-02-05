@@ -33,25 +33,28 @@ include 'db.php';
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ANGEBOTE</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="angebote_abnehmpaket.php">Abnehm Paket</a>
-                    <a class="dropdown-item" href="angebote_veganpaket.php">Vegan Paket</a>
-                    <a class="dropdown-item" href="angebote_aufbaupaket.php">Aufbau Paket</a>
+                    <a class="dropdown-item" href="paket_01.php">Abnehm Paket</a>
+                    <a class="dropdown-item" href="paket_02.php">Vegan Paket</a>
+                    <a class="dropdown-item" href="paket_03.php">Aufbau Paket</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SALES</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="sales_proteinwaffeln.php">Protein Waffeln</a>
-                    <a class="dropdown-item" href="sales_proteincookies.php">Protein Cookies</a>
-                    <a class="dropdown-item" href="sales_proteinpudding.php">Protein Pudding</a>
+                    <a class="dropdown-item" href="sales_01.php">Protein Waffeln</a>
+                    <a class="dropdown-item" href="sales_02.php">Protein Cookies</a>
+                    <a class="dropdown-item" href="sales_03.php">Protein Pudding</a>
                 </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link" id="blog" href="blog.php">BLOG</a>
             </li>
         </ul>
-        <div class="form-inline my-2 ml-3" href="warenkorb_uebersicht.php">
-            <a href="uebersicht.php"> <img src="bilder/suche_icon.png" width="25" height="25" alt="Suche"></a>
+        <div class="form-inline my-2 " >
+            <form action="suche.php" method="POST">
+                <input type="text" name="search" placeholder="Suche ein Produkt...">
+                <button type="submit" name="submit-search">Suchen</button>
+            </form>
         </div>
         <div class="form-inline my-2 my-lg-1 ml-3">
             <a href="warenkorb_uebersicht.php"> <img src="bilder/einkaufswagen_icon.png" width="25" height="25" alt="Einkaufswagen"></a>

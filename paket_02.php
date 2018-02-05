@@ -33,17 +33,17 @@ include 'db.php';
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ANGEBOTE</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="angebote_abnehmpaket.php">Abnehm Paket</a>
-                    <a class="dropdown-item" href="angebote_veganpaket.php">Vegan Paket</a>
-                    <a class="dropdown-item" href="angebote_aufbaupaket.php">Aufbau Paket</a>
+                    <a class="dropdown-item" href="paket_01.php">Abnehm Paket</a>
+                    <a class="dropdown-item" href="paket_02.php">Vegan Paket</a>
+                    <a class="dropdown-item" href="paket_03.php">Aufbau Paket</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SALES</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="sales_proteinwaffeln.php">Protein Waffeln</a>
-                    <a class="dropdown-item" href="sales_proteincookies.php">Protein Cookies</a>
-                    <a class="dropdown-item" href="sales_proteinpudding.php">Protein Pudding</a>
+                    <a class="dropdown-item" href="sales_01.php">Protein Waffeln</a>
+                    <a class="dropdown-item" href="sales_02.php">Protein Cookies</a>
+                    <a class="dropdown-item" href="sales_03.php">Protein Pudding</a>
                 </div>
             </li>
             <li class="nav-item">
