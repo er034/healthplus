@@ -106,7 +106,7 @@ include 'db.php';
                                         <p class="lead"><?php echo ''.$row["price"].'€'; ?></p>
                                     </div>
                                     <div class="col-md-6 align-center">
-                                        <a class="btn btn-outline-info" href="warenkorb_funktion.php?action=addToCart&id=<?php echo $row["id"]; ?>">In den Warenkorb</a>
+                                        <a class="btn btn-outline-info" href="warenkorb_funktion.php?action=addToCart&id=<?php echo $row["id"]; ?>">In den Einkaufswagen</a>
                                     </div>
                                 </div>
                             </div>
