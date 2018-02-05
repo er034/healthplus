@@ -95,6 +95,7 @@
     <div align="center">
         <img src="bilder/balken.png" alt="Balken-Icon">
     </div>
+
 <div class="row justify-content-center">
     <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
         <a style="text-decoration: none" href="paket_01.php">
