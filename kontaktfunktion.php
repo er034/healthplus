@@ -1,6 +1,5 @@
 <?php
 
-//send_email.php
 $email_from = "healthplus@web.de";   //Absender falls keiner angegeben wurde
 $sendermail_antwort = true;      //E-Mail Adresse des Besuchers als Absender. false= Nein ; true = Ja
 $name_von_emailfeld = "Email";   //Feld in der die Absenderadresse steht
