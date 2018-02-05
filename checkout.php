@@ -14,7 +14,6 @@ $cart = new Cart;
 if($cart->total_items() <= 0){
     header("Location: uebersicht.php");
 }
-
 // set customer ID in session
 $id = "id";
 $email    = "email";
