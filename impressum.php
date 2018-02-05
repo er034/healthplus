@@ -71,8 +71,9 @@
             <br>70569 Stuttgart
             <br>Deutschland
             <br>Telefon: <span style="text-decoration: underline;">01375 82359102</span>
-            <br>E-Mail: <span style="text-decoration: underline;">hello@healthplus.de</span>
+            <br>E-Mail: <span style="text-decoration: underline;"><a href="healthplus@web.de">healthplus@web.de</a></span>
         </p>
+
         <p>Geschäftsführer: Eileen Röhm, Marc Lunardi & Cedric Tippl
             <br>Inhaltlich Verantwortlicher: Marc Lunardi
             <br>Registergericht: Landesgericht Stuttgart

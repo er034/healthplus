@@ -14,11 +14,45 @@ $cart = new Cart;
 if($cart->total_items() <= 0){
     header("Location: uebersicht.php");
 }
+
 // set customer ID in session
-$_SESSION['sessCustomerID'] = $_GET['id'];
-$query = $db->query("SELECT * FROM users WHERE id = ".$_SESSION['sessCustomerID']);
-$custRow = $query->fetch_assoc();
+$id = "id";
+$email    = "email";
+$firstname    = "firstname";
+$lastname    = "lastname";
+$street    = "street";
+$housenumber   = "housenumber";
+$postcode    = "postcode";
+$city    = "city";
+
+$_SESSION['sessCustomerID'] = 1;
+
+if (isset($_GET['logout'])) {
+    session_destroy();
+    unset($_SESSION['username']);
+    header("location:/~er034/abmelden.php");
+}
 ?>
+<?php if (isset($_SESSION['success'])) : ?>
+    <div class="error success" >
+        <h3>
+            <?php
+            echo $_SESSION['success'];
+            unset($_SESSION['success']);
+            ?>
+        </h3>
+    </div>
+<?php endif ?>
+
+<!-- logged in user information -->
+<?php  if (isset($_SESSION['username'])) : ?>
+    <p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
+    <p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
+<?php endif ?>
+
+<?php
+$results = mysqli_query($db, "SELECT * FROM users"); ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -76,7 +110,7 @@ $custRow = $query->fetch_assoc();
     </div>
 </nav>
 <body>
-<div class="container">
+<div class="container mt-5">
     <h1>Order Preview</h1>
     <table class="table">
         <thead>
@@ -113,38 +147,62 @@ $custRow = $query->fetch_assoc();
         </tr>
         </tfoot>
     </table>
-    <div class="shipAddr">
-        <h4>Shipping Details</h4>
+    <div class=" shipAddr card col-12">
+        <div class="card-body text-lg-left row">
+            <h4 class="card-title col-12">Shipping Details</h4>
         <?php while ($row = mysqli_fetch_array($results)) { ?>
-
-                <p><?php echo $row['firstname']; ?></p>
-                <p><?php echo $row['lastname']; ?></p>
-                <p><?php echo $row['email']; ?></p>
-                <p><?php echo $row['street']; ?></p>
-                <p><?php echo $row['housenumber']; ?></p>
-                <p><?php echo $row['postcode']; ?></p>
-                <p><?php echo $row['city']; ?></p>
+        <div class="ml-3">
+            <p><?php echo $row['firstname']; ?><br>
+                <?php echo $row['lastname']; ?><br>
+                <?php echo $row['email']; ?><br>
+                <?php echo $row['street']; ?>
+                <?php echo $row['housenumber'];?><br>
+                <?php echo $row['postcode']; ?>
+                <?php echo $row['city']; ?></p>
         <?php } ?>
+        </div>
+        </div>
     </div>
-    <?php
-    //Bezahlmethode Auswahl durch Radio Checkbox:
-    ?>
-    Wähle deine Bezahlmethode:
-    <br />
+    <div class="card col-12 mt-3">
+        <div class="card-body row">
+            <h4 class="card-title ml-3">Distribution Options</h4>
 
-    <input type="radio" name="bezahlmethode"
-        <?php if (isset($bezahlmethode) && $bezahlmethode=="nachname") echo "checked";?>
-           value="nachname">Nachname
-    <input type="radio" name="bezahlmethode"
-        <?php if (isset($bezahlmethode) && $bezahlmethode=="paypal") echo "checked";?>
-           value="paypal">Paypal
+            <div class="col-12">
+                <div class="mt-3 row justify-content-around">
+                    <div class="col-9 order-2 col-sm-3 order-sm-1">
+                        <p class="h6">KOSTENLOS</p>
+                    </div>
+                    <div class="col-12 order-1 col-sm-8 order-sm-2">
+                        <div class="font-weight-bold">Standard Delivery</div>
+                        <div class="mt-0 mt-sm-3 mb-3 mb-sm-0 text-muted">Delivery in 3-4 workdays</div>
+                    </div>
+                    <div class="my-auto col-3 order-3 col-sm-1 order-sm-3">
+                        <input type="radio" name="distributionType">
+                    </div>
+                </div>
 
-    <div class="footBtn">
-        <a href="uebersicht.php" class="btn btn-warning"><i class="glyphicon glyphicon-menu-left"></i> Continue Shopping</a>
+                <hr>
+
+                <div class="mt-5 row justify-content-around">
+                    <div class="col-9 order-2 col-sm-3 oder-sm-1">
+                        <p class="h6">5,00 €</p>
+                    </div>
+                    <div class="col-12 order-1 col-sm-8 order-sm-2">
+                        <div class="font-weight-bold">Express</div>
+                        <div class="mt-0 mt-sm-3 mb-3 mb-sm-0 text-muted">Delivery in 2 workdays</div>
+                    </div>
+                    <div class="my-auto col-3 order-3 col-sm-1 order-sm-3">
+                        <input type="radio" name="distributionType">
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footBtn mt-3 mb-5 align-content-lg-center">
+        <a href="uebersicht.php" class="btn btn-outline-info"><i class="glyphicon glyphicon-menu-left"></i> Continue Shopping</a>
         <a href="warenkorb_funktion.php?action=placeOrder" class="btn btn-success orderBtn">Place Order <i class="glyphicon glyphicon-menu-right"></i></a>
     </div>
-
-
 </div>
 </body>
 </html>
