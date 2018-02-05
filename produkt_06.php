@@ -119,13 +119,27 @@ include 'db.php';
 
 <div class="col-xs-12" style="height:130px;"></div>
 
-<footer id="footer" class="mx-auto mt-5">
-    <nav class="footernav footernav-expand-lg footernav-light form-inline mx-auto">
-        <div class="footer mx-auto text-center " id="footeritem">
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+</html>
+
+
+<footer>
+    <nav class="footernav footernav-expand-lg footernav-light form-inline mx-auto mt-5">
+        <div class="footer mx-auto text-center" id="footeritem">
             <a href="impressum.php">IMPRESSUM</a>
             <a href="datenschutz.php">DATENSCHUTZ</a>
             <a href="kontakt.php">KONTAKT</a><br>
         </div>
+        <!-- Social Media Buttons-->
+        <a href="https://www.facebook.com/Healthplusblog-126934821455800/" class="fa fa-facebook mr-3"></a>
+        <a href="https://twitter.com/HealthPlusBlog" class="fa fa-twitter mr-3"></a>
+        <a href="https://www.instagram.com/healthplusblog/" class="fa fa-instagram mr-5"></a>
+
     </nav>
 </footer>
 </body>
