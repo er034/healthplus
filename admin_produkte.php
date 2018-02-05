@@ -47,7 +47,7 @@ if (isset($_GET['edit'])) {
                 <?php include 'db.php';
                 session_start();
                 if (isset($_SESSION['username'])) : ?>
-                    <a>Welcome <?php echo $_SESSION['username']; ?> &nbsp; <a href="admin_anmelden.php" style="color: #29ABE2; text-decoration: none">LOGOUT</a> </a>
+                    <a> <?php echo $_SESSION['username']; ?> &nbsp; <a href="admin_anmelden.php" style="color: #29ABE2; text-decoration: none">ABMELDEN</a> </a>
                 <?php endif ?>
             </li>
         </ul>
@@ -90,10 +90,10 @@ if (isset($_GET['edit'])) {
             <td><?php echo $row['description']; ?></td>
             <td><?php echo $row['price']; ?></td>
             <td>
-                <a href="admin_produkte.php?edit=<?php echo $row['id']; ?>" class="btn btn-outline-info" >Edit</a>
+                <a href="admin_produkte.php?edit=<?php echo $row['id']; ?>" class="btn btn-outline-info" >Anpassen</a>
             </td>
             <td>
-                <a href="admin_funktion_produkte.php?del=<?php echo $row['id']; ?>" class="btn btn-outline-info">Delete</a>
+                <a href="admin_funktion_produkte.php?del=<?php echo $row['id']; ?>" class="btn btn-outline-info">Löschen</a>
             </td>
         </tr>
     <?php } ?>
@@ -118,9 +118,9 @@ if (isset($_GET['edit'])) {
     </div>
     <div class="input-group">
         <?php if ($update == true): ?>
-            <button class="btn btn-outline-info" type="submit" name="update" style="background: #556B2F;" >update</button>
+            <button class="btn btn-outline-info" type="submit" name="update" style="background: #556B2F;" >Anpassen</button>
         <?php else: ?>
-            <button class="btn btn-outline-info " type="submit" name="save" >Save</button>
+            <button class="btn btn-outline-info " type="submit" name="save" >Speichern</button>
         <?php endif ?>
     </div>
 </form>

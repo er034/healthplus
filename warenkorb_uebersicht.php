@@ -117,7 +117,7 @@ $cart = new Cart;
                     <td><input type="number" class="form-control text-center" value="<?php echo $item["qty"]; ?>" onchange="updateCartItem(this, '<?php echo $item["rowid"]; ?>')"></td>
                     <td><?php echo ''.$item["subtotal"].' Euro'; ?></td>
                     <td>
-                        <a href="warenkorb_funktion.php?action=removeCartItem&id=<?php echo $item["rowid"]; ?>" class="btn btn-outline-danger" onclick="return confirm('Are you sure?')">Löschen</a>
+                        <a href="warenkorb_funktion.php?action=removeCartItem&id=<?php echo $item["rowid"]; ?>" class="btn btn-outline-danger" onclick="return confirm('Bist du dir sicher?')">Löschen</a>
                     </td>
                 </tr>
             <?php } }else{ ?>
@@ -129,7 +129,7 @@ $cart = new Cart;
             <td><a href="uebersicht.php" class="btn btn-outline-info"><i class="glyphicon glyphicon-menu-left"></i>Einkaufen fortfahren</a></td>
             <td colspan="2"></td>
             <?php if($cart->total_items() > 0){ ?>
-                <td class="text-center"><strong>Gesamt<?php echo ''.$cart->total().' Euro'; ?></strong></td>
+                <td class="text-center"><strong>Gesamt <?php echo ''.$cart->total().' Euro'; ?></strong></td>
                 <td><a href="checkout.php" class="btn btn-success btn-outline-secondary">Kasse<i class="glyphicon glyphicon-menu-right"></i></a></td>
             <?php } ?>
         </tr>

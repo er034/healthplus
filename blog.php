@@ -118,10 +118,10 @@
         <div class="wpb_wrapper">
             <p><strong>ZUTATEN</strong></p>
             <ul>
-                <li>1 scoop Health Plus Slim Body Shake</li>
-                <li>1 cup Soja Milch</li>
-                <li>1 cup gefroren Mango</li>
-                <li>1 cup gefroren Himbeeren</li>
+                <li>1 Löffel Health Plus Slim Body Shake</li>
+                <li>1 Tasse Soja Milch</li>
+                <li>1 Tasse gefrorene Mango</li>
+                <li>1 Tasse gefrorene Himbeeren</li>
             </ul>
             <p><strong>ZUBEREITUNG</strong></p>
             <p>Alle Zutaten zusammengeben und mit Toppings füllen: ½ Tasse Müsli, ½ Kiwi, Samen Ihrer Wahl, Blaubeeren</p>
@@ -158,10 +158,10 @@
             <div class="wpb_wrapper">
                 <p><strong>ZUTATEN</strong></p>
                 <ul>
-                    <li>1 scoop Women`s Best Slim Body Shake</li>
+                    <li>1 Löffel Women`s Best Slim Body Shake</li>
                     <li>150ml Tasse Milch</li>
                     <li>200g Vanilie Pudding</li>
-                    <li>1 Tasse gefroren Himbeeren</li>
+                    <li>1 Tasse gefrorene Himbeeren</li>
                     <li>1 Tasse Haferflocken</li>
                     <li>1/2 Tasse Eiswürfel</li>
                 </ul>
@@ -189,6 +189,7 @@
 </html>
 
 
+<div class="col-xs-12" style="height:200px;"></div>
 <footer>
     <nav class="footernav footernav-expand-lg footernav-light form-inline mx-auto mt-5">
         <div class="footer mx-auto text-center" id="footeritem">
@@ -205,4 +206,3 @@
 </footer>
 </body>
 </html>
->

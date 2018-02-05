@@ -34,7 +34,7 @@
                 <?php include 'db.php';
                 session_start();
                 if (isset($_SESSION['username'])) : ?>
-                    <a>Welcome <?php echo $_SESSION['username']; ?> &nbsp; <a href="admin_anmelden.php" style="color: #29ABE2; text-decoration: none">LOGOUT</a> </a>
+                    <a> <?php echo $_SESSION['username']; ?> &nbsp; <a href="admin_anmelden.php" style="color: #29ABE2; text-decoration: none">ABMELDEN</a> </a>
                 <?php endif ?>
             </li>
         </ul>

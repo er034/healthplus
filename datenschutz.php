@@ -106,7 +106,7 @@
 <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
-<div class="col-xs-12" style="height:100px;"></div>
+<div class="col-xs-12" style="height:180px;"></div>
 <footer>
     <nav class="footernav footernav-expand-lg footernav-light form-inline mx-auto mt-5">
         <div class="footer mx-auto text-center" id="footeritem">

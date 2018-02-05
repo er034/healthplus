@@ -139,9 +139,9 @@ $results = mysqli_query($db, "SELECT * FROM users"); ?>
                 ?>
                 <tr>
                     <td><?php echo $item["name"]; ?></td>
-                    <td><?php echo ''.$item["price"].' EURO'; ?></td>
+                    <td><?php echo ''.$item["price"].' Euro'; ?></td>
                     <td><?php echo $item["qty"]; ?></td>
-                    <td><?php echo ''.$item["subtotal"].' EURO'; ?></td>
+                    <td><?php echo ''.$item["subtotal"].' Euro'; ?></td>
                 </tr>
             <?php } }else{ ?>
         <tr><td colspan="4"><p>In deinem Einkaufswagen befinden sich keine Artikel...</p></td>
@@ -151,7 +151,7 @@ $results = mysqli_query($db, "SELECT * FROM users"); ?>
         <tr>
             <td colspan="3"></td>
             <?php if($cart->total_items() > 0){ ?>
-                <td class="text-center"><strong>Gesamt <?php echo ''.$cart->total().' EURO'; ?></strong></td>
+                <td class="text-center"><strong>Gesamt <?php echo ''.$cart->total().' Euro'; ?></strong></td>
             <?php } ?>
         </tr>
         </tfoot>
@@ -198,7 +198,7 @@ $results = mysqli_query($db, "SELECT * FROM users"); ?>
                     </div>
                     <div class="col-12 order-1 col-sm-8 order-sm-2">
                         <div class="font-weight-bold">Express</div>
-                        <div class="mt-0 mt-sm-3 mb-3 mb-sm-0 text-muted">Lieferung in 3-4 Werktagen</div>
+                        <div class="mt-0 mt-sm-3 mb-3 mb-sm-0 text-muted">Lieferung in 1-2 Werktagen</div>
                     </div>
                     <div class="my-auto col-3 order-3 col-sm-1 order-sm-3">
                         <input type="radio" name="distributionType">

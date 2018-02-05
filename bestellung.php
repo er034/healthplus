@@ -68,8 +68,12 @@ if(!isset($_REQUEST['id'])){
     </div>
 </nav>
 <div class="container">
-    <h1>Bestellstatus</h1>
-    <p>Deine Bestellung ist bei uns eingetroffen. Wir senden Dir in Kürze die Bestätigung per Mail zu. Die Bestellnummer lautet #<?php echo $_GET['id']; ?></p>
+    <h1>Bestellbestätigung</h1>
+    <p>Vielen Dank für deine Bestellung!<br>
+        Bei Fragen erreichst Du uns per E-Mail unter healtplus@web.de.<br><br>
+        Wir senden Dir in Kürze die Bestätigung per Mail zu.<br>
+        Die Bestellnummer lautet #<?php echo $_GET['id']; ?><br><br>
+        Dein HealthPlus-Team</p>
 </div>
 
 <div class="col-xs-12" style="height:350px;"></div>
