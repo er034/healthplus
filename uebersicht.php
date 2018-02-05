@@ -19,51 +19,54 @@ include 'db.php';
 
 <body>
 <nav class="navbar navbar-expand-lg navbar-light ">
-<a class="navbar-brand" href="index.php">
-    <img src="bilder/logo.png" width="250" height="33" alt="HealthPlus">
-</a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-</button>
+    <a class="navbar-brand" href="index.php">
+        <img src="bilder/logo.png" width="250" height="33" alt="HealthPlus">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto ml-4">
-        <li class="nav-item">
-            <a class="nav-link" id="blog" href="uebersicht.php">PRODUKTE</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ANGEBOTE</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="angebote_abnehmpaket.php">Abnehm Paket</a>
-                <a class="dropdown-item" href="angebote_veganpaket.php">Vegan Paket</a>
-                <a class="dropdown-item" href="angebote_aufbaupaket.php">Aufbau Paket</a>
-            </div>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SALES</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="sales_proteinwaffeln.php">Protein Waffeln</a>
-                <a class="dropdown-item" href="sales_proteincookies.php">Protein Cookies</a>
-                <a class="dropdown-item" href="sales_proteinpudding.php">Protein Pudding</a>
-            </div>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="blog" href="blog.php">BLOG</a>
-        </li>
-    </ul>
-    <div class="form-inline my-2 ml-3" href="warenkorb_uebersicht.php">
-        <a href="uebersicht.php"> <img src="bilder/suche_icon.png" width="25" height="25" alt="Suche"></a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto ml-4">
+            <li class="nav-item">
+                <a class="nav-link" id="blog" href="uebersicht.php">PRODUKTE</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ANGEBOTE</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="angebote_abnehmpaket.php">Abnehm Paket</a>
+                    <a class="dropdown-item" href="angebote_veganpaket.php">Vegan Paket</a>
+                    <a class="dropdown-item" href="angebote_aufbaupaket.php">Aufbau Paket</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SALES</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="sales_proteinwaffeln.php">Protein Waffeln</a>
+                    <a class="dropdown-item" href="sales_proteincookies.php">Protein Cookies</a>
+                    <a class="dropdown-item" href="sales_proteinpudding.php">Protein Pudding</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="blog" href="blog.php">BLOG</a>
+            </li>
+        </ul>
+        <div class="form-inline my-2 " >
+            <form action="suche.php" method="POST">
+                <input type="text" name="search" placeholder="Suche ein Produkt...">
+                <button type="submit" name="submit-search">Suchen</button>
+            </form>
+        </div>
+        <div class="form-inline my-2 my-lg-1 ml-3">
+            <a href="warenkorb_uebersicht.php"> <img src="bilder/einkaufswagen_icon.png" width="25" height="25" alt="Einkaufswagen"></a>
+        </div>
     </div>
-    <div class="form-inline my-2 my-lg-1 ml-3">
-        <a href="warenkorb_uebersicht.php"> <img src="bilder/einkaufswagen_icon.png" width="25" height="25" alt="Einkaufswagen"></a>
-    </div>
-</div>
 </nav>
 <div class="mt-5 text-center Oberueberschirft"><h5>ALLE PRODUKTE</h5></div>
 <div align="center">
     <img src="bilder/balken.png">
 </div>
-<div class="products">
+<div class="container">
     <div id="products" class="row list-group">
         <div class="row justify-content-center">
             <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
@@ -168,48 +171,48 @@ include 'db.php';
                 </a>
             </div>
             <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-            <a href="angebote_aufbaupaket.php">
-                <div class='card img-container'>
-                    <img class='card-img-top' width='100%' src="bilder/sales_01.jpg">
-                    <div class='card-body'>
-                        <h6><?php echo $row["name"]; ?></h6>
-                        <p class='text-muted'><?php echo '$'.$row["price"].' EURO'; ?></p>
+                <a href="angebote_aufbaupaket.php">
+                    <div class='card img-container'>
+                        <img class='card-img-top' width='100%' src="bilder/sales_01.jpg">
+                        <div class='card-body'>
+                            <h6><?php echo $row["name"]; ?></h6>
+                            <p class='text-muted'><?php echo '$'.$row["price"].' EURO'; ?></p>
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-        <a href="angebote_aufbaupaket.php">
-            <div class='card img-container'>
-                <img class='card-img-top' width='100%' src="bilder/sales_02.jpg">
-                <div class='card-body'>
-                    <h6><?php echo $row["name"]; ?></h6>
-                    <p class='text-muted'><?php echo '$'.$row["price"].' EURO'; ?></p>
-                </div>
+                </a>
             </div>
-        </a>
-    </div>
-    <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-    <a href="angebote_aufbaupaket.php">
-        <div class='card img-container'>
-            <img class='card-img-top' width='100%' src="bilder/sales_03.jpg">
-            <div class='card-body'>
-                <h6><?php echo $row["name"]; ?></h6>
-                <p class='text-muted'><?php echo '$'.$row["price"].' EURO'; ?></p>
+            <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
+                <a href="angebote_aufbaupaket.php">
+                    <div class='card img-container'>
+                        <img class='card-img-top' width='100%' src="bilder/sales_02.jpg">
+                        <div class='card-body'>
+                            <h6><?php echo $row["name"]; ?></h6>
+                            <p class='text-muted'><?php echo '$'.$row["price"].' EURO'; ?></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
+                <a href="angebote_aufbaupaket.php">
+                    <div class='card img-container'>
+                        <img class='card-img-top' width='100%' src="bilder/sales_03.jpg">
+                        <div class='card-body'>
+                            <h6><?php echo $row["name"]; ?></h6>
+                            <p class='text-muted'><?php echo '$'.$row["price"].' EURO'; ?></p>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
-    </a>
-</div>
-        </div>
- <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<footer>
-    <nav class="footernav footernav-expand-lg footernav-light form-inline mx-auto mt-5">
+    </div></div>
+<footer id="footer" class="mx-auto mt-5">
+    <nav class="footernav footernav-expand-lg footernav-light form-inline mx-auto">
         <div class="footer mx-auto text-center " id="footeritem">
             <a href="impressum.php">IMPRESSUM</a>
             <a href="datenschutz.php">DATENSCHUTZ</a>
@@ -217,4 +220,5 @@ include 'db.php';
         </div>
     </nav>
 </footer>
+</body>
 </html>
