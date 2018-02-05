@@ -112,18 +112,18 @@
         <input type="text" name="city" value="<?php  $city; ?>">
     </div>
     <div class="input-group">
-        <label>Password</label>
+        <label>Passwort</label>
         <input type="password" name="password_1">
     </div>
     <div class="input-group">
-        <label>Confirm password</label>
+        <label>Passwort wiederholen</label>
         <input type="password" name="password_2">
     </div>
     <div class="input-group">
-        <button type="submit" class="button" name="reg_user">Register</button>
+        <button type="submit" class="button" name="reg_user">Registrieren</button>
     </div>
     <p>
-        Already a member? <a href="anmelden.php">Sign in</a>
+        Schon ein Mitglied?<a href="anmelden.php"> Jetzt einloggen</a>
     </p>
 </form>
 </body>
