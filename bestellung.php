@@ -69,7 +69,7 @@ if(!isset($_REQUEST['id'])){
 </nav>
 <div class="container">
     <h1>Bestellstatus</h1>
-    <p>Deine Bestellung ist bei uns eingetroffen. Die Bestellnummer lautet #<?php echo $_GET['id']; ?></p>
+    <p>Deine Bestellung ist bei uns eingetroffen. Wir senden Dir in Kürze die Bestätigung per Mail zu. Die Bestellnummer lautet #<?php echo $_GET['id']; ?></p>
 </div>
 
 <div class="col-xs-12" style="height:350px;"></div>
