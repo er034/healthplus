@@ -4,7 +4,6 @@ body {
     line-height: 1.5;
     padding:0;
     background: white;
-    background: url("bilder/registrieren_hintergrund.jpg");
     background-position: center;
     background-attachment: local;
     width: 100%;
@@ -15,14 +14,14 @@ body {
 .titel {
     font-family: "Azo Sans", "Arial", "Helvetica Neue";
     width: 30%;
-    margin: 200px auto 0px;
+    margin: 40px auto 0px;
     color: white;
-    background: #29ABE2;
+    background: #3388ad;
     text-align: center;
     border: 1px solid #B0C4DE;
     border-bottom: none;
     border-radius: 10px 10px 0px 0px;
-    padding: 20px;
+    padding: 10px;
 }
 
 /*Schriftart im gesamten Form sowie die Farbe der Schrift und Hintergrund */
@@ -57,7 +56,7 @@ form, .content {
     font-size: 16px;
     border-radius: 5px;
     border: 1px solid gray;
-    margin-bottom: 60px;
+    margin-bottom: 5px;
 }
 
 /*Style des Login-Buttons*/
@@ -65,7 +64,7 @@ form, .content {
     padding: 10px;
     font-size: 15px;
     color: white;
-    background: #29ABE2;
+    background: #3388ad;
     border: none;
     border-radius: 5px;
 }
@@ -90,47 +89,5 @@ form, .content {
     margin-bottom: 20px;
 }
 
-/* Footer-Eigenschaften im Browser*/
-footer {
-    background: #333333;
-    height: 60px;
-    top: 160px;
-    margin-right: -10px;
-    margin-left: -10px;
-    margin-bottom: 0px;
-    position: relative;
-}
 
-/* Zentrierung des Footers*/
-footer nav{
-    text-align: center;
-}
-
-/* Schriftfarbe des Footer Textes (ist hier weil sonst der Link als Linkfarbe angegeben wird), Full-Width bezieht sich auf die Browserfläche*/
-footer a{
-    color: white;
-    text-decoration:none;
-    text-transform: full-width;
-    font-size: 15px;
-    font-weight: lighter;
-}
-
-/* Ausrichtung des Footer Textes mit padding(Abstand oben,rechts,unten,links), Margin bedeutet der Abstand (oben/unten)*/
-footer ul{
-    margin: 0;
-    padding: 20px 0px 0px 0px;
-}
-
-/*Schirftart des Footers sowie die Ausrichtung innerhalb des Footers(inline=nebeneinadner)*/
-footer li{
-    font-family: "Azo Sans", "Arial", "Helvetica Neue";
-    text-align: center;
-    display: inline;
-    padding: 0px 50px 0px 50px;
-}
-/*Mouse-Over des Footer Textes */
-footer a:hover{
-    color: #29ABE2;
-    font-weight: lighter;
-}
 
