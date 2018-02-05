@@ -50,8 +50,11 @@ include 'db.php';
                 <a class="nav-link" id="blog" href="blog.php">BLOG</a>
             </li>
         </ul>
-        <div class="form-inline my-2 ml-3" href="warenkorb_uebersicht.php">
-            <a href="uebersicht.php"> <img src="bilder/suche_icon.png" width="25" height="25" alt="Suche"></a>
+        <div class="form-inline my-2 " >
+            <form action="suche.php" method="POST">
+                <input type="text" name="search" placeholder="Suche ein Produkt...">
+                <button type="submit" name="submit-search">Suchen</button>
+            </form>
         </div>
         <div class="form-inline my-2 my-lg-1 ml-3">
             <a href="warenkorb_uebersicht.php"> <img src="bilder/einkaufswagen_icon.png" width="25" height="25" alt="Einkaufswagen"></a>
@@ -62,12 +65,12 @@ include 'db.php';
 </div><div class="container mt-5 al">
     <div class="row justify-content-between" id="product-details">
         <div class="col-12 col-md-6">
-            <img class="w-100 " src="bilder/produkt_1.jpg">
+            <img class="w-100 " src="bilder/paket_01.jpg">
         </div>
         <div class="col-12 col-md-6 align-self-center">
             <?php
             //get rows query
-            $query = $db->query("SELECT * FROM products WHERE id=0");
+            $query = $db->query("SELECT * FROM products WHERE id=12");
             if($query->num_rows > 0){
                 while($row = $query->fetch_assoc()){
                     ?>

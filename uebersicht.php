@@ -34,17 +34,17 @@ include 'db.php';
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ANGEBOTE</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="angebote_abnehmpaket.php">Abnehm Paket</a>
-                    <a class="dropdown-item" href="angebote_veganpaket.php">Vegan Paket</a>
-                    <a class="dropdown-item" href="angebote_aufbaupaket.php">Aufbau Paket</a>
+                    <a class="dropdown-item" href="paket_01.php">Abnehm Paket</a>
+                    <a class="dropdown-item" href="paket_02.php">Vegan Paket</a>
+                    <a class="dropdown-item" href="paket_03.php">Aufbau Paket</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SALES</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="sales_proteinwaffeln.php">Protein Waffeln</a>
-                    <a class="dropdown-item" href="sales_proteincookies.php">Protein Cookies</a>
-                    <a class="dropdown-item" href="sales_proteinpudding.php">Protein Pudding</a>
+                    <a class="dropdown-item" href="sales_01.php">Protein Waffeln</a>
+                    <a class="dropdown-item" href="sales_02.php">Protein Cookies</a>
+                    <a class="dropdown-item" href="sales_03.php">Protein Pudding</a>
                 </div>
             </li>
             <li class="nav-item">
@@ -70,7 +70,7 @@ include 'db.php';
     <div id="products" class="row list-group">
         <div class="row justify-content-center">
             <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-                <a href="angebote_abnehmpaket.php">
+                <a href="paket_01.php">
                     <div class='card img-container'>
                         <img class='card-img-top' width='100%' src="bilder/produkt_1.jpg">
                         <div class='card-body'>
@@ -82,7 +82,7 @@ include 'db.php';
             </div>
 
             <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-                <a href="angebote_veganpaket.php">
+                <a href="produkt_02.php">
                     <div class='card img-container'>
                         <img class='card-img-top' width='100%' src="bilder/produkt_2.jpg">
                         <div class='card-body'>
@@ -94,7 +94,7 @@ include 'db.php';
             </div>
 
             <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-                <a href="angebote_aufbaupaket.php">
+                <a href="produkt_03.php">
                     <div class='card img-container'>
                         <img class='card-img-top' width='100%' src="bilder/produkt_3.jpg">
                         <div class='card-body'>
@@ -105,7 +105,7 @@ include 'db.php';
                 </a>
             </div>
             <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-                <a href="angebote_aufbaupaket.php">
+                <a href="produkt_04.php">
                     <div class='card img-container'>
                         <img class='card-img-top' width='100%' src="bilder/produkt_4.jpg">
                         <div class='card-body'>
@@ -116,7 +116,7 @@ include 'db.php';
                 </a>
             </div>
             <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-                <a href="angebote_aufbaupaket.php">
+                <a href="produkt_05.php">
                     <div class='card img-container'>
                         <img class='card-img-top' width='100%' src="bilder/produkt_5.jpg">
                         <div class='card-body'>
@@ -127,7 +127,7 @@ include 'db.php';
                 </a>
             </div>
             <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-                <a href="angebote_aufbaupaket.php">
+                <a href="produkt_06.php">
                     <div class='card img-container'>
                         <img class='card-img-top' width='100%' src="bilder/produkt_6.jpg">
                         <div class='card-body'>
@@ -138,7 +138,7 @@ include 'db.php';
                 </a>
             </div>
             <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-                <a href="angebote_aufbaupaket.php">
+                <a href="produkt_07.php">
                     <div class='card img-container'>
                         <img class='card-img-top' width='100%' src="bilder/produkt_7.jpg">
                         <div class='card-body'>
@@ -149,7 +149,7 @@ include 'db.php';
                 </a>
             </div>
             <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-                <a href="angebote_aufbaupaket.php">
+                <a href="produkt_08.php">
                     <div class='card img-container'>
                         <img class='card-img-top' width='100%' src="bilder/produkt_8.jpg">
                         <div class='card-body'>
@@ -160,7 +160,7 @@ include 'db.php';
                 </a>
             </div>
             <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-                <a href="angebote_aufbaupaket.php">
+                <a href="produkt_09.php">
                     <div class='card img-container'>
                         <img class='card-img-top' width='100%' src="bilder/produkt_9.jpg">
                         <div class='card-body'>
@@ -171,7 +171,7 @@ include 'db.php';
                 </a>
             </div>
             <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-                <a href="angebote_aufbaupaket.php">
+                <a href="sales_01.php">
                     <div class='card img-container'>
                         <img class='card-img-top' width='100%' src="bilder/sales_01.jpg">
                         <div class='card-body'>
@@ -182,7 +182,7 @@ include 'db.php';
                 </a>
             </div>
             <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-                <a href="angebote_aufbaupaket.php">
+                <a href="sales_02.php">
                     <div class='card img-container'>
                         <img class='card-img-top' width='100%' src="bilder/sales_02.jpg">
                         <div class='card-body'>
@@ -193,7 +193,7 @@ include 'db.php';
                 </a>
             </div>
             <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-                <a href="angebote_aufbaupaket.php">
+                <a href="sales_03.php">
                     <div class='card img-container'>
                         <img class='card-img-top' width='100%' src="bilder/sales_03.jpg">
                         <div class='card-body'>

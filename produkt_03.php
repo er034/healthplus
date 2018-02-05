@@ -62,12 +62,12 @@ include 'db.php';
 </div><div class="container mt-5 al">
     <div class="row justify-content-between" id="product-details">
         <div class="col-12 col-md-6">
-            <img class="w-100 " src="bilder/produkt_1.jpg">
+            <img class="w-100 " src="bilder/produkt_3.jpg">
         </div>
         <div class="col-12 col-md-6 align-self-center">
             <?php
             //get rows query
-            $query = $db->query("SELECT * FROM products WHERE id=0");
+            $query = $db->query("SELECT * FROM products WHERE id=2");
             if($query->num_rows > 0){
                 while($row = $query->fetch_assoc()){
                     ?>

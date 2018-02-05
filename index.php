@@ -29,17 +29,17 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ANGEBOTE</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="angebote_abnehmpaket.php">Abnehm Paket</a>
-                    <a class="dropdown-item" href="angebote_veganpaket.php">Vegan Paket</a>
-                    <a class="dropdown-item" href="angebote_aufbaupaket.php">Aufbau Paket</a>
+                    <a class="dropdown-item" href="paket_01.php">Abnehm Paket</a>
+                    <a class="dropdown-item" href="paket_02.php">Vegan Paket</a>
+                    <a class="dropdown-item" href="paket_03.php">Aufbau Paket</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SALES</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="sales_proteinwaffeln.php">Protein Waffeln</a>
-                    <a class="dropdown-item" href="sales_proteincookies.php">Protein Cookies</a>
-                    <a class="dropdown-item" href="sales_proteinpudding.php">Protein Pudding</a>
+                    <a class="dropdown-item" href="sales_01.php">Protein Waffeln</a>
+                    <a class="dropdown-item" href="sales_02.php">Protein Cookies</a>
+                    <a class="dropdown-item" href="sales_03.php">Protein Pudding</a>
                 </div>
             </li>
             <li class="nav-item">
@@ -66,16 +66,16 @@
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-                <a href="produkt.php"><img class="img-fluid w-100" src="bilder/slider_01.jpg" alt="Fit Whey">
+                <a href="produkt_01.php"><img class="img-fluid w-100" src="bilder/slider_01.jpg" alt="Fit Whey">
             </div>
             <div class="carousel-item">
-                <a href="produkt.php"><img class="img-fluid w-100" src="bilder/slider_02.jpg" alt="Pre Workout Booster">
+                <a href="produkt_02.php"><img class="img-fluid w-100" src="bilder/slider_02.jpg" alt="Pre Workout Booster">
             </div>
             <div class="carousel-item">
-                <a href="produkt.php"><img class="img-fluid w-100" src="bilder/slider_03.jpg" alt="Erdnussbutter">
+                <a href="produkt_03.php"><img class="img-fluid w-100" src="bilder/slider_03.jpg" alt="Erdnussbutter">
             </div>
             <div class="carousel-item">
-                <a href="produkt.php"><img class="img-fluid w-100" src="bilder/slider_04.jpg" alt="Protein Creme">
+                <a href="produkt_04.php"><img class="img-fluid w-100" src="bilder/slider_04.jpg" alt="Protein Creme">
             </div>
         </div>
         <a class="carousel-control-prev" href="#slider_home" role="button" data-slide="prev">
@@ -97,7 +97,7 @@
     </div>
 <div class="row justify-content-center">
     <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-        <a style="text-decoration: none" href="angebote_abnehmpaket.php">
+        <a style="text-decoration: none" href="paket_01.php">
             <div class='card img-container'>
                     <img class='card-img-top' width='100%' src="bilder/paket_01.jpg" alt="Abnehm-Paket">
                 <div class='card-body'>
@@ -110,7 +110,7 @@
     </div>
 
     <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-        <a style="text-decoration: none" href="angebote_veganpaket.php">
+        <a style="text-decoration: none" href="paket_02.php">
             <div class='card img-container'>
                     <img class='card-img-top' width='100%' src="bilder/paket_03.jpg" alt="Vegan-Paket">
                 <div class='card-body'>
@@ -123,7 +123,7 @@
     </div>
 
     <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-        <a style="text-decoration: none" href="angebote_aufbaupaket.php">
+        <a style="text-decoration: none" href="paket_03.php">
             <div class='card img-container'>
                 <img class='card-img-top' width='100%' src="bilder/paket_02.jpg" alt="Aufbau-Paket">
                 <div class='card-body'>
@@ -145,7 +145,7 @@
 
     <div class="row justify-content-center">
         <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-            <a style="text-decoration: none" href="sales_proteinwaffeln.php">
+            <a style="text-decoration: none" href="sales_01.php">
                 <div class='card img-container'>
                     <img class='card-img-top' width='100%' src="bilder/sales_01.jpg" alt="Protein Waffeln">
                     <div class='card-body'>
@@ -159,7 +159,7 @@
         </div>
 
         <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-            <a style="text-decoration: none" href="sales_proteincookies.php">
+            <a style="text-decoration: none" href="sales_02.php">
                 <div class='card img-container'>
                     <img class='card-img-top' width='100%' src="bilder/sales_02.jpg" alt="Protein Cookies">
                     <div class='card-body'>
@@ -173,7 +173,7 @@
         </div>
 
         <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-            <a style="text-decoration: none" href="sales_proteinpudding.php">
+            <a style="text-decoration: none" href="sales_03.php">
                 <div class='card img-container'>
                     <img class='card-img-top' width='100%' src="bilder/sales_03.jpg" alt="Protein Pudding">
                     <div class='card-body'>
