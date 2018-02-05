@@ -10,26 +10,26 @@
     <link rel="stylesheet" href="style_index.css">
     <link rel="stylesheet" href="style_login.css"
     <!-- Titel eines Dokumentes -->
-    <title>HEALTH PLUS | Home</title>
+    <title>HEALTH PLUS | Admin Anmelden</title>
 </head>
 
 <!-- Beginn Body-Bereich -->
 <body>
 <div class="titel text-center">
-    <h2>LOGIN</h2>
+    <h2>ANMELDEN</h2>
 </div>
 <form method="post" action="admin_anmelden.php">
     <?php include('errors.php'); ?>
     <div class="input-group">
-        <label>Username</label>
+        <label>Benutzername</label>
         <input type="text" name="username" >
     </div>
     <div class="input-group">
-        <label>Password</label>
+        <label>Passwort</label>
         <input type="password" name="password">
     </div>
     <div class="input-group">
-        <button type="submit" class="button" name="login_admin">Login</button>
+        <button type="submit" class="button" name="login_admin">ABMELDEN</button>
     </div>
 
 </form>
