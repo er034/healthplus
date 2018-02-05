@@ -1,11 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: cedric
- * Date: 05.02.18
- * Time: 15:32
- */
-?>
 <html lang="en">
 
 <head>
@@ -54,6 +46,9 @@
             <li class="nav-item">
                 <a class="nav-link" id="blog" href="blog.php">BLOG</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" id="blog" href="news.php">NEWS</a>
+            </li>
         </ul>
         <div class="form-inline my-2 ml-3" href="warenkorb_uebersicht.php">
             <a href="uebersicht.php"> <img src="bilder/suche_icon.png" width="25" height="25" alt="Suche"></a>
@@ -70,8 +65,6 @@
 <div align="center">
     <img src="bilder/balken.png" alt="Balken-Icon">
 </div>
-
-<a class="twitter-timeline" href="https://twitter.com/HealthPlusBlog?ref_src=twsrc%5Etfw">Tweets by HealthPlusBlog</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
