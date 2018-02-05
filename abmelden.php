@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style_index.css">
     <!-- Titel eines Dokumentes -->
-    <title>HEALTH PLUS | Home</title>
+    <title>HEALTH PLUS | Goodbye</title>
 </head>
 
 <!-- Beginn Body-Bereich -->
@@ -66,7 +66,6 @@
 </nav>
 <body>
 <div class="text-center mt-5" id="abgemeldet">
-<div>
 <h1>BIS ZUM NÄCHTSEN MAL!</h1>
     <a href="index.php">ZURÜCK ZUM SHOP</a>
 </div>
@@ -92,5 +91,21 @@
     // Zum Schluß, löschen der Session.
     session_destroy();
     ?>
+    <div class="col-xs-12" style="height:450px;"></div>
+
+    <footer>
+        <nav class="footernav footernav-expand-lg footernav-light form-inline mx-auto mt-5">
+            <div class="footer mx-auto text-center" id="footeritem">
+                <a href="impressum.php">IMPRESSUM</a>
+                <a href="datenschutz.php">DATENSCHUTZ</a>
+                <a href="kontakt.php">KONTAKT</a><br>
+            </div>
+            <!-- Social Media Buttons-->
+            <a href="https://www.facebook.com/Healthplusblog-126934821455800/" class="fa fa-facebook mr-3"></a>
+            <a href="https://twitter.com/HealthPlusBlog" class="fa fa-twitter mr-3"></a>
+            <a href="https://www.instagram.com/healthplusblog/" class="fa fa-instagram mr-5"></a>
+
+        </nav>
+    </footer>
 </body>
 </html>
