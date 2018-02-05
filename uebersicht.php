@@ -70,7 +70,7 @@ include 'db.php';
     <div id="products" class="row list-group">
         <div class="row justify-content-center">
             <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-                <a href="paket_01.php">
+                <a href="produkt_01.php">
                     <div class='card img-container'>
                         <img class='card-img-top' width='100%' src="bilder/produkt_1.jpg">
                         <div class='card-body'>
