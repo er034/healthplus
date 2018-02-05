@@ -69,7 +69,7 @@ include 'db.php';
             <?php include 'db.php';
             session_start();
             if (isset($_SESSION['username'])) : ?>
-                <a><?php echo $_SESSION['username']; ?> &nbsp; <a href="abmelden.php" style="color: #29ABE2; text-decoration: none">ABMELDEN</a> </a>
+                <a><?php echo $_SESSION['username']; ?> &nbsp; <a href="abmelden.php" style="color: #29ABE2; text-decoration: none">LOGOUT</a> </a>
             <?php endif ?>
         </div>
     </div>
@@ -84,7 +84,7 @@ include 'db.php';
 </div><div class="container mt-5 al">
     <div class="row justify-content-between" id="product-details">
         <div class="col-12 col-md-6">
-            <img class="w-100 " src="bilder/">
+            <img class="w-100 " src="bilder/sales_03.jpg">
         </div>
         <div class="col-12 col-md-6 align-self-center">
             <?php
