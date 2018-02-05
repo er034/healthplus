@@ -29,7 +29,7 @@
         <input type="password" name="password">
     </div>
     <div class="input-group">
-        <button type="submit" class="button" name="login_admin">ABMELDEN</button>
+        <button type="submit" class="button" name="login_admin">LOGOUT</button>
     </div>
 
 </form>
