@@ -7,6 +7,7 @@
  */
 ?>
 <html lang="en">
+
 <head>
     <!-- Informationen über zusätzliche Angaben -->
     <meta charset="utf-8">
