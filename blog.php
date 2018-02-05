@@ -131,7 +131,6 @@
 
         </div>
     </div>
-
     <div class="col-xs-12" style="height:130px;"></div>
 
     <h2 class="container">CHIA SMOOTHIE WITH STRAWBERRY TOPPING</h2>
