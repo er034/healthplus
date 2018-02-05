@@ -13,26 +13,26 @@
     <title>HEALTH PLUS | Home</title>
 </head>
 
-<!-- Beginn Body-Bereich -->
-<body>
-<div class="titel text-center">
-    <h2>LOGIN</h2>
+<div class="titel">
+    <h2>REGISTRIEREN</h2>
 </div>
-<form method="post" action="admin_anmelden.php">
-    <?php include('errors.php'); ?>
+
+<form method="post" action="admin_registrieren.php">
+    <?php include_once "errors.php"?>
     <div class="input-group">
-        <label>Username</label>
-        <input type="text" name="username" >
+        <label>Benutzername</label>
+        <input type="text" name="username" value="<?php  $username; ?>">
     </div>
     <div class="input-group">
         <label>Password</label>
-        <input type="password" name="password">
+        <input type="password" name="password_1">
     </div>
     <div class="input-group">
-        <button type="submit" class="button" name="login_admin">Login</button>
+        <label>Confirm password</label>
+        <input type="password" name="password_2">
     </div>
-
+    <div class="input-group">
+        <button type="submit" class="button" name="reg_admin">Register</button>
+    </div>
 </form>
-<div class="col-xs-12" style="height:160px;"></div>
 </body>
-</html>

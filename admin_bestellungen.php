@@ -1,3 +1,7 @@
+<?php  include('admin_funktion_bestellungen.php'); ?>
+<?php $results = mysqli_query($db, "SELECT * FROM orders"); ?>
+
+<link rel="stylesheet" type="text/css" href="style_admin_listen.css">
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,9 +13,7 @@
     <link rel="stylesheet" href="style_index.css">
     <!-- Titel eines Dokumentes -->
     <title>ADMIN BEREICH - HEALTHPLUS</title>
-
-    <!-- Beginn Body-Bereich -->
-<body>
+</head>
 <nav class="navbar navbar-expand-lg navbar-light ">
     <a class="navbar-brand" href="index.php">
         <img src="bilder/logo_admin.png" width="250" height="21" alt="HealthPlus">
@@ -28,12 +30,17 @@
             <li class="nav-item">
                 <a class="nav-link" id="bestellungen" href="admin_bestellungen.php">BESTELLUNGEN</a>
             </li>
+            <li class="form-inline my-2 my-lg-1 ml-3 mt-5" >
+                <?php include 'db.php';
+                session_start();
+                if (isset($_SESSION['username'])) : ?>
+                    <a>Welcome <?php echo $_SESSION['username']; ?> &nbsp; <a href="admin_anmelden.php" style="color: #29ABE2; text-decoration: none">LOGOUT</a> </a>
+                <?php endif ?>
+            </li>
         </ul>
     </div>
 </nav>
 
-<?php  include('admin_funktion_bestellungen.php'); ?>
-<?php $results = mysqli_query($db, "SELECT * FROM orders"); ?>
 <html>
 <title>Adminbereich | Bestellungen</title>
 <link rel="stylesheet" type="text/css" href="style_admin_listen.css">
