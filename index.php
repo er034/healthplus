@@ -66,16 +66,16 @@
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-                <a href="produkt.php"><img class="img-fluid w-100" src="bilder/slider_01.jpg" alt="Produkt 1">
+                <a href="produkt.php"><img class="img-fluid w-100" src="bilder/slider_01.jpg" alt="Fit Whey">
             </div>
             <div class="carousel-item">
-                <a href="produkt.php"><img class="img-fluid w-100" src="bilder/slider_02.jpg" alt="Produkt 2">
+                <a href="produkt.php"><img class="img-fluid w-100" src="bilder/slider_02.jpg" alt="Pre Workout Booster">
             </div>
             <div class="carousel-item">
-                <a href="produkt.php"><img class="img-fluid w-100" src="bilder/slider_03.jpg" alt="Produkt 3">
+                <a href="produkt.php"><img class="img-fluid w-100" src="bilder/slider_03.jpg" alt="Erdnussbutter">
             </div>
             <div class="carousel-item">
-                <a href="produkt.php"><img class="img-fluid w-100" src="bilder/slider_04.jpg" alt="Produkt 4">
+                <a href="produkt.php"><img class="img-fluid w-100" src="bilder/slider_04.jpg" alt="Protein Creme">
             </div>
         </div>
         <a class="carousel-control-prev" href="#slider_home" role="button" data-slide="prev">
@@ -89,7 +89,9 @@
     </div>
 
 
-<div class="mt-5 text-center Oberueberschirft"><h5>ANGEBOTE</h5></div>
+<div class="mt-5 text-center Oberueberschirft">
+    <h5>ANGEBOTE</h5>
+</div>
     <div align="center">
         <img src="bilder/balken.png" alt="Balken-Icon">
     </div>
@@ -134,11 +136,13 @@
     </div>
 </div>
 
-
-    <div class="mt-5 text-center Oberueberschirft"><h5>SALES</h5></div>
+    <div class="mt-5 text-center Oberueberschirft">
+        <h5>SALES</h5>
+    </div>
         <div align="center">
             <img src="bilder/balken.png" alt="Balken-Icon">
         </div>
+
     <div class="row justify-content-center">
         <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
             <a href="sales_proteinwaffeln.php">
@@ -194,7 +198,7 @@
 
 <footer>
     <nav class="footernav footernav-expand-lg footernav-light form-inline mx-auto mt-5">
-        <div class="footer mx-auto text-center " id="footeritem">
+        <div class="footer mx-auto text-center" id="footeritem">
             <a href="impressum.php">IMPRESSUM</a>
             <a href="datenschutz.php">DATENSCHUTZ</a>
             <a href="kontakt.php">KONTAKT</a><br>
