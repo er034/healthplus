@@ -69,7 +69,7 @@ include 'db.php';
             <?php include 'db.php';
             session_start();
             if (isset($_SESSION['username'])) : ?>
-                <a>Welcome <?php echo $_SESSION['username']; ?> &nbsp; <a href="abmelden.php" style="color: #29ABE2; text-decoration: none">LOGOUT</a> </a>
+                <a>Welcome <?php echo $_SESSION['username']; ?> &nbsp; <a href="abmelden.php" style="color: #29ABE2; text-decoration: none">ABMELDEN</a> </a>
             <?php endif ?>
         </div>
     </div>
