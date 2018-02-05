@@ -59,8 +59,16 @@ include 'db.php'?>
         </div>
     </div>
 </nav>
-<div class="container mt-5">
-    <a class="mt-5 h4">DEINE ERGEBNISSE</a><br><br>
+
+<div class="page-header mt-5 text-center">
+    <h5>DEINE SUCHERGEBNISSE</h5>
+</div>
+<div align="center">
+    <img src="bilder/balken.png" alt="Balken-Icon">
+</div>
+
+
+
 <?php
 
 if (isset($_POST['submit-search'])){
