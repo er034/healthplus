@@ -15,41 +15,10 @@ if($cart->total_items() <= 0){
     header("Location: uebersicht.php");
 }
 // set customer ID in session
-$id = "id";
-$email    = "email";
-$firstname    = "firstname";
-$lastname    = "lastname";
-$street    = "street";
-$housenumber   = "housenumber";
-$postcode    = "postcode";
-$city    = "city";
-
-        if (isset($_GET['logout'])) {
-            session_destroy();
-            unset($_SESSION['username']);
-            header("location:/~er034/abmelden.php");
-        }
-        ?>
-<?php if (isset($_SESSION['success'])) : ?>
-    <div class="error success" >
-        <h3>
-            <?php
-            echo $_SESSION['success'];
-            unset($_SESSION['success']);
-            ?>
-        </h3>
-    </div>
-<?php endif ?>
-
-<!-- logged in user information -->
-<?php  if (isset($_SESSION['username'])) : ?>
-    <p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
-    <p> <a href="index_alt.php?logout='1'" style="color: red;">logout</a> </p>
-<?php endif ?>
-
-<?php
-$results = mysqli_query($db, "SELECT * FROM users"); ?>
-
+$_SESSION['sessCustomerID'] = $_GET['id'];
+$query = $db->query("SELECT * FROM users WHERE id = ".$_SESSION['sessCustomerID']);
+$custRow = $query->fetch_assoc();
+?>
 <!doctype html>
 <html lang="en">
 <head>
