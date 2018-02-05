@@ -78,21 +78,18 @@
             <li data-slide-to="1" class="active"></li>
             <li data-slide-to="2"></li>
             <li data-slide-to="3"></li>
-            <li data-slide-to="4"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-                <a href="produkt_01.php"><img class="img-fluid w-100" src="bilder/slider_01.jpg" alt="Fit Whey">
+                <a href=""><img class="img-fluid w-100" src="bilder/Slider_Blog_01.jpg" alt="Fit Whey">
             </div>
             <div class="carousel-item">
-                <a href="produkt_02.php"><img class="img-fluid w-100" src="bilder/slider_02.jpg" alt="Pre Workout Booster">
+                <a href=""><img class="img-fluid w-100" src="bilder/Slider_Blog_02.jpg" alt="Pre Workout Booster">
             </div>
             <div class="carousel-item">
-                <a href="produkt_03.php"><img class="img-fluid w-100" src="bilder/slider_03.jpg" alt="Erdnussbutter">
+                <a href="produkt_03.php"><img class="img-fluid w-100" src="bilder/Slider_Blog_03.jpg" alt="Erdnussbutter">
             </div>
-            <div class="carousel-item">
-                <a href="produkt_04.php"><img class="img-fluid w-100" src="bilder/slider_04.jpg" alt="Protein Creme">
-            </div>
+
         </div>
         <a class="carousel-control-prev" href="#slider_home" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
