@@ -23,16 +23,8 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="uebersicht.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRODUKTE</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Produkt 1</a>
-                    <a class="dropdown-item" href="#">Produkt 2</a>
-                    <a class="dropdown-item" href="#">Produkt 3</a>
-                    <a class="dropdown-item" href="#">Produkt 4</a>
-                    <a class="dropdown-item" href="#">Produkt 5</a>
-                    <a class="dropdown-item" href="#">Produkt 6</a>
-                </div>
+            <li class="nav-item">
+                <a class="nav-link" id="blog" href="uebersicht.php">PRODUKTE</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ANGEBOTE</a>
@@ -64,7 +56,7 @@
 </nav>
 
 
-<div class="container">
+<div class="slider">
     <div id="slider_home" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-slide-to="1" class="active"></li>
