@@ -83,6 +83,7 @@ include 'db.php';
 </div>
 
 <body>
+
 </div><div class="container mt-5 al">
     <div class="row justify-content-between" id="product-details">
         <div class="col-12 col-md-6">
@@ -114,7 +115,8 @@ include 'db.php';
             <?php } ?>
         </div>
     </div>
-    </div></div>
+    </div>
+</div>
 
 <div class="col-xs-12" style="height:130px;"></div>
 

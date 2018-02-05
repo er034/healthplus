@@ -66,7 +66,7 @@ include 'db.php';
         </div>
     </div>
 </nav>
-<div class="mt-5 text-center Oberueberschirft">
+<div class="mt-5 text-center schriftzug">
     <h5>ALLE PRODUKTE</h5>
 </div>
 <div align="center">

@@ -92,14 +92,14 @@ $cart = new Cart;
     </div>
 </nav>
 <div class="container">
-    <h1>Shopping Cart</h1>
+    <h1>Einkaufswagen</h1>
     <table class="table">
         <thead>
         <tr>
-            <th>Product</th>
-            <th>Price</th>
-            <th>Quantity</th>
-            <th>Subtotal</th>
+            <th>Produkt</th>
+            <th>Preis</th>
+            <th>Menge</th>
+            <th>Zwischensumme</th>
             <th>&nbsp;</th>
         </tr>
         </thead>
@@ -120,16 +120,16 @@ $cart = new Cart;
                     </td>
                 </tr>
             <?php } }else{ ?>
-        <tr><td colspan="5"><p>Es befinden sich keine Produkte im Einkaufswagen...</p></td>
+        <tr><td colspan="5"><p>Dein Einkaufswagen ist leer...</p></td>
             <?php } ?>
         </tbody>
         <tfoot>
         <tr>
-            <td><a href="uebersicht.php" class="btn btn-outline-info"><i class="glyphicon glyphicon-menu-left"></i> Continue Shopping</a></td>
+            <td><a href="uebersicht.php" class="btn btn-outline-info"><i class="glyphicon glyphicon-menu-left"></i>Einkaufen fortfahren</a></td>
             <td colspan="2"></td>
             <?php if($cart->total_items() > 0){ ?>
-                <td class="text-center"><strong>Total <?php echo ''.$cart->total().' Euro'; ?></strong></td>
-                <td><a href="checkout.php" class="btn btn-success btn-outline-secondary">Checkout <i class="glyphicon glyphicon-menu-right"></i></a></td>
+                <td class="text-center"><strong>Gesamt<?php echo ''.$cart->total().' Euro'; ?></strong></td>
+                <td><a href="checkout.php" class="btn btn-success btn-outline-secondary">Kasse<i class="glyphicon glyphicon-menu-right"></i></a></td>
             <?php } ?>
         </tr>
         </tfoot>
