@@ -60,7 +60,7 @@ include 'db.php';
 </nav>
 
 <div class="page-header mt-5 text-center">
-    <h5>ANGEBOTE</h5>
+    <h5>ANGEBOT</h5>
 </div>
 <div align="center">
     <img src="bilder/balken.png" alt="Balken-Icon">
