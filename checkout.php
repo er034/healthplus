@@ -57,7 +57,7 @@ $results = mysqli_query($db, "SELECT * FROM users"); ?>
     <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style_index.css">
     <!-- Titel eines Dokumentes -->
-    <title>HEALTH PLUS</title>
+    <title>HEALTH PLUS | Kasse</title>
 </head>
 
 <!-- Beginn Body-Bereich -->
@@ -120,14 +120,14 @@ $results = mysqli_query($db, "SELECT * FROM users"); ?>
 </nav>
 <body>
 <div class="container mt-5">
-    <h1>Order Preview</h1>
+    <h1>VORSCHAU</h1>
     <table class="table">
         <thead>
         <tr>
-            <th>Product</th>
-            <th>Price</th>
-            <th>Quantity</th>
-            <th>Subtotal</th>
+            <th>Produkt</th>
+            <th>Preis</th>
+            <th>Menge</th>
+            <th>Zwischensumme</th>
         </tr>
         </thead>
         <tbody>
@@ -144,21 +144,21 @@ $results = mysqli_query($db, "SELECT * FROM users"); ?>
                     <td><?php echo '$'.$item["subtotal"].' USD'; ?></td>
                 </tr>
             <?php } }else{ ?>
-        <tr><td colspan="4"><p>No items in your cart......</p></td>
+        <tr><td colspan="4"><p>In deinem Einkaufswagen befinden sich keine Artikel...</p></td>
             <?php } ?>
         </tbody>
         <tfoot>
         <tr>
             <td colspan="3"></td>
             <?php if($cart->total_items() > 0){ ?>
-                <td class="text-center"><strong>Total <?php echo '$'.$cart->total().' EURO'; ?></strong></td>
+                <td class="text-center"><strong>Gesamt<?php echo '$'.$cart->total().' EURO'; ?></strong></td>
             <?php } ?>
         </tr>
         </tfoot>
     </table>
     <div class=" shipAddr card col-12">
         <div class="card-body text-lg-left row">
-            <h4 class="card-title col-12">Shipping Details</h4>
+            <h4 class="card-title col-12">VERSANDDETAILS</h4>
         <?php while ($row = mysqli_fetch_array($results)) { ?>
         <div class="ml-3">
             <p><?php echo $row['firstname']; ?><br>
@@ -174,7 +174,7 @@ $results = mysqli_query($db, "SELECT * FROM users"); ?>
     </div>
     <div class="card col-12 mt-3">
         <div class="card-body row">
-            <h4 class="card-title ml-3">Distribution Options</h4>
+            <h4 class="card-title ml-3">VERSANDOPTIONEN</h4>
 
             <div class="col-12">
                 <div class="mt-3 row justify-content-around">
@@ -182,8 +182,8 @@ $results = mysqli_query($db, "SELECT * FROM users"); ?>
                         <p class="h6">KOSTENLOS</p>
                     </div>
                     <div class="col-12 order-1 col-sm-8 order-sm-2">
-                        <div class="font-weight-bold">Standard Delivery</div>
-                        <div class="mt-0 mt-sm-3 mb-3 mb-sm-0 text-muted">Delivery in 3-4 workdays</div>
+                        <div class="font-weight-bold">Standard Lieferung</div>
+                        <div class="mt-0 mt-sm-3 mb-3 mb-sm-0 text-muted">Lieferung in 3-4 Werktagen</div>
                     </div>
                     <div class="my-auto col-3 order-3 col-sm-1 order-sm-3">
                         <input type="radio" name="distributionType">
@@ -194,11 +194,11 @@ $results = mysqli_query($db, "SELECT * FROM users"); ?>
 
                 <div class="mt-5 row justify-content-around">
                     <div class="col-9 order-2 col-sm-3 oder-sm-1">
-                        <p class="h6">5,00 €</p>
+                        <p class="h6">6,95€</p>
                     </div>
                     <div class="col-12 order-1 col-sm-8 order-sm-2">
                         <div class="font-weight-bold">Express</div>
-                        <div class="mt-0 mt-sm-3 mb-3 mb-sm-0 text-muted">Delivery in 2 workdays</div>
+                        <div class="mt-0 mt-sm-3 mb-3 mb-sm-0 text-muted">Lieferung in 3-4 Werktagen</div>
                     </div>
                     <div class="my-auto col-3 order-3 col-sm-1 order-sm-3">
                         <input type="radio" name="distributionType">
@@ -209,8 +209,8 @@ $results = mysqli_query($db, "SELECT * FROM users"); ?>
         </div>
     </div>
     <div class="footBtn mt-3 mb-5 align-content-lg-center">
-        <a href="uebersicht.php" class="btn btn-outline-info"><i class="glyphicon glyphicon-menu-left"></i> Continue Shopping</a>
-        <a href="warenkorb_funktion.php?action=placeOrder" class="btn btn-success orderBtn">Place Order <i class="glyphicon glyphicon-menu-right"></i></a>
+        <a href="uebersicht.php" class="btn btn-outline-info"><i class="glyphicon glyphicon-menu-left"></i>Einkaufen fortfahren</a>
+        <a href="warenkorb_funktion.php?action=placeOrder" class="btn btn-success orderBtn">Bestellung aufgeben <i class="glyphicon glyphicon-menu-right"></i></a>
     </div>
 </div>
 </body>
