@@ -1,6 +1,7 @@
 <?php  include('admin_funktion_bestellungen.php'); ?>
 <?php $results = mysqli_query($db, "SELECT * FROM orders"); ?>
 <html>
+<title>Adminbereich | Bestellungen</title>
 <link rel="stylesheet" type="text/css" href="style_admin_listen.css">
 
 <?php $results = mysqli_query($db, "SELECT * FROM orders"); ?>
