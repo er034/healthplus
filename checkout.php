@@ -113,7 +113,7 @@ $results = mysqli_query($db, "SELECT * FROM users"); ?>
         <div class="form-inline my-2 my-lg-1 ml-3 mt-5" >
             <?php include 'db.php';
             if (isset($_SESSION['username'])) : ?>
-                <a>Welcome <?php echo $_SESSION['username']; ?> &nbsp; <a href="abmelden.php" style="color: #29ABE2; text-decoration: none">LOGOUT</a> </a>
+                <a>Welcome <?php echo $_SESSION['username']; ?> &nbsp; <a href="abmelden.php" style="color: #29ABE2; text-decoration: none">ABMELDEN</a> </a>
             <?php endif ?>
         </div>
     </div>
