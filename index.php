@@ -165,7 +165,7 @@
                     <img class='card-img-top' width='100%' src="bilder/sales_02.jpg" alt="Protein Cookies">
                     <div class='card-body'>
                         <h5>PROTEIN COOKIES</h5>
-                        <h6>Ein leckerer proteinreicher Cookie-Snack.</h6>
+                        <h6>Proteinreicher Cookie-Snack.</h6>
                         <p class='text-muted'><h4>0.99€</h4></p>
                         <p><s>2.99€</s></p>
                     </div>
