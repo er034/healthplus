@@ -196,7 +196,6 @@ $results = mysqli_query($db, "SELECT * FROM users"); ?>
                     </div>
                     <hr>
                 </div>
-
             </div>
         </div>
     </div>
