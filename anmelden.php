@@ -74,20 +74,20 @@
 </nav>
 
 <div class="titel text-center">
-    <h2>LOGIN</h2>
+    <h2>ANMELDEN</h2>
 </div>
 <form method="post" action="anmelden.php">
     <?php include('errors.php'); ?>
     <div class="input-group">
-        <label>Username</label>
+        <label>Benutzername</label>
         <input type="text" name="username" >
     </div>
     <div class="input-group">
-        <label>Password</label>
+        <label>Passwort</label>
         <input type="password" name="password">
     </div>
     <div class="input-group">
-        <button type="submit" class="button" name="login_user">Login</button>
+        <button type="submit" class="button" name="login_user">Einloggen</button>
     </div>
     <p>
         Noch kein Mitglied? <a href="registrieren.php">Jetzt registrieren</a>
