@@ -29,17 +29,17 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ANGEBOTE</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="angebote_abnehmpaket.php">Abnehm Paket</a>
-                    <a class="dropdown-item" href="angebote_veganpaket.php">Vegan Paket</a>
-                    <a class="dropdown-item" href="angebote_aufbaupaket.php">Aufbau Paket</a>
+                    <a class="dropdown-item" href="paket_01.php">Abnehm Paket</a>
+                    <a class="dropdown-item" href="paket_02.php">Vegan Paket</a>
+                    <a class="dropdown-item" href="paket_03.php">Aufbau Paket</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SALES</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="sales_proteinwaffeln.php">Protein Waffeln</a>
-                    <a class="dropdown-item" href="sales_proteincookies.php">Protein Cookies</a>
-                    <a class="dropdown-item" href="sales_proteinpudding.php">Protein Pudding</a>
+                    <a class="dropdown-item" href="sales_01.php">Protein Waffeln</a>
+                    <a class="dropdown-item" href="sales_02.php">Protein Cookies</a>
+                    <a class="dropdown-item" href="sales_03.php">Protein Pudding</a>
                 </div>
             </li>
             <li class="nav-item">
@@ -54,6 +54,19 @@
         </div>
         <div class="form-inline my-2 my-lg-1 ml-3">
             <a href="warenkorb_uebersicht.php"> <img src="bilder/einkaufswagen_icon.png" width="25" height="25" alt="Einkaufswagen"></a>
+        </div>
+        <div class="form-inline my-2 my-lg-1 ml-3">
+            <a class="nav-link h-75" id="anmelden" href="anmelden.php">ANMELDEN</a>
+        </div>
+        <div class="form-inline my-2 my-lg-1 ml-1">
+            <a class="nav-link h-75" id="registrieren" href="registrieren.php">REGISTRIEREN</a>
+        </div>
+        <div class="form-inline my-2 my-lg-1 ml-3 mt-5" >
+            <?php include 'db.php';
+            session_start();
+            if (isset($_SESSION['username'])) : ?>
+                <a><?php echo $_SESSION['username']; ?> &nbsp; <a href="abmelden.php" style="color: #29ABE2; text-decoration: none">LOGOUT</a> </a>
+            <?php endif ?>
         </div>
     </div>
 </nav>
