@@ -59,7 +59,7 @@ include 'db.php';
     </div>
 </nav>
 <body>
-</div><div class="container">
+</div><div class="container mt-5">
     <div class="row justify-content-between" id="product-details">
         <div class="col-12 col-md-6">
             <img class="w-100 " src="bilder/produkt_1.jpg">
@@ -71,21 +71,19 @@ include 'db.php';
             if($query->num_rows > 0){
                 while($row = $query->fetch_assoc()){
                     ?>
-                    <div class="item col-lg-4">
-                        <div class="thumbnail">
-                            <div class="caption">
-                                <h4 class="list-group-item-heading"><?php echo $row["name"]; ?></h4>
+                    <div class="col-12 col-md-6 align-self-center">
+                            <div  class="row justify-content-start">
+                                <h2 class="ol-12 h2"><?php echo $row["name"]; ?></h2>
                                 <p class="list-group-item-text"><?php echo $row["description"]; ?></p>
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <p class="lead"><?php echo '$'.$row["price"].' USD'; ?></p>
+                                    <div class="col-md-6 align-content-center">
+                                        <p class="lead"><?php echo '€'.$row["price"].''; ?></p>
                                     </div>
-                                    <div class="col-md-6">
-                                        <a class="btn btn-success" href="warenkorb_funktion.php?action=addToCart&id=<?php echo $row["id"]; ?>">Add to cart</a>
+                                    <div class="col-md-6 align-center">
+                                        <a class="btn btn-outline-info" href="warenkorb_funktion.php?action=addToCart&id=<?php echo $row["id"]; ?>">In den Warenkorb</a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 <?php } }else{ ?>
                 <p>Product(s) not found.....</p>

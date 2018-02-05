@@ -97,7 +97,7 @@
     </div>
 <div class="row justify-content-center">
     <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-        <a href="angebote_abnehmpaket.php">
+        <a style="text-decoration: none" href="angebote_abnehmpaket.php">
             <div class='card img-container'>
                     <img class='card-img-top' width='100%' src="bilder/paket_01.jpg" alt="Abnehm-Paket">
                 <div class='card-body'>
@@ -110,7 +110,7 @@
     </div>
 
     <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-        <a href="angebote_veganpaket.php">
+        <a style="text-decoration: none" href="angebote_veganpaket.php">
             <div class='card img-container'>
                     <img class='card-img-top' width='100%' src="bilder/paket_03.jpg" alt="Vegan-Paket">
                 <div class='card-body'>
@@ -123,7 +123,7 @@
     </div>
 
     <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-        <a href="angebote_aufbaupaket.php">
+        <a style="text-decoration: none" href="angebote_aufbaupaket.php">
             <div class='card img-container'>
                 <img class='card-img-top' width='100%' src="bilder/paket_02.jpg" alt="Aufbau-Paket">
                 <div class='card-body'>
@@ -145,7 +145,7 @@
 
     <div class="row justify-content-center">
         <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-            <a href="sales_proteinwaffeln.php">
+            <a style="text-decoration: none" href="sales_proteinwaffeln.php">
                 <div class='card img-container'>
                     <img class='card-img-top' width='100%' src="bilder/sales_01.jpg" alt="Protein Waffeln">
                     <div class='card-body'>
@@ -159,7 +159,7 @@
         </div>
 
         <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-            <a href="sales_proteincookies.php">
+            <a style="text-decoration: none" href="sales_proteincookies.php">
                 <div class='card img-container'>
                     <img class='card-img-top' width='100%' src="bilder/sales_02.jpg" alt="Protein Cookies">
                     <div class='card-body'>
@@ -173,7 +173,7 @@
         </div>
 
         <div class='new-release mt-4 col-12 col-sm-6 col-lg-3'>
-            <a href="sales_proteinpudding.php">
+            <a style="text-decoration: none" href="sales_proteinpudding.php">
                 <div class='card img-container'>
                     <img class='card-img-top' width='100%' src="bilder/sales_03.jpg" alt="Protein Pudding">
                     <div class='card-body'>
