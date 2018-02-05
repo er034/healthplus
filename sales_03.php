@@ -70,7 +70,7 @@ include 'db.php';
             <?php include 'db.php';
             session_start();
             if (isset($_SESSION['username'])) : ?>
-                <a><?php echo $_SESSION['username']; ?> &nbsp; <a href="abmelden.php" style="color: #29ABE2; text-decoration: none">LOGOUT</a> </a>
+                <a><?php echo $_SESSION['username']; ?> &nbsp; <a href="abmelden.php" style="color: #29ABE2; text-decoration: none">ABMELDEN</a> </a>
             <?php endif ?>
         </div>
     </div>
@@ -110,7 +110,7 @@ include 'db.php';
                             </div>
                     </div>
                 <?php } }else{ ?>
-                <p>Product(s) not found.....</p>
+                <p>Artikel nicht gefunden....</p>
             <?php } ?>
         </div>
     </div>
