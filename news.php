@@ -93,9 +93,9 @@
             <a href="kontakt.php">KONTAKT</a><br>
         </div>
         <!-- Social Media Buttons-->
-        <a href="#" class="fa fa-facebook mr-3"></a>
-        <a href="#" class="fa fa-twitter mr-3"></a>
-        <a href="#" class="fa fa-instagram mr-5"></a>
+        <a href="https://www.facebook.com/Healthplusblog-126934821455800/" class="fa fa-facebook mr-3"></a>
+        <a href="https://twitter.com/HealthPlusBlog" class="fa fa-twitter mr-3"></a>
+        <a href="https://www.instagram.com/healthplusblog/" class="fa fa-instagram mr-5"></a>
 
     </nav>
 </footer>

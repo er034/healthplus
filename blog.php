@@ -106,7 +106,7 @@
 
     <div class="page-header mt-5 text-center">
     <h5>BLOG</h5>
-        <div align="center">
+    <div align="center">
             <img src="bilder/balken.png" alt="Balken-Icon">
         </div>
     </div>
@@ -114,23 +114,66 @@
     <div class="col-xs-12" style="height:130px;"></div>
 
     <h2 class="container">RASPBERRY MANGO SMOOTHIE BOWL</h2>
-    <img src=""
-    <div class="container mt-5 ">
+    <div class="container">
+    <img src="bilder/Banner_01.jpg" width="" height="">
+    </div>
+    <div class="container mt-2 ">
         <div class="wpb_wrapper">
-            <p><strong>Ingredients</strong></p>
+            <p><strong>ZUTATEN</strong></p>
             <ul>
-                <li>1 scoop Women`s Best Slim Body Shake</li>
-                <li>1 cup soy milk</li>
-                <li>1 cup frozen mango</li>
-                <li>1 cup frozen raspberries</li>
-                <li>1/4 cup raw pumpkin seeds</li>
+                <li>1 scoop Health Plus Slim Body Shake</li>
+                <li>1 cup Soja Milch</li>
+                <li>1 cup gefroren Mango</li>
+                <li>1 cup gefroren Himbeeren</li>
             </ul>
-            <p>&nbsp;</p>
-            <p><strong>Directions</strong></p>
-            <p>Blend all ingredients together and add toppings: ½ cup granola, ½ kiwi, seed of your choice, blueberries</p>
+            <p><strong>ZUBEREITUNG</strong></p>
+            <p>Alle Zutaten zusammengeben und mit Toppings füllen: ½ Tasse Müsli, ½ Kiwi, Samen Ihrer Wahl, Blaubeeren</p>
 
         </div>
     </div>
+    <div class="col-xs-12" style="height:130px;"></div>
+
+    <h2 class="container">CHIA SMOOTHIE WITH STRAWBERRY TOPPING</h2>
+    <div class="container">
+    <img src="bilder/Banner_02.jpg" width="" height="">
+    </div>
+    <div class="container mt-2 ">
+    <div class="wpb_wrapper">
+        <p><strong>ZUTATEN</strong></p>
+        <ul>
+            <li>2 gefrorene Bananen</li>
+            <li>1/2 Tasse gefrorene Erdbeeren</li>
+            <li>100ml Kokosnusswasser</li>
+            <li>1 Tasse gefroren Himbeeren</li>
+        </ul>
+        <p><strong>ZUBEREITUNG</strong></p>
+        <p>Lagern Sie den Pudding über Nacht im Kühlschrank. Den Smoothie mixen und auf den Chia Pudding mit frischen Feigen servieren.</p>
+
+    </div>
+
+        <div class="col-xs-12" style="height:130px;"></div>
+
+        <h2 class="container">BLUEBERRY MUFFIN SMOOTHIE</h2>
+        <div class="container">
+            <img src="bilder/Banner_03.jpg" width="" height="">
+        </div>
+        <div class="container mt-2 ">
+            <div class="wpb_wrapper">
+                <p><strong>ZUTATEN</strong></p>
+                <ul>
+                    <li>1 scoop Women`s Best Slim Body Shake</li>
+                    <li>150ml Tasse Milch</li>
+                    <li>200g Vanilie Pudding</li>
+                    <li>1 Tasse gefroren Himbeeren</li>
+                    <li>1 Tasse Haferflocken</li>
+                    <li>1/2 Tasse Eiswürfel</li>
+                </ul>
+                <p><strong>ZUBEREITUNG</strong></p>
+                <p>Zutaten zusammen mischen und danach im Mixer verblenden.</p>
+
+            </div>
+</div>
+
 </div>
 
 <!-- Optional JavaScript -->
