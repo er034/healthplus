@@ -84,7 +84,7 @@ include 'db.php';
 </div><div class="container mt-5 al">
     <div class="row justify-content-between" id="product-details">
         <div class="col-12 col-md-6">
-            <img class="w-100 " src="bilder/sales_03.jpg">
+            <img class="w-100 " src="sales_03.php">
         </div>
         <div class="col-12 col-md-6 align-self-center">
             <?php
