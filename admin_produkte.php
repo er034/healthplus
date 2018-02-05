@@ -14,19 +14,30 @@ if (isset($_GET['edit'])) {
     }
 }
 ?>
-
-<!DOCTYPE html>
-<html>
 <link rel="stylesheet" type="text/css" href="style_admin_listen.css">
+<!doctype html>
+<html lang="en">
 <head>
+    <!-- Informationen über zusätzliche Angaben -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style_index.css">
+    <!-- Titel eines Dokumentes -->
     <title>ADMIN BEREICH - HEALTHPLUS</title>
 </head>
+<header>
+    <section class="container text-center mt-5">
+        <h3>ADMIN-BEREICH</h3>
+        <h6>PRODUKTKATALOG BEI HEALTH PLUS</h6>
+        <div align="center">
+            <img src="bilder/balken.png" alt="Balken-Icon">
+        </div>
+        </div>
+    </section>
+</header>
 <body>
-<section class="Head">
-<h3>ADMIN-BEREICH</h3>
-    <h6>PRODUKT-KATALOG</h6>
-    <p>Bestellen,bearbeiten & löschen von Produkten</p>
-</section>
 <?php if (isset($_SESSION['message'])): ?>
     <div class="msg">
         <?php
@@ -55,10 +66,10 @@ if (isset($_GET['edit'])) {
             <td><?php echo $row['description']; ?></td>
             <td><?php echo $row['price']; ?></td>
             <td>
-                <a href="admin_produkte.php?edit=<?php echo $row['id']; ?>" class="edit_btn" >Edit</a>
+                <a href="admin_produkte.php?edit=<?php echo $row['id']; ?>" class="btn btn-outline-info" >Edit</a>
             </td>
             <td>
-                <a href="admin_funktion_produkte.php?del=<?php echo $row['id']; ?>" class="del_btn">Delete</a>
+                <a href="admin_funktion_produkte.php?del=<?php echo $row['id']; ?>" class="btn btn-outline-info">Delete</a>
             </td>
         </tr>
     <?php } ?>
@@ -83,9 +94,9 @@ if (isset($_GET['edit'])) {
     </div>
     <div class="input-group">
         <?php if ($update == true): ?>
-            <button class="btn" type="submit" name="update" style="background: #556B2F;" >update</button>
+            <button class="btn btn-outline-info" type="submit" name="update" style="background: #556B2F;" >update</button>
         <?php else: ?>
-            <button class="btn" type="submit" name="save" >Save</button>
+            <button class="btn btn-outline-info " type="submit" name="save" >Save</button>
         <?php endif ?>
     </div>
 </form>
