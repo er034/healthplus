@@ -1,9 +1,13 @@
 <?php
-// include database configuration file
-include 'db.php';
+/**
+ * Created by PhpStorm.
+ * User: cedric
+ * Date: 05.02.18
+ * Time: 15:32
+ */
 ?>
-<!doctype html>
 <html lang="en">
+
 <head>
     <!-- Informationen über zusätzliche Angaben -->
     <meta charset="utf-8">
@@ -12,7 +16,7 @@ include 'db.php';
     <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style_index.css">
     <!-- Titel eines Dokumentes -->
-    <title>HEALTH PLUS | Fit Whey Protein</title>
+    <title>HEALTH PLUS | Home</title>
 </head>
 
 <!-- Beginn Body-Bereich -->
@@ -58,50 +62,23 @@ include 'db.php';
         </div>
     </div>
 </nav>
-<body>
-</div><div class="container mt-5 al">
-    <div class="row justify-content-between" id="product-details">
-        <div class="col-12 col-md-6">
-            <img class="w-100 " src="bilder/produkt_1.jpg">
-        </div>
-        <div class="col-12 col-md-6 align-self-center">
-            <?php
-            //get rows query
-            $query = $db->query("SELECT * FROM products WHERE id=0");
-            if($query->num_rows > 0){
-                while($row = $query->fetch_assoc()){
-                    ?>
-                    <div class="col-12 col-md-6 align-self-center">
-                            <div  class="row justify-content-start">
-                                <h2 class="ol-12 h2"><?php echo $row["name"]; ?></h2>
-                                <p class="list-group-item-text"><?php echo $row["description"]; ?></p>
-                                <div class="row">
-                                    <div class="col-md-6 align-content-center">
-                                        <p class="lead"><?php echo ''.$row["price"].'€'; ?></p>
-                                    </div>
-                                    <div class="col-md-6 align-center">
-                                        <a class="btn btn-outline-info" href="warenkorb_funktion.php?action=addToCart&id=<?php echo $row["id"]; ?>">In den Warenkorb</a>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                <?php } }else{ ?>
-                <p>Product(s) not found.....</p>
-            <?php } ?>
-        </div>
-    </div>
-    </div></div>
 
-<div class="col-xs-12" style="height:130px;"></div>
+<a class="twitter-timeline" href="https://twitter.com/HealthPlusBlog?ref_src=twsrc%5Etfw">Tweets by HealthPlusBlog</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<footer id="footer" class="mx-auto mt-5">
-    <nav class="footernav footernav-expand-lg footernav-light form-inline mx-auto">
-        <div class="footer mx-auto text-center " id="footeritem">
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="bootstrap-4.0.0-dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+<footer>
+    <nav class="footernav footernav-expand-lg footernav-light form-inline mx-auto mt-5">
+        <div class="footer mx-auto text-center" id="footeritem">
             <a href="impressum.php">IMPRESSUM</a>
             <a href="datenschutz.php">DATENSCHUTZ</a>
             <a href="kontakt.php">KONTAKT</a><br>
         </div>
     </nav>
 </footer>
-</body>
 </html>
