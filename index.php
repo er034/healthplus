@@ -1,11 +1,3 @@
-<?php
-include 'db.php';
-    session_start();
-
-    if (isset($_SESSION['username'])) : ?>
-    <p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
-    <p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
-<?php endif ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -63,6 +55,19 @@ include 'db.php';
         <div class="form-inline my-2 my-lg-1 ml-3">
             <a href="warenkorb_uebersicht.php"> <img src="bilder/einkaufswagen_icon.png" width="25" height="25" alt="Einkaufswagen"></a>
         </div>
+        <div class="form-inline my-2 my-lg-1 ml-3">
+            <a class="nav-link h-75" id="anmelden" href="anmelden.php">ANMELDEN</a>
+        </div>
+        <div class="form-inline my-2 my-lg-1 ml-1">
+            <a class="nav-link h-75" id="registrieren" href="registrieren.php">REGISTRIEREN</a>
+        </div>
+        <div class="form-inline my-2 my-lg-1 ml-3 mt-5" >
+        <?php include 'db.php';
+        session_start();
+        if (isset($_SESSION['username'])) : ?>
+            <a>Welcome <?php echo $_SESSION['username']; ?> &nbsp; <a href="abmelden.php" style="color: #29ABE2; text-decoration: none">LOGOUT</a> </a>
+        <?php endif ?>
+        </div>
     </div>
 </nav>
 
@@ -115,7 +120,7 @@ include 'db.php';
                 <div class='card-body'>
                     <h5>ABNEHM PAKET</h5>
                     <h6>Unser Bestseller. Das Rundum Paket für Gewichtsverlust.</h6>
-                    <p class='text-muted'>49.99€</p>
+                    <p>49.99€</p>
                 </div>
             </div>
         </a>
@@ -128,7 +133,7 @@ include 'db.php';
                 <div class='card-body'>
                     <h5>VEGAN PAKET</h5>
                     <h6>Unsere besten veganen Produkte in einem Paket.</h6>
-                    <p class='text-muted'>109.99€</p>
+                    <p>109.99€</p>
                 </div>
             </div>
         </a>
@@ -141,7 +146,7 @@ include 'db.php';
                 <div class='card-body'>
                     <h5>AUFBAU PAKET</h5>
                     <h6>Perfekt aufeinander abgestimmtes Paket für den Muskelaufbau.</h6>
-                    <p class='text-muted'>89.99€</p>
+                    <p>89.99€</p>
                 </div>
             </div>
         </a>
@@ -163,8 +168,9 @@ include 'db.php';
                     <div class='card-body'>
                         <h5>PROTEIN WAFFELN</h5>
                         <h6>Naschen ohne Schuldgefühle: jederzeit & überall.</h6>
-                        <p class='text-muted'><h4>5.99€</h4></p>
-                        <p><s>12.99€</s></p>
+                        <p>5.99€ <br>
+                            <s>12.99€</s>
+                        </p>
                     </div>
                 </div>
             </a>
@@ -177,8 +183,9 @@ include 'db.php';
                     <div class='card-body'>
                         <h5>PROTEIN COOKIES</h5>
                         <h6>Proteinreicher Cookie-Snack.</h6>
-                        <p class='text-muted'><h4>0.99€</h4></p>
-                        <p><s>2.99€</s></p>
+                        <p>0.99€ <br>
+                            <s>2.99€</s>
+                        </p>
                     </div>
                 </div>
             </a>
@@ -191,8 +198,9 @@ include 'db.php';
                     <div class='card-body'>
                         <h5>PROTEIN PUDDING</h5>
                         <h6>Ein leckerer Snack für zwischendurch!</h6>
-                        <p class='text-muted'><h4>4.99€</h4></p>
-                        <p><s>9.99€</s></p>
+                        <p>4.99€ <br>
+                            <s>9.99€</s>
+                        </p>
                     </div>
                 </div>
             </a>

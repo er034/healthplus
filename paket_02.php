@@ -59,6 +59,19 @@ include 'db.php';
         <div class="form-inline my-2 my-lg-1 ml-3">
             <a href="warenkorb_uebersicht.php"> <img src="bilder/einkaufswagen_icon.png" width="25" height="25" alt="Einkaufswagen"></a>
         </div>
+        <div class="form-inline my-2 my-lg-1 ml-3">
+            <a class="nav-link h-75" id="anmelden" href="anmelden.php">ANMELDEN</a>
+        </div>
+        <div class="form-inline my-2 my-lg-1 ml-1">
+            <a class="nav-link h-75" id="registrieren" href="registrieren.php">REGISTRIEREN</a>
+        </div>
+        <div class="form-inline my-2 my-lg-1 ml-3 mt-5" >
+            <?php include 'db.php';
+            session_start();
+            if (isset($_SESSION['username'])) : ?>
+                <a>Welcome <?php echo $_SESSION['username']; ?> &nbsp; <a href="abmelden.php" style="color: #29ABE2; text-decoration: none">LOGOUT</a> </a>
+            <?php endif ?>
+        </div>
     </div>
 </nav>
 

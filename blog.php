@@ -1,5 +1,5 @@
+<!doctype html>
 <html lang="en">
-
 <head>
     <!-- Informationen über zusätzliche Angaben -->
     <meta charset="utf-8">
@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style_index.css">
     <!-- Titel eines Dokumentes -->
-    <title>HEALTH PLUS | Blog</title>
+    <title>HEALTH PLUS | Home</title>
 </head>
-
 
 <!-- Beginn Body-Bereich -->
 <body>
@@ -56,14 +55,82 @@
         <div class="form-inline my-2 my-lg-1 ml-3">
             <a href="warenkorb_uebersicht.php"> <img src="bilder/einkaufswagen_icon.png" width="25" height="25" alt="Einkaufswagen"></a>
         </div>
+        <div class="form-inline my-2 my-lg-1 ml-3">
+            <a class="nav-link h-75" id="anmelden" href="anmelden.php">ANMELDEN</a>
+        </div>
+        <div class="form-inline my-2 my-lg-1 ml-1">
+            <a class="nav-link h-75" id="registrieren" href="registrieren.php">REGISTRIEREN</a>
+        </div>
+        <div class="form-inline my-2 my-lg-1 ml-3 mt-5" >
+            <?php include 'db.php';
+            session_start();
+            if (isset($_SESSION['username'])) : ?>
+                <a>Welcome <?php echo $_SESSION['username']; ?> &nbsp; <a href="abmelden.php" style="color: #29ABE2; text-decoration: none">LOGOUT</a> </a>
+            <?php endif ?>
+        </div>
     </div>
 </nav>
 
-<div class="page-header mt-5 text-center">
+
+<div class="slider">
+    <div id="slider_home" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-slide-to="1" class="active"></li>
+            <li data-slide-to="2"></li>
+            <li data-slide-to="3"></li>
+            <li data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <a href="produkt_01.php"><img class="img-fluid w-100" src="bilder/slider_01.jpg" alt="Fit Whey">
+            </div>
+            <div class="carousel-item">
+                <a href="produkt_02.php"><img class="img-fluid w-100" src="bilder/slider_02.jpg" alt="Pre Workout Booster">
+            </div>
+            <div class="carousel-item">
+                <a href="produkt_03.php"><img class="img-fluid w-100" src="bilder/slider_03.jpg" alt="Erdnussbutter">
+            </div>
+            <div class="carousel-item">
+                <a href="produkt_04.php"><img class="img-fluid w-100" src="bilder/slider_04.jpg" alt="Protein Creme">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#slider_home" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Zurück</span>
+        </a>
+        <a class="carousel-control-next" href="#slider_home" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Weiter</span>
+        </a>
+    </div>
+
+    <div class="page-header mt-5 text-center">
     <h5>BLOG</h5>
-</div>
-<div align="center">
-    <img src="bilder/balken.png" alt="Balken-Icon">
+        <div align="center">
+            <img src="bilder/balken.png" alt="Balken-Icon">
+        </div>
+    </div>
+
+    <div class="col-xs-12" style="height:130px;"></div>
+
+    <h2 class="container">RASPBERRY MANGO SMOOTHIE BOWL</h2>
+    <img src=""
+    <div class="container mt-5 ">
+        <div class="wpb_wrapper">
+            <p><strong>Ingredients</strong></p>
+            <ul>
+                <li>1 scoop Women`s Best Slim Body Shake</li>
+                <li>1 cup soy milk</li>
+                <li>1 cup frozen mango</li>
+                <li>1 cup frozen raspberries</li>
+                <li>1/4 cup raw pumpkin seeds</li>
+            </ul>
+            <p>&nbsp;</p>
+            <p><strong>Directions</strong></p>
+            <p>Blend all ingredients together and add toppings: ½ cup granola, ½ kiwi, seed of your choice, blueberries</p>
+
+        </div>
+    </div>
 </div>
 
 <!-- Optional JavaScript -->
