@@ -1,44 +1,31 @@
 <!doctype html>
-<!-- Sprachdefinition für das Dokument-->
 <html lang="en">
 <head>
-    <!-- Allgemeine Informationen des Webshops -->
+    <!-- Informationen über zusätzliche Angaben -->
     <meta charset="utf-8">
-    <meta charset="utf-8">
-    <meta name="description" content="Webshop für Nahrungsergänzungsmittel">
-    <meta name="author" content="Marc Lunardi, Cedric Tippl und Eileen Röhm">
-    <meta name="keywords" content="Fitness, Nahrung, Ergänzungsmittel">
-    <!--Seite an Viewport anpassen, für mobile Endgeräte -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS einbinden-->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style_index.css">
-    <!-- Name der Website und Titel der aktuellen Seite -->
+    <!-- Titel eines Dokumentes -->
     <title>HEALTH PLUS | Home</title>
 </head>
 
-<!-- Beginn Bodybereich-->
+<!-- Beginn Body-Bereich -->
 <body>
-<!-- Beginn Header -->
-<header>
-    <!-- Navigationsbereich im Kopf mit Eigeschaften von nav -->
-    <nav class="navbar navbar-expand-lg navbar-light ">
-        <!-- Beim Klicken des Logos zurück zur Landingpage, Logo eingebunden, Größe des Logos festgelegt a-Element für Hyperlink-->
-        <a class="navbar-brand" href="index.php">
-            <img src="bilder/logo.png" width="250" height="33" alt="HealthPlus">
-        </a>
-        <!-- Beim kleiner skalieren der Größe der Seite wird aus der Navigationsleiste ein Button-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-        </button>
-    <!-- Navigationselemente werden definiert -->
+<nav class="navbar navbar-expand-lg navbar-light ">
+    <a class="navbar-brand" href="index.php">
+        <img src="bilder/logo.png" width="250" height="33" alt="HealthPlus">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto ml-4">
-            <!-- Bei Element "Produkt" gelangt man auf den Produktkatalog -->
             <li class="nav-item">
                 <a class="nav-link" id="blog" href="uebersicht.php">PRODUKTE</a>
             </li>
-            <!-- Beginn Dropdown Menü bei den Elementen "Angebote" und "Sales", jedes Element verweist auf die jeweilige Seite-->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ANGEBOTE</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -55,16 +42,13 @@
                     <a class="dropdown-item" href="sales_03.php">Protein Pudding</a>
                 </div>
             </li>
-            <!-- Bei Element "Blog" gelangt man auf den Blog des Shops -->
             <li class="nav-item">
                 <a class="nav-link" id="blog" href="blog.php">BLOG</a>
             </li>
-            <!-- Bei Element "News" gelangt man auf den Newsfeed des Shops -->
             <li class="nav-item">
                 <a class="nav-link" id="blog" href="news.php">NEWS</a>
             </li>
         </ul>
-        <!-- 2. Teil in der Kopfzeile mit diesen Bestandteilen: Suche, Anmelden, Registieren und Abmelden-->
         <div class="form-inline my-2 ml-3" href="warenkorb_uebersicht.php">
             <a href="uebersicht.php"> <img src="bilder/suche_icon.png" width="25" height="25" alt="Suche"></a>
         </div>
@@ -78,9 +62,7 @@
             <a class="nav-link h-75" id="registrieren" href="registrieren.php">REGISTRIEREN</a>
         </div>
         <div class="form-inline my-2 my-lg-1 ml-3 mt-5" >
-            <!-- Php Code wird eingebunden, mit "include" wird auf den Datenbank-File zugegriffen -->
             <?php include 'db.php';
-            // Session = Um Benutzerdaten für einen gewissen Zeitraum zu speichern
             session_start();
             if (isset($_SESSION['username'])) : ?>
                 <a>Willkommen <?php echo $_SESSION['username']; ?> &nbsp; <a href="abmelden.php" style="color: #29ABE2; text-decoration: none">ABMELDEN</a> </a>
@@ -88,7 +70,6 @@
         </div>
     </div>
 </nav>
-</header>
 
 
 <div class="slider">
@@ -233,7 +214,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<footer>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    </html>
+
+
+    <footer>
         <nav class="footernav footernav-expand-lg footernav-light form-inline mx-auto mt-5">
             <div class="footer mx-auto text-center" id="footeritem">
                 <a href="impressum.php">IMPRESSUM</a>
@@ -247,6 +238,6 @@
             <!-- Social Media Buttons-->
 
         </nav>
-</footer>
+    </footer>
 </body>
 </html>
