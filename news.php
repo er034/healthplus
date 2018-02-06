@@ -91,11 +91,11 @@
             <a href="datenschutz.php">DATENSCHUTZ</a>
             <a href="agb.php">AGB</a>
             <a href="kontakt.php">KONTAKT</a><br>
+            <a href="https://www.facebook.com/Healthplusblog-126934821455800/" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/HealthPlusBlog" class="fa fa-twitter "></a>
+            <a href="https://www.instagram.com/healthplusblog/" class="fa fa-instagram"></a>
         </div>
         <!-- Social Media Buttons-->
-        <a href="https://www.facebook.com/Healthplusblog-126934821455800/" class="fa fa-facebook mr-3"></a>
-        <a href="https://twitter.com/HealthPlusBlog" class="fa fa-twitter mr-3"></a>
-        <a href="https://www.instagram.com/healthplusblog/" class="fa fa-instagram mr-5"></a>
 
     </nav>
 </footer>

@@ -64,7 +64,7 @@
 </div>
 <div class="col-xs-12" style="height:330px;"></div>
 
-</body>
+
 <footer>
     <nav class="footernav footernav-expand-lg footernav-light form-inline mx-auto mt-5">
         <div class="footer mx-auto text-center" id="footeritem">
@@ -72,7 +72,13 @@
             <a href="datenschutz.php">DATENSCHUTZ</a>
             <a href="agb.php">AGB</a>
             <a href="kontakt.php">KONTAKT</a><br>
+            <a href="https://www.facebook.com/Healthplusblog-126934821455800/" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/HealthPlusBlog" class="fa fa-twitter "></a>
+            <a href="https://www.instagram.com/healthplusblog/" class="fa fa-instagram"></a>
         </div>
+        <!-- Social Media Buttons-->
+
     </nav>
 </footer>
+</body>
 </html>
