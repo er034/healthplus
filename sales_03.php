@@ -110,7 +110,7 @@ include 'db.php';
                             </div>
                     </div>
                 <?php } }else{ ?>
-                <p>Artikel nicht gefunden....</p>
+                <p>Produkt(e) nicht gefunden...</p>
             <?php } ?>
         </div>
     </div>
