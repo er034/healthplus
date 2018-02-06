@@ -112,7 +112,7 @@
 
     <h2 class="container">RASPBERRY MANGO SMOOTHIE BOWL</h2>
     <div class="container">
-    <img src="bilder/Banner_01.jpg" width="" height="">
+    <img class="img-fluid" src="bilder/Banner_01.jpg" width="" height="">
     </div>
     <div class="container mt-2 ">
         <div class="wpb_wrapper">
@@ -132,7 +132,7 @@
 
     <h2 class="container">CHIA SMOOTHIE WITH STRAWBERRY TOPPING</h2>
     <div class="container">
-    <img src="bilder/Banner_02.jpg" width="" height="">
+    <img class="img-fluid"src="bilder/Banner_02.jpg" width="" height="">
     </div>
     <div class="container mt-2 ">
     <div class="wpb_wrapper">
@@ -152,7 +152,7 @@
 
         <h2 class="container">BLUEBERRY MUFFIN SMOOTHIE</h2>
         <div class="container">
-            <img src="bilder/Banner_03.jpg" width="" height="">
+            <img class="img-fluid" src="bilder/Banner_03.jpg" width="" height="">
         </div>
         <div class="container mt-2 ">
             <div class="wpb_wrapper">
