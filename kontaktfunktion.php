@@ -1,15 +1,14 @@
 <?php
 
 $email_from = "healthplus@web.de";   //Absender falls keiner angegeben wurde
-$sendermail_antwort = true;      //E-Mail Adresse des Besuchers als Absender. false= Nein ; true = Ja
+$sendermail_antwort = true;      //E-Mail Adresse des Besuchers als Absender. false= Nein true = Ja
 $name_von_emailfeld = "Email";   //Feld in der die Absenderadresse steht
 
 $empfaenger = "healthplus@web.de"; //Empfänger-Adresse
-$mail_cc = ""; //CC-Adresse, diese E-Mail-Adresse bekommt einer weitere Kopie
 $betreff = "Neue Kontaktanfrage"; //Betreff der Email
 
-$url_ok = "https://mars.iuk.hdm-stuttgart.de/~er034/kontakt_anfrageerfolgreich.php"; //Zielseite, wenn E-Mail erfolgreich versendet wurde
-$url_fehler = "https://mars.iuk.hdm-stuttgart.de/~er034/kontakt_errormeldung.php"; //Zielseite, wenn E-Mail nicht gesendet werden konnte
+$url_ok = "https://mars.iuk.hdm-stuttgart.de/~er034/kontakt_anfrageerfolgreich.php"; //wenn E-Mail erfolgreich versendet wurde
+$url_fehler = "https://mars.iuk.hdm-stuttgart.de/~er034/kontakt_errormeldung.php"; //wenn E-Mail nicht gesendet werden konnte
 
 
 //Diese Felder werden nicht in der Mail stehen
@@ -17,7 +16,7 @@ $ignore_fields = array('submit');
 
 
 
-//Hier werden alle Eingabefelder abgefragt
+//Eingabefelder abfragen
 while (list($name,$value) = each($_POST)) {
     if (in_array($name, $ignore_fields)) {
         continue; //Ignore Felder wird nicht in die Mail eingefügt
@@ -42,7 +41,7 @@ if (!empty($mail_cc)) {
 $mail_senden = mail($empfaenger,$betreff,$msg,$header);
 
 
-//Weiterleitung, hier konnte jetzt per echo auch Ausgaben stehen
+//Weiterleitung
 if($mail_senden){
     header("Location: ".$url_ok); //Mail wurde gesendet
     exit();
