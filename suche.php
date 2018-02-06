@@ -104,6 +104,7 @@ if (isset($_POST['submit-search'])){
         <div class="footer mx-auto text-center" id="footeritem">
             <a href="impressum.php">IMPRESSUM</a>
             <a href="datenschutz.php">DATENSCHUTZ</a>
+            <a href="agb.php">AGB</a>
             <a href="kontakt.php">KONTAKT</a><br>
         </div>
         <!-- Social Media Buttons-->
