@@ -15,7 +15,6 @@ $url_fehler = "https://mars.iuk.hdm-stuttgart.de/~er034/kontakt_errormeldung.php
 $ignore_fields = array('submit');
 
 
-
 //Eingabefelder abfragen
 while (list($name,$value) = each($_POST)) {
     if (in_array($name, $ignore_fields)) {
