@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <!-- Sprachdefinition für das Dokument-->
 <html lang="en">
+<!-- Allgemeiene Informationen des Webshops -->
 <head>
-    <!-- Allgemeiene Informationen des Webshops -->
     <meta charset="utf-8">
     <meta name="description" content="Webshop für Nahrungsergänzungsmittel">
     <meta name="author" content="Marc Lunardi, Cedric Tippl und Eileen Röhm">
@@ -15,22 +15,26 @@
     <!-- Name der Website und Titel der aktuellen Seite -->
     <title>HEALTH PLUS | Home</title>
 </head>
-
-<!-- Beginn Body-Bereich -->
-<body>
+<!-- Beginn Header -->
+<header>
+<!-- Navigationsbereich im Kopf mit Eigeschaften von nav -->
 <nav class="navbar navbar-expand-lg navbar-light ">
+    <!-- Beim Klicken des Logos zurück zur Landingpage, Logo eingebunden, Größe des Logos festgelegt a-Element für Hyperlink-->
     <a class="navbar-brand" href="index.php">
         <img src="bilder/logo.png" width="250" height="33" alt="HealthPlus">
     </a>
+    <!-- Beim kleiner skalieren der Größe der Seite wird aus der Navigationsleiste ein Button-->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-
+    <!-- Navigationselemente werden definiert -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto ml-4">
+            <!-- Bei Element "Produkt" gelangt man auf den Produktkatalog -->
             <li class="nav-item">
                 <a class="nav-link" id="blog" href="uebersicht.php">PRODUKTE</a>
             </li>
+            <!-- Beginn Dropdown Menü bei den Elementen "Angebote" und "Sales", jedes Element verweist auf die jeweilige Seite-->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ANGEBOTE</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -47,13 +51,16 @@
                     <a class="dropdown-item" href="sales_03.php">Protein Pudding</a>
                 </div>
             </li>
+            <!-- Bei Element "Blog" gelangt man auf den Blog des Shops -->
             <li class="nav-item">
                 <a class="nav-link" id="blog" href="blog.php">BLOG</a>
             </li>
+            <!-- Bei Element "News" gelangt man auf den Newsfeed des Shops -->
             <li class="nav-item">
                 <a class="nav-link" id="blog" href="news.php">NEWS</a>
             </li>
         </ul>
+        <!-- Beginn 2. Teil Header -->
         <div class="form-inline my-2 ml-3" href="warenkorb_uebersicht.php">
             <a href="uebersicht.php"> <img src="bilder/suche_icon.png" width="25" height="25" alt="Suche"></a>
         </div>
@@ -75,8 +82,10 @@
         </div>
     </div>
 </nav>
+</header>
 
-
+<!-- Beginn Body -->
+<body>
 <div class="slider">
     <div id="slider_home" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
