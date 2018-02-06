@@ -57,21 +57,14 @@
         </div>
     </div>
 </nav>
-
-<div>
-    <a>Vielen Dank für Deine Nachricht. Habe ein wenig Geduld, wir bearbeiten schnellstmöglich Deine Anfrage!<br>
-    Dein HealthPlus-Team
+<div class="col-xs-12" style="height:100px;"></div>
+<div class="container text-center h4 mt-5" style="font-size: larger}">
+    <a>Vielen Dank für Deine Nachricht.<br> Habe ein wenig Geduld, wir bearbeiten schnellstmöglich Deine Anfrage!<br>Dein HealthPlus-Team
     </a>
 </div>
-
-
-
-
-
+<div class="col-xs-12" style="height:330px;"></div>
 
 </body>
-
-
 <footer>
     <nav class="footernav footernav-expand-lg footernav-light form-inline mx-auto mt-5">
         <div class="footer mx-auto text-center" id="footeritem">
