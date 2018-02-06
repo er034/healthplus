@@ -76,24 +76,29 @@ if (isset($_POST['submit-search'])){
     $sql ="SELECT * FROM products WHERE name LIKE '%$search%' OR description LIKE '%$search%' OR id LIKE '%$search%' OR price LIKE '%$search%'";
     $result = mysqli_query($db, $sql);
     $queryResult = mysqli_num_rows($result);
-
-    echo "Es gibt".$queryResult." Produkte!";
-
+?>
+    <div class="container card-body mt-3">
+    <?php
+    echo "Es gibt ".$queryResult." Produkt(e)!";
+?>
+    <div class="col-xs-12" style="height:30px; "></div>
+    <?php
     if($queryResult > 0){
         while ($row = mysqli_fetch_assoc($result)){
-            echo "<a href='produkt.php?name=".$row['name']. "&description=".$row['description']. "&price=".$row['price']."'>
-                <div>
+            echo "
+                <div class='card-body' style='border: 1px solid #B0C4DE';>
                 <h3>".$row['name']."</h3>
                 <p>".$row['description']."</p>
-                <p>".$row['price'].'Euro'."</p>
-                </div></a>";
-        }
-    } else {
+                <p>".$row['price'].' Euro'."</p>
+                </div> <br> ";
+        }?>
+             <?php
+    } else
         echo "Es gibt dieses Produkt nicht!";
-    }
 }
 ?>
-</div>
+    </div>
+
 <footer>
     <nav class="footernav footernav-expand-lg footernav-light form-inline mx-auto mt-5">
         <div class="footer mx-auto text-center" id="footeritem">
