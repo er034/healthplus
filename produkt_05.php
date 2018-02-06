@@ -101,7 +101,7 @@ include 'db.php';
                     <div class="col-12 col-md-6 align-self-center">
                             <div  class="row justify-content-start">
                                 <h2 class="ol-12 h2"><?php echo $row["name"]; ?></h2>
-                                <p class="list-group-item-text">Artikelnummer:<?php echo $row["ean"]; ?></p>
+                                <p class="list-group-item-text">Artikelnummer: <?php echo $row["ean"]; ?></p>
                                 <p class="list-group-item-text"><?php echo $row["description"]; ?></p>
                                 <div class="row">
                                     <div class="col-md-6 align-content-center">
@@ -114,7 +114,7 @@ include 'db.php';
                             </div>
                     </div>
                 <?php } }else{ ?>
-                <p>Artikel nicht gefunden....</p>
+                <p>Produkt(e) nicht gefunden...</p>
             <?php } ?>
         </div>
     </div>
