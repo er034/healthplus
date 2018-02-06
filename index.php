@@ -1,13 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
+<!-- Sprachdefinition für das Dokument-->
 <html lang="en">
 <head>
-    <!-- Informationen über zusätzliche Angaben -->
+    <!-- Allgemeiene Informationen des Webshops -->
     <meta charset="utf-8">
+    <meta name="description" content="Webshop für Nahrungsergänzungsmittel">
+    <meta name="author" content="Marc Lunardi, Cedric Tippl und Eileen Röhm">
+    <meta name="keywords" content="Fitness, Nahrung, Ergänzungsmittel">
+    <!--Seite an Viewport anpassen, für mobile Endgeräte -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS einbinden-->
     <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style_index.css">
-    <!-- Titel eines Dokumentes -->
+    <!-- Name der Website und Titel der aktuellen Seite -->
     <title>HEALTH PLUS | Home</title>
 </head>
 
