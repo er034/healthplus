@@ -57,9 +57,12 @@
         </div>
     </div>
 </nav>
-<?php
-echo "Vielen dank fuer deine Anfrage"
-?>
+
+<div>
+    <a>Vielen Dank für Deine Nachricht. Habe ein wenig Geduld, wir bearbeiten schnellstmöglich Deine Anfrage!<br>
+    Dein HealthPlus-Team
+    </a>
+</div>
 
 
 

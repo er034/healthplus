@@ -7,6 +7,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style_index.css">
+    <link rel="stylesheet" href="style_login.css">
     <!-- Titel eines Dokumentes -->
     <title>HEALTH PLUS | Kontakt</title>
 </head>
@@ -59,31 +60,38 @@
 </nav>
 
 <div class="page-header mt-5 text-center">
-    <h5>KONTAKT</h5>
+    <h5>KONTAKTIERE UNS</h5>
 </div>
 <div align="center">
     <img src="bilder/balken.png" alt="Balken-Icon">
 </div>
-
-<div class="container text-center">
-    <meta charset="UTF-8">
-    <title>HEALTH PLUS | Kontakt</title>
-    <form method="post" action="kontaktfunktion.php">
-        <label for="Name"><b>Name:</b></label><br>
-        <input type="text" id="Name" name="Name"><br><br>
-
-        <label for="Email"><b>E-Mail:</b></label><br>
-        <input type="text" id="Email" name="Email"><br><br>
-
-        <label for="Betreff"><b>Betreff:</b></label><br>
-        <input type="text" id="Betreff" name="Betreff"><br><br>
-
-        <label for="Nachricht"><b>Nachricht:</b></label><br>
-        <textarea id="Nachricht" name="Nachricht" rows="10" cols="50"></textarea> <br><br>
-
-        <input type="submit" name="submit">
-    </form>
+<div class="titel text-center">
+    <h2>KONTAKT</h2>
 </div>
+
+<form method="post" action="kontaktfunktion.php">
+    <?php include('errors.php'); ?>
+    <div class="input-group">
+        <label>Name</label>
+        <input type="text" id="Name" name="Name" >
+    </div>
+    <div class="input-group">
+        <label>E-Mail</label>
+        <input type="text" id="Email" name="Email">
+    </div>
+    <div class="input-group">
+        <label>Betreff</label>
+        <input type="text" id="Betreff" name="Betreff">
+    </div>
+    <div class="input-group">
+        <label>Nachricht</label>
+        <input style="height: 200px" type="Nachricht" id="Nachricht" name="Betreff"rows="10" cols="50">
+    </div>
+    <div class="input-group">
+        <button type="submit" class="button" name="submit">Versenden</button>
+    </div>
+
+</form>
 </html>
 
 
@@ -95,7 +103,7 @@
 <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
-<div class="col-xs-12" style="height:100px;"></div>
+<div class="col-xs-12" style="height:50px;"></div>
 <footer>
     <nav class="footernav footernav-expand-lg footernav-light form-inline mx-auto mt-5">
         <div class="footer mx-auto text-center" id="footeritem">
