@@ -73,9 +73,9 @@
 <div align="center">
     <img src="bilder/balken.png" alt="Balken-Icon">
 </div>
-
-<a class="twitter-timeline" href="https://twitter.com/HealthPlusBlog?ref_src=twsrc%5Etfw">Tweets by HealthPlusBlog</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+<div class="container mt-5">
+<a class="twitter-timeline align" href="https://twitter.com/HealthPlusBlog?ref_src=twsrc%5Etfw">Tweets by HealthPlusBlog</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
